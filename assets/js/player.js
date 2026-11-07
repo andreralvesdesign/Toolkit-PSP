@@ -506,7 +506,9 @@ const capVideos = $$('video').filter(v => v.textTracks && v.textTracks.length).m
   const s = { v, o, last: 0, text: null };
   const paint = () => {
     const t = [...v.textTracks].find(x => x.kind === 'captions' || x.kind === 'subtitles'), cues = t && t.activeCues ? [...t.activeCues] : [];
-    const txt = cues.map(c => c.text).join('\n');
+    /* nothing over the poster: captions only once the video has started (playing, or paused after some playing/seeking) */
+    const started = !v.paused || v.currentTime > 0.05;
+    const txt = started ? cues.map(c => c.text).join('\n') : '';
     if (txt === s.text) return; s.text = txt;
     o.innerHTML = ''; txt.split('\n').filter(Boolean).forEach(l => { const sp = document.createElement('span'); sp.textContent = l; o.append(sp); });
   };
