@@ -1586,3 +1586,16 @@ body[data-chapter^="6"] .drawer-top{--circ:url(../img/circ-pink-b.webp)}
 @media (max-width:359px){
   .lbtn small{display:none}
 }
+
+/* phones, accordions of the checklists (.chk-groups): the open title has the same navy stroke as its panel, square bottom corners,
+   so the two read as one box (the .chk-groups button rule used to override the general "open" rule) */
+.chk-groups.acc>button[aria-expanded=true]{background:var(--white);border:1.5px solid var(--navy);border-bottom-left-radius:0;border-bottom-right-radius:0;box-shadow:none}
+.chk-groups.acc>[data-tp]{border-width:0 1.5px 1.5px}
+/* phones, the other accordions (.vtabs, .rtabs): their list gap (larger than the accordion's) left a 4 px band between an open title and its panel */
+.vtabs.acc,.rtabs.acc{row-gap:0.5rem}
+/* phones, open accordion: no outline; the title and its panel read as one box by their shared background and matching corners */
+.acc>button[aria-expanded=true],.chk-groups.acc>button[aria-expanded=true]{border-color:transparent}
+.acc>[data-tp],.chk-groups.acc>[data-tp]{border-color:transparent}
+.acc>[data-tp],.chk-groups.acc>[data-tp]{clip-path:inset(0 -2.5rem -3rem -2.5rem)}   /* no shadow band over the open title */
+/* phones, open accordion: a thin line between the title and its content */
+.acc>button[aria-expanded=true],.chk-groups.acc>button[aria-expanded=true]{border-bottom-color:var(--line)}
