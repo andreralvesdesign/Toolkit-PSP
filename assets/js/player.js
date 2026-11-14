@@ -12,7 +12,10 @@
 window.PSP = (() => {
 'use strict';
 const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
-const RM = matchMedia('(prefers-reduced-motion:reduce)').matches;
+/* reader preferences (Definições, see assets/js/prefs.js): larger text, more spacing, animations off */
+const PREFS = (() => { try { return JSON.parse(localStorage.getItem('psp:prefs')) || {}; } catch (e) { return {}; } })();
+const savePrefs = () => { try { localStorage.setItem('psp:prefs', JSON.stringify(PREFS)); } catch (e) {} };
+const RM = matchMedia('(prefers-reduced-motion:reduce)').matches || !!PREFS.still;
 const CH = document.body.dataset.chapter || 'x';
 /* Language: the English course lives in en/ and is the same player. <html lang="en-GB"> switches every text below (L(pt, en)).
    Progress, sound, captions and the review switches are shared between the two languages. */
@@ -38,24 +41,24 @@ const put = (node, prop, v) => { if (node && node[prop] !== v) node[prop] = v; }
 /* ======================= Course map ======================= */
 const COURSE = [
   { part: 'Início', items: [{ id: '0', n: '', t: 'Início do curso', f: 'index.html' }] },
-  { part: 'Módulo 1 · Introdução', items: [{ id: '1.1', n: '1.1', t: 'Como utilizar este Toolkit', f: '1-1-como-utilizar.html' }] },
-  { part: 'Módulo 2 · Primeiros Socorros Psicológicos no Local de Trabalho', items: [
+  { part: 'Parte 1 · Introdução', items: [{ id: '1.1', n: '1.1', t: 'Como utilizar este Toolkit', f: '1-1-como-utilizar.html' }] },
+  { part: 'Parte 2 · Primeiros Socorros Psicológicos no Local de Trabalho', items: [
     { id: '2.1', n: '2.1', t: 'Contextualização', f: '2-1-contextualizacao.html' },
     { id: '2.2', n: '2.2', t: 'Os Riscos Psicossociais', f: '2-2-riscos-psicossociais.html' },
     { id: '2.3', n: '2.3', t: 'Primeiros Socorros Psicológicos', f: '2-3-primeiros-socorros-psicologicos.html' }] },
-  { part: 'Módulo 3 · Se eu sou um Colaborador', items: [
+  { part: 'Parte 3 · Se eu sou um Colaborador', items: [
     { id: '3.1', n: '3.1', t: 'Sinais de alerta: o que observar em mim', f: '3-1-sinais-de-alerta.html' },
     { id: '3.2', n: '3.2', t: 'Autorregulação: a base e o que fazer no momento', f: '3-2-autorregulacao.html' },
     { id: '3.3', n: '3.3', t: 'Um colega em sofrimento: reconhecer e aproximar', f: '3-3-reconhecer-e-aproximar.html' },
     { id: '3.4', n: '3.4', t: 'Apoiar durante a conversa', f: '3-4-apoiar-durante-a-conversa.html' },
     { id: '3.5', n: '3.5', t: 'Limites, confidencialidade e guia de conversa', f: '3-5-limites-e-guia-de-conversa.html' }] },
-  { part: 'Módulo 4 · Se eu sou um Líder', items: [
-    { id: '4.1', n: '4.1', t: 'O papel do líder nos PSP', f: '4-1-o-papel-do-lider.html' },
+  { part: 'Parte 4 · Se eu sou um Líder', items: [
+    { id: '4.1', n: '4.1', t: 'O papel do líder nos Primeiros Socorros Psicológicos', f: '4-1-o-papel-do-lider.html' },
     { id: '4.2', n: '4.2', t: 'Identificar sinais na equipa', f: '4-2-identificar-sinais-na-equipa.html' },
     { id: '4.3', n: '4.3', t: 'Devo intervir? Da dúvida à ação', f: '4-3-devo-intervir.html' },
     { id: '4.4', n: '4.4', t: 'Como abordar um colaborador', f: '4-4-como-abordar-um-colaborador.html' },
     { id: '4.5', n: '4.5', t: 'Liderar para a segurança psicológica', f: '4-5-liderar-para-a-seguranca-psicologica.html' }] },
-  { part: 'Módulo 5 · Situações Sensíveis', items: [
+  { part: 'Parte 5 · Situações Sensíveis', items: [
     { id: '5.0', n: '', t: 'As nove situações', f: '5-0-situacoes-sensiveis.html' },
     { id: '5.1', n: '5.1', t: 'Burnout', f: '5-1-burnout.html' },
     { id: '5.2', n: '5.2', t: 'Luto', f: '5-2-luto.html' },
@@ -66,41 +69,42 @@ const COURSE = [
     { id: '5.7', n: '5.7', t: 'Conflito na equipa', f: '5-7-conflito-na-equipa.html' },
     { id: '5.8', n: '5.8', t: 'Apoio a cliente em sofrimento', f: '5-8-apoio-a-cliente-em-sofrimento.html' },
     { id: '5.9', n: '5.9', t: 'Suicídio', f: '5-9-suicidio.html' }] },
-  { part: 'Módulo 6 · Encaminhamento e Recursos', items: [
+  { part: 'Parte 6 · Encaminhamento e Recursos', items: [
     { id: '6.1', n: '6.1', t: 'Quando encaminhar', f: '6-1-quando-encaminhar.html' },
     { id: '6.2', n: '6.2', t: 'Recursos', f: '6-2-recursos.html' }] }
 ];
 if (EN) {
-  const PARTS = ['Home', 'Module 1 · Introduction', 'Module 2 · Psychological First Aid in the Workplace', 'Module 3 · If I am an Employee', 'Module 4 · If I am a Leader', 'Module 5 · Sensitive Situations', 'Module 6 · Referral and Resources'];
+  const PARTS = ['Home', 'Part 1 · Introduction', 'Part 2 · Psychological First Aid in the Workplace', 'Part 3 · If I am an Employee', 'Part 4 · If I am a Leader', 'Part 5 · Sensitive Situations', 'Part 6 · Referral and Resources'];
   const TITLES = {
     '0': 'Start of the course', '1.1': 'How to use this Toolkit', '2.1': 'Context', '2.2': 'Psychosocial Risks', '2.3': 'Psychological First Aid',
     '3.1': 'Warning signs: what to look for in myself', '3.2': 'Self-regulation: the foundation and what to do in the moment', '3.3': 'A colleague in distress: recognising and approaching',
     '3.4': 'Supporting during the conversation', '3.5': 'Limits, confidentiality and conversation guide',
-    '4.1': 'The role of the leader in PFA', '4.2': 'Identifying signs in the team', '4.3': 'Should I step in? From doubt to action', '4.4': 'How to approach an employee', '4.5': 'Leading for psychological safety',
+    '4.1': 'The role of the leader in Psychological First Aid', '4.2': 'Identifying signs in the team', '4.3': 'Should I step in? From doubt to action', '4.4': 'How to approach an employee', '4.5': 'Leading for psychological safety',
     '5.0': 'The nine situations', '5.1': 'Burnout', '5.2': 'Grief', '5.3': 'Panic attacks', '5.4': 'Disaster situations', '5.5': 'Aggressive behaviour', '5.6': 'Serious personal crisis',
     '5.7': 'Conflict in the team', '5.8': 'Supporting a customer in distress', '5.9': 'Suicide', '6.1': 'When to refer', '6.2': 'Resources'
   };
   COURSE.forEach((pt, i) => { pt.part = PARTS[i]; pt.items.forEach(c => { c.t = TITLES[c.id]; }); });
 }
-/* Page names: the f above are the source fragments; the pages have the short names of _src/pages.json (window.PAGES, written by build.py),
-   in Portuguese at the root and in English in en/. Online (http/https) the address leaves ".html" out (/contextualizacao, /en/context);
-   from disk (file://) the links keep it, so the course still opens with a double-click. */
+/* Page names (portfolio demo): the f above are the source fragments; the pages have the short names of _src/pages.json (window.PAGES,
+   written by build.py), in Portuguese at the root and in English in en/; index.html keeps its name. Online (http/https) the address leaves
+   ".html" out (/contextualizacao, /en/context) and the home page is the folder itself; from disk (file://) the links keep it. */
 const PG_ = window.PAGES || {};
 const ONLINE = /^https?:$/.test(location.protocol);
-const U = f => ONLINE ? f.replace(/\.html(?=$|[#?])/, '') : f;
-const PG = (src, lang = EN ? 1 : 0) => U(((PG_[src] || [])[lang] || src.replace(/\.html$/, '')) + '.html');
+const U = f => ONLINE ? f.replace(/^((?:\.\.\/)?(?:en\/)?)index\.html(?=[#?]|$)/, '$1').replace(/\.html(?=$|[#?])/, '') || './' : f;
+const PG = (src, lang = EN ? 1 : 0) => U(PG_[src] ? PG_[src][lang] + '.html' : src);
 COURSE.forEach(p => p.items.forEach(c => { c.f = PG(c.f); }));
-const IS_LANG = CH === 'lang';   /* the language screen is a page of its own (idioma / language) */
 if (ONLINE) {
-  /* the address: no ".html" */
-  if (/\.html$/.test(location.pathname)) { try { history.replaceState(null, '', location.pathname.replace(/\.html$/, '') + location.search + location.hash); } catch (e) {} }
+  /* the address: no ".html", no "index" */
+  const clean = location.pathname.replace(/index\.html$/, '').replace(/\.html$/, '');
+  if (clean !== location.pathname) { try { history.replaceState(null, '', clean + location.search + location.hash); } catch (e) {} }
   /* links between pages: no ".html" (assets and other sites are left alone) */
-  $$('a[href]').forEach(a => { const h = a.getAttribute('href'); if (/^(\.\.\/)?[\w-]+\.html(?=$|[#?])/.test(h)) a.setAttribute('href', U(h)); });
+  $$('a[href]').forEach(a => { const h = a.getAttribute('href'); if (/^(\.\.\/)?(en\/)?[\w-]+\.html(?=$|[#?])/.test(h)) a.setAttribute('href', U(h)); });
 }
 /* linear sequence for prev/next: chapters, plus one placeholder per part still in preparation */
 const SEQ = COURSE.flatMap(p => p.items.length ? p.items : [{ id: null, n: '', t: p.part, f: null }]);
 const CI = SEQ.findIndex(c => c.id === CH), PREV_CH = CI > 0 && SEQ[CI - 1].f ? SEQ[CI - 1] : null, NEXT_CH = CI > -1 && SEQ[CI + 1] && SEQ[CI + 1].f ? SEQ[CI + 1] : null, LAST = CI === SEQ.length - 1;
-const chLabel = c => (c.n ? c.n + ' ' : '') + c.t;
+/* the modules carry no number on screen (only the six parts do) */
+const chLabel = c => c.t;
 /* Modules can be opened in any order, from the Índice or the Início. The only forced order is inside a module (the Seguinte gate).
    If the client ever wants a module to wait for another, list it here: { '2.2': '2.1' } locks 2.2 in the Índice until 2.1 is done
    (the Índice then shows a padlock). Review mode (?gate=off) unlocks everything. */
@@ -122,10 +126,10 @@ slides.forEach((s, i) => {
 });
 $$('.not').forEach((el, i) => el.style.setProperty('--i', i + 2));
 const idx = id => slides.findIndex(s => s.dataset.id === id);
-/* the language screen (idioma / language page: its one section has data-noprev) is shown on its own; "Seguinte" opens the home page */
+/* index.html: the language screen (the section with data-noprev) is shown on its own, the rest of the page once a language is chosen */
 const SOLO = slides.find(s => s.hasAttribute('data-noprev')) || null;
 const shownIdx = () => slides.map((s, i) => s.hidden ? -1 : i).filter(i => i > -1);
-/* Deep links: the URL hash is the slide's stable id, qualified by the module (m2-1-v01, m0-capa), and the page title says where we are.
+/* Review tool (review.fullfill.pt): the URL hash is the slide's stable id, qualified by the module (m2-1-v01, m0-capa), and the page title says where we are.
    Ids come from data-id in the fragments and never change; a hash of another module opens that module (index.html#m2-1-v01 works from the root). */
 const slug = c => 'm' + String(c).replace(/\./g, '-');
 const hashOf = i => slug(CH) + '-' + slides[i].dataset.id;
@@ -139,10 +143,8 @@ function target() {
   const m = h.match(/^s(\d+)$/); if (m) return { i: Math.min(N - 1, +m[1] - 1) }; /* old position links; #s999 = last slide (back from the next module) */
   return null;
 }
-/* the browser tab: the course name, with the module in front inside a module ("Módulo 3 - Sonae Toolkit PSP");
-   the language screen and the home page show the course name only. Same rule as build.py, which writes the first <title>. */
-const MOD = /^[1-9]/.test(CH) ? CH.split('.')[0] : '';
-const pageTitle = () => (MOD ? L('Módulo ', 'Module ') + MOD + ' - ' : '') + L('Sonae Toolkit PSP', 'Sonae PFA Toolkit');
+/* the browser tab always shows the course name, whatever page or section (user request, Nov 2026) */
+const pageTitle = () => L('Sonae Toolkit PSP', 'Sonae Toolkit PFA');
 
 /* jump to a section (Índice, data-goto, the hash): the page scrolls there and its heading takes the focus */
 function go(n, focus = true, smooth = true) {
@@ -156,8 +158,7 @@ function go(n, focus = true, smooth = true) {
 /* the section being read: its id goes into the hash and its title into the page title (review tool) */
 function setCur(n) {
   if (n === cur || n < 0) return; cur = n; store.set('cur', n);
-  /* the address stays clean (/contextualizacao): a #section link still opens its section, then the hash is dropped */
-  if (location.hash) { try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {} }
+  if (location.hash !== '#' + hashOf(n)) history.replaceState(null, '', '#' + hashOf(n));
   document.title = pageTitle(n);
   (hooks[slides[n].dataset.id] || (() => {}))();
 }
@@ -172,7 +173,7 @@ function ui() {
   const pv = $('#prev'), nx = $('#next'), alone = !!SOLO && !SOLO.hidden;
   pv.hidden = alone || !PREV_CH; pv.disabled = !PREV_CH; nx.disabled = !alone && !NEXT_CH && !LAST;
   if (LAST) put($('#next .t'), 'textContent', L('Terminar', 'Finish'));
-  [[pv, PREV_CH, L('Parte anterior', 'Previous part')], [nx, alone ? null : NEXT_CH, L('Parte seguinte', 'Next part')]].forEach(([b, c, lead]) => {
+  [[pv, PREV_CH, L('Módulo anterior', 'Previous module')], [nx, alone ? null : NEXT_CH, L('Módulo seguinte', 'Next module')]].forEach(([b, c, lead]) => {
     if (c) { b.title = chLabel(c); b.setAttribute('aria-label', `${lead}: ${chLabel(c)}`); } else { b.removeAttribute('title'); b.removeAttribute('aria-label'); }
   });
   /* where Seguinte leads (in place of the "01 / 09" counter of the slides version) */
@@ -195,9 +196,13 @@ function finText() {
   if (eb) put(eb, 'textContent', n ? L('Quase lá', 'Almost there') : eb.dataset.done);
   sec.classList.toggle('fin-open', !!n);
   put(fin, 'textContent', n
-    ? L(`Para concluíres, falta explorar ${n === 1 ? '1 elemento' : `${n} elementos`} com ponto vermelho nesta página.`, `To finish, you still have ${n === 1 ? '1 element' : `${n} elements`} with a red dot to explore on this page.`)
-    : NEXT_CH ? L('Utiliza o botão "Seguinte" para avançar.', 'Use the "Next" button to continue.')
-      : CI === SEQ.length - 1 ? L('Utiliza o botão "Terminar" para fechar a página.', 'Use the "Finish" button to close the page.') : '');
+    ? L(`Para concluíres, falta explorar ${n === 1 ? '1 elemento' : `${n} elementos`} por abrir (marcados com um ponto vermelho) nesta página.`, `To finish, you still have ${n === 1 ? '1 element' : `${n} elements`} to open (marked with a red dot) on this page.`) : '');
+  fin.hidden = !n;
+  let nx = $('#finNext', sec);
+  if (!nx) { nx = document.createElement('p'); nx.id = 'finNext'; nx.className = 'lede fin-next'; fin.closest('.head').parentElement.append(nx); }
+  put(nx, 'textContent', n ? '' : NEXT_CH ? L('Utiliza o botão "Seguinte", logo abaixo, para avançar.', 'Use the "Next" button, just below, to continue.')
+      : CI === SEQ.length - 1 ? L('Utiliza o botão "Terminar", logo abaixo, para fechar a página.', 'Use the "Finish" button, just below, to close the page.') : '');
+  nx.hidden = !nx.textContent;
 }
 /* the module counts as done when every section was on screen and nothing is left to explore */
 function checkDone() {
@@ -216,7 +221,8 @@ document.addEventListener('click', e => {
    Captions, sound and the ?gate=off review mode are kept. Triggers: triple-click on the MC logo (asks first) or Shift+Alt+R / Ctrl+Alt+R. */
 function resetAll() {
   try { Object.keys(localStorage).filter(k => k.startsWith('psp:' + NS + ':') && !/:(muted|cc|gateoff|lang)$/.test(k)).forEach(k => localStorage.removeItem(k)); } catch (err) {}
-  if (IS_LANG) location.reload(); else location.href = PG('idioma');
+  const onHome = CH === '0';
+  location.href = PG('index.html') + '#m0-idioma'; if (onHome) location.reload();
 }
 document.addEventListener('keydown', e => {
   if (!(e.altKey && (e.shiftKey || e.ctrlKey) && e.code === 'KeyR')) return;
@@ -250,13 +256,18 @@ const markTodo = (u, on) => {
   let d = $(':scope > .todo-dot', h);
   if (on) { if (getComputedStyle(h).position === 'static') h.classList.add('todo-rel'); if (!d) { d = document.createElement('i'); d.className = 'todo-dot'; d.setAttribute('aria-hidden', 'true'); h.append(d); } }
   else if (d) d.remove();
+  /* screen readers do not see the dot: the control says "por abrir" until it has been opened */
+  const ctl = h.closest('button,a,[role=tab]') || $('button', h) || h;
+  let sr = $(':scope > .todo-sr', ctl);
+  if (on && !sr) { sr = document.createElement('span'); sr.className = 'sr todo-sr'; sr.textContent = L(' (por abrir)', ' (not opened yet)'); ctl.append(sr); }
+  else if (!on && sr) sr.remove();
 };
 function ctaText(s, el) {
   if (s.dataset.cta) return s.dataset.cta;
   if (el.length === 1 && el[0].matches('[data-reveal],[data-need]')) return L(`Clica em “${el[0].textContent.trim()}”${el[0].matches('[data-reveal]') ? ' para ver a resposta.' : '.'}`, `Click on “${el[0].textContent.trim()}”${el[0].matches('[data-reveal]') ? ' to see the answer.' : '.'}`);
-  if (el.every(e => e.matches('[role=tab],.acc > button'))) return L('Clica em cada opção. O ponto vermelho marca o que ainda não abriste.', 'Click on each option. The red dot marks what you have not opened yet.');
+  if (el.every(e => e.matches('[role=tab],.acc > button'))) return L('Clica em cada opção para abrires a informação. O ponto vermelho marca o que ainda não abriste.', 'Click on each option to open the information. The red dot marks what you have not opened yet.');
   if (el.every(e => e.matches('.flip button'))) return L('Clica em cada cartão para o virar. O ponto vermelho marca os que ainda não viraste.', 'Click on each card to turn it over. The red dot marks the ones you have not turned yet.');
-  return L('Clica em tudo o que tem um ponto vermelho.', 'Click on everything that has a red dot.');
+  return L('Clica em cada elemento com ponto vermelho para abrires a informação.', 'Click on each element with a red dot to open the information.');
 }
 function ownCta(s) {
   $$('.hint', s).filter(h => /clica|click/i.test(h.textContent)).forEach(h => { h.classList.add('cta'); const v = $('svg', h); if (v) v.outerHTML = POINTER; });
@@ -326,14 +337,16 @@ document.addEventListener('keyup', () => setTimeout(tabDots));
 /* the single entry point for every "next" gesture: the next module, or (locked) the first thing still to explore */
 function tryNext() {
   if (!locked()) {
-    if (SOLO && !SOLO.hidden) { langGo(); return; }
+    if (SOLO && !SOLO.hidden) { if (!langGo()) { solo(false); const h = $('h1', slides[shownIdx()[0]]); h && h.focus({ preventScroll: true }); } return; }
     if (NEXT_CH) location.href = NEXT_CH.f; return;
   }
   const todo = todoUnits(), n = todo.length;
   toast(L(`Explora todos os elementos desta página para avançar. ${n === 1 ? 'Falta 1.' : `Faltam ${n}.`}`, `Explore all the elements on this page to move on. ${n} left.`));
   const hiddenIn = $('[role=tab] .todo-dot');
   const el = todo.map(u => u.el).find(e => e.offsetParent) || (hiddenIn && hiddenIn.closest('[role=tab]'));
-  if (el) { el.scrollIntoView({ block: 'center', behavior: RM ? 'auto' : 'smooth' }); el.classList.remove('gate-pulse'); void el.offsetWidth; el.classList.add('gate-pulse'); setTimeout(() => el.classList.remove('gate-pulse'), 2400); }
+  say(L(`Ainda não podes avançar: faltam ${n} elementos por abrir nesta página. Vais para o primeiro.`, `You cannot move on yet: ${n} elements on this page are still to be opened. Going to the first one.`));
+  if (el) { const f = el.matches('button,a,[role=tab],input,[tabindex]') ? el : $('button,a,[role=tab],input', el); if (f) setTimeout(() => f.focus({ preventScroll: true }), 350);
+    el.scrollIntoView({ block: 'center', behavior: RM ? 'auto' : 'smooth' }); el.classList.remove('gate-pulse'); void el.offsetWidth; el.classList.add('gate-pulse'); setTimeout(() => el.classList.remove('gate-pulse'), 2400); }
 }
 function gateStart() {
   const mo = new MutationObserver(recs => {
@@ -415,12 +428,15 @@ const openMenu = on => {
 menuBtn.onclick = () => openMenu(true);
 $('#courseToc').addEventListener('click', e => {
   const a = e.target.closest('a.lock'); if (!a) return;
-  e.preventDefault(); toast(L(`Esta parte abre depois de concluíres “${ITEM[PRE[a.dataset.id]].t}”.`, `This part opens after you complete “${ITEM[PRE[a.dataset.id]].t}”.`));
+  e.preventDefault(); toast(L(`Este módulo abre depois de concluíres “${ITEM[PRE[a.dataset.id]].t}”.`, `This module opens after you complete “${ITEM[PRE[a.dataset.id]].t}”.`));
 });
 $('#menuClose').onclick = () => openMenu(false);
 scrim.onclick = () => openMenu(false);
+/* Esc closes the Índice wherever the focus is (not only inside it), unless a dialog on top takes the Esc first */
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && drawer.classList.contains('on') && !document.querySelector('dialog[open]') && ($('#setMenu') || {}).hidden !== false) openMenu(false);
+});
 drawer.addEventListener('keydown', e => {
-  if (e.key === 'Escape') openMenu(false);
   if (e.key === 'Tab') { const f = $$('button,a[href]', drawer), a = f[0], z = f[f.length - 1];
     if (e.shiftKey && document.activeElement === a) { e.preventDefault(); z.focus(); } else if (!e.shiftKey && document.activeElement === z) { e.preventDefault(); a.focus(); } }
 });
@@ -445,16 +461,16 @@ function courseMap() {
   $$('a[data-id]', el).forEach(a => {
     const c = ITEM[a.dataset.id], d = done(c), here = a.getAttribute('aria-current') === 'page', lk = isLocked(c);
     a.classList.toggle('done', d); a.classList.toggle('lock', lk);
-    if (lk) { a.setAttribute('aria-disabled', 'true'); a.title = L(`Abre depois de concluíres a parte “${ITEM[PRE[c.id]].t}”`, `Opens after you complete the part “${ITEM[PRE[c.id]].t}”`); } else { a.removeAttribute('aria-disabled'); a.removeAttribute('title'); }
-    put($('.no', a), 'textContent', d ? '✓' : (c.n || c.id));
-    put($('.st', a), 'innerHTML', (d ? `<span class="sr">${L('concluída', 'completed')}</span>` : '') + (lk ? `<span class="sr">${L('bloqueada, abre depois de concluíres a parte', 'locked, opens after you complete the parle')} ${ITEM[PRE[c.id]].t}</span>` : '') + (here ? `<em>${L('Aqui', 'Here')}</em>` : ''));
+    if (lk) { a.setAttribute('aria-disabled', 'true'); a.title = L(`Abre depois de concluíres o módulo “${ITEM[PRE[c.id]].t}”`, `Opens after you complete the module “${ITEM[PRE[c.id]].t}”`); } else { a.removeAttribute('aria-disabled'); a.removeAttribute('title'); }
+    put($('.no', a), 'textContent', d ? '✓' : '');
+    put($('.st', a), 'innerHTML', (d ? `<span class="sr">${L('concluído', 'completed')}</span>` : '') + (lk ? `<span class="sr">${L('bloqueado, abre depois de concluíres o módulo', 'locked, opens after you complete the module')} ${ITEM[PRE[c.id]].t}</span>` : '') + (here ? `<em>${L('Estás aqui', 'You are here')}</em>` : ''));
   });
   COURSE.forEach((p, i) => { const pc = $$('.cpart', el)[i]; if (pc) put($('.pc', pc), 'textContent', `${p.items.filter(done).length} ${L('de', 'of')} ${p.items.length}`); });
   const chapters = COURSE.flatMap(p => p.items).filter(c => c.id !== '0'), n = chapters.filter(done).length;
   $('#meter').style.width = (n / chapters.length * 100) + '%';
-  put($('#meterTxt'), 'textContent', L(`${n} de ${chapters.length} partes concluídas`, `${n} of ${chapters.length} parts completed`));
+  put($('#meterTxt'), 'textContent', L(`${n} de ${chapters.length} módulos concluídos`, `${n} of ${chapters.length} modules completed`));
   const on = shownIdx(), sn = on.filter(i => visited.has(i)).length;
-  put($('#meterChap'), 'textContent', L(`Nesta parte: ${sn} de ${on.length} secções vistas`, `In this part: ${sn} of ${on.length} sections seen`));
+  put($('#meterChap'), 'textContent', L(`Neste módulo: ${sn} de ${on.length} secções vistas`, `In this module: ${sn} of ${on.length} sections seen`));
 }
 
 /* ======================= Sound, captions, exit, help ======================= */
@@ -476,14 +492,9 @@ document.querySelectorAll('a[href]').forEach(a => {
 });
 const media = () => $$('video,audio');
 let muted = !!gstore.get('muted'), cc = gstore.get('cc') !== false;
-/* Captions are drawn by the course (.capov over the picture, sized to the video's width), not by the browser: the native ::cue size differs a lot
-   between engines (on iPhones, where every browser is WebKit, it took half the picture). The track stays "hidden" and only feeds the cues;
-   in full screen the overlay is not on show, so there the browser draws its own captions ("showing"). */
-const isFull = v => document.fullscreenElement === v || document.webkitFullscreenElement === v || !!v.webkitDisplayingFullscreen;
 const applyMedia = () => media().forEach(m => {
   m.muted = muted;
-  [...(m.textTracks || [])].forEach(t => { if (t.kind === 'captions' || t.kind === 'subtitles') t.mode = cc && isFull(m) ? 'showing' : 'hidden'; });
-  const o = m.parentElement && m.parentElement.querySelector(':scope > .capov'); if (o) o.hidden = !cc;
+  [...(m.textTracks || [])].forEach(t => { if (t.kind === 'captions' || t.kind === 'subtitles') t.mode = cc ? 'showing' : 'hidden'; });
 });
 /* captions come from captions.js (window.CAPS), not from <track src>: browsers refuse a track file when the course is opened from disk (file://) */
 const vttSecs = s => { const p = s.split(':').map(parseFloat); return p.length === 3 ? p[0] * 3600 + p[1] * 60 + p[2] : p[0] * 60 + p[1]; };
@@ -499,33 +510,24 @@ $$('video').forEach(v => {
   });
   t.remove();
 });
-/* the overlay: one box per line, raised above the native control bar while the controls show (paused, or the pointer/finger moved in the last ~3 s) */
-const capVideos = $$('video').filter(v => v.textTracks && v.textTracks.length).map(v => {
-  const o = document.createElement('div'); o.className = 'capov'; o.setAttribute('aria-hidden', 'true'); o.hidden = !cc;
-  v.after(o);
-  const s = { v, o, last: 0, text: null };
-  const paint = () => {
-    const t = [...v.textTracks].find(x => x.kind === 'captions' || x.kind === 'subtitles'), cues = t && t.activeCues ? [...t.activeCues] : [];
-    /* nothing over the poster: captions only once the video has started (playing, or paused after some playing/seeking) */
-    const started = !v.paused || v.currentTime > 0.05;
-    const txt = started ? cues.map(c => c.text).join('\n') : '';
-    if (txt === s.text) return; s.text = txt;
-    o.innerHTML = ''; txt.split('\n').filter(Boolean).forEach(l => { const sp = document.createElement('span'); sp.textContent = l; o.append(sp); });
-  };
-  s.paint = paint;
-  [...v.textTracks].forEach(t => t.addEventListener('cuechange', paint));
-  return s;
-});
-const capCtl = s => { const on = s.v.paused || s.v.ended || Date.now() - s.last < 3300; s.o.classList.toggle('ctl', on); };
+/* with the native controls visible the browser lifts the captions above the bar; once the controls hide they drop to the very edge of the picture,
+   so lift them one line then. Controls show while paused or while the pointer moves over the video (they hide ~3 s after the last move). */
+const capVideos = $$('video').map(v => ({ v, last: 0, lifted: false }));
+const capLift = s => {
+  const lift = !(s.v.paused || s.v.ended || Date.now() - s.last < 3300);   /* the controls hide ~3 s after the last pointer move OR after the pointer leaves */
+  if (lift === s.lifted) return;
+  s.lifted = lift;
+  [...s.v.textTracks].forEach(t => {
+    /* the line number counts to the cue's FIRST line, so a cue of n lines needs -(n + 1) to end one line above the edge */
+    [...(t.cues || [])].forEach(c => { c.snapToLines = true; c.line = lift ? -(c.text.split('\n').length + 1) : 'auto'; });
+    if (t.mode === 'showing') { t.mode = 'hidden'; t.mode = 'showing'; }   /* a cue already on screen is not laid out again by the change alone */
+  });
+};
 capVideos.forEach(s => {
-  ['mousemove', 'mouseenter', 'mouseleave', 'touchstart', 'keydown'].forEach(ev => s.v.addEventListener(ev, () => { s.last = Date.now(); capCtl(s); }, { passive: true }));
-  ['play', 'pause', 'ended', 'seeked', 'loadedmetadata', 'timeupdate'].forEach(ev => s.v.addEventListener(ev, () => { capCtl(s); s.paint(); }));
-  /* full screen: the browser draws the captions (iPhone: webkitbegin/endfullscreen on the video; elsewhere fullscreenchange) */
-  ['webkitbeginfullscreen', 'webkitendfullscreen'].forEach(ev => s.v.addEventListener(ev, () => setTimeout(applyMedia, 50)));
-  capCtl(s);
+  ['mousemove', 'mouseenter', 'mouseleave', 'touchstart', 'keydown'].forEach(ev => s.v.addEventListener(ev, () => { s.last = Date.now(); capLift(s); }, { passive: true }));
+  ['play', 'pause', 'ended', 'seeked', 'loadedmetadata'].forEach(ev => s.v.addEventListener(ev, () => capLift(s)));
 });
-['fullscreenchange', 'webkitfullscreenchange'].forEach(ev => document.addEventListener(ev, applyMedia));
-setInterval(() => capVideos.forEach(s => { if (!s.v.paused) capCtl(s); }), 500);
+setInterval(() => capVideos.forEach(s => { if (!s.v.paused) capLift(s); }), 500);
 const muteBtn = $('#muteBtn'), ccBtn = $('#ccBtn');
 const syncBtns = () => {
   muteBtn.setAttribute('aria-pressed', muted); muteBtn.dataset.tip = muted ? L('Ativar som', 'Turn sound on') : L('Desativar som', 'Turn sound off');
@@ -557,7 +559,7 @@ function closeCourse() {
   /* LMS: SCORM Terminate goes here */
   try { if (window.API && API.LMSFinish) API.LMSFinish(''); else if (window.API_1484_11 && API_1484_11.Terminate) API_1484_11.Terminate(''); } catch (e) {}
   /* portfolio version: leaving the course (Sair, or Terminar at the end) opens the project page of the portfolio, in the same tab */
-  location.href = 'https://www.andrealvesdesign.com/sonae-toolkit-psp';
+  location.href = 'https://www.andrealvesdesign.com/sonae-toolkit-psp/';
 }
 const dlg = $('#help');
 $('#helpBtn').onclick = () => dlg.showModal();
@@ -570,12 +572,16 @@ $$('a[aria-disabled=true]').forEach(a => a.addEventListener('click', e => e.prev
 /* Headings: the panels use h4 under an h2, which skips a level for screen-reader users who navigate by heading.
    The level exposed to assistive technology follows the previous visible heading (+1 at most). The look does not change. */
 function fixHeadings(s) {
-  let prev = 0;
+  /* a stack of (level in the markup, level exposed): headings of the same markup level under the same parent get the same exposed level */
+  const st = [];
   $$('h1,h2,h3,h4,h5,h6', s).forEach(h => {
     if (h.closest('[hidden]')) return;
-    let l = +h.tagName[1];
-    if (prev && l > prev + 1) { l = prev + 1; h.setAttribute('aria-level', l); } else h.removeAttribute('aria-level');
-    prev = l;
+    if (h.dataset.h1) { st.length = 0; st.push([1, 1]); return; }
+    const l = +h.tagName[1];
+    while (st.length && st[st.length - 1][0] >= l) st.pop();
+    const e = st.length ? Math.min(l, st[st.length - 1][1] + 1) : l;
+    if (e !== l) h.setAttribute('aria-level', e); else h.removeAttribute('aria-level');
+    st.push([l, e]);
   });
 }
 const fixSoon = () => setTimeout(() => slides.forEach(s => { if (!s.hidden) fixHeadings(s); }), 80);
@@ -623,7 +629,7 @@ function tabs(list, onSelect, vertical) {
   const sel = (t, user) => { ts.forEach(x => { const on = x === t; x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1; }); seen(t); onSelect(t, ts.indexOf(t), user); };
   ts.filter(t => t.getAttribute('aria-selected') === 'true').forEach(seen);
   ts.forEach((t, i) => {
-    t.addEventListener('click', () => sel(t, true));
+    t.addEventListener('click', e => { sel(t, true); if (e.detail === 0) { const p = document.getElementById(t.getAttribute('aria-controls')); if (p && !p.hidden) { if (!p.hasAttribute('tabindex')) p.tabIndex = -1; setTimeout(() => p.focus({ preventScroll: false }), 60); } } });
     t.addEventListener('keydown', e => {
       const map = vertical ? { ArrowDown: 1, ArrowUp: -1, ArrowRight: 1, ArrowLeft: -1 } : { ArrowRight: 1, ArrowLeft: -1 };
       const k = map[e.key]; let n;
@@ -671,6 +677,53 @@ $$('[data-reveal]').forEach(b => b.addEventListener('click', () => {
   b.setAttribute('aria-expanded', o); tg.hidden = !o;
   if (o) { tg.classList.remove('swap'); void tg.offsetWidth; tg.classList.add('swap'); if (b.dataset.reveal === 'once') b.hidden = true; }
 }));
+/* video: a play / pause button before each player, visually hidden until it has the keyboard focus (screen readers and keyboard users) */
+$$('.player video').forEach(v => {
+  const name = (v.getAttribute('aria-label') || L('Vídeo', 'Video')).replace(/^(Vídeo|Video):\s*/, '');
+  const b = document.createElement('button'); b.type = 'button'; b.className = 'vplay';
+  const upd = () => { b.textContent = (v.paused ? L('Reproduzir o vídeo: ', 'Play the video: ') : L('Pausar o vídeo: ', 'Pause the video: ')) + name; };
+  b.addEventListener('click', () => { if (v.paused) v.play().catch(() => {}); else v.pause(); });
+  ['play', 'pause', 'ended'].forEach(ev => v.addEventListener(ev, upd)); upd();
+  v.closest('.player').before(b);
+});
+/* sensitive-content note: "ou usa o botão Apoio, …" / "or use the Support button, …" starts on a new line */
+$$('.cw > svg').forEach(g => { const b = document.createElement('span'); b.className = 'cw-ic'; b.setAttribute('aria-hidden', 'true'); g.before(b); b.append(g); });
+$$('.cw > span:not(.cw-ic)').forEach(s => {
+  const t = s.textContent, m = t.match(/,? (ou usa|or use) /);
+  if (m) { const br = document.createElement('br'); br.className = 'cw-br'; s.textContent = t.slice(0, m.index) + ' '; s.append(br, t.slice(m.index + m[0].length - m[1].length - 1).trim()); }
+  /* the button's name in bold ("Apoio" / "Support") */
+  [...s.childNodes].forEach(n => {
+    const k = n.nodeType === 3 ? n.textContent.search(/\b(Apoio|Support)\b/) : -1; if (k < 0) return;
+    const w = n.textContent.match(/\b(Apoio|Support)\b/)[0], b = document.createElement('b'); b.textContent = w;
+    n.replaceWith(n.textContent.slice(0, k), b, n.textContent.slice(k + w.length));
+  });
+});
+/* transcript under every video, built from its captions (window.CAPS); each speaker turn ("– ") starts a paragraph */
+$$('.player video').forEach(v => {
+  const src = v.getAttribute('src') || ($('source', v) || {}).src || v.currentSrc || '';
+  const m = src.match(/video-([\w]+)\.mp4/), caps = window.CAPS && window.CAPS[EN ? 'en' : 'pt'];
+  if (!m || !caps || !caps[m[1]]) return;
+  const paras = []; let cur = '', last = 0;
+  caps[m[1]].split(/\n\s*\n/).forEach(b => {
+    const ls = b.split('\n').filter(Boolean), ti = ls.findIndex(x => x.includes('-->')); if (ti < 0) return;
+    const sec = x => { const [h, mi, se] = x.trim().split(' ')[0].split(':'); return +h * 3600 + +mi * 60 + parseFloat(se); };
+    const [a, z] = ls[ti].split(' --> '), t = sec(a);
+    ls.slice(ti + 1).forEach((line, k) => {
+      const turn = /^[–-]\s/.test(line), txt = line.replace(/^[–-]\s*/, '').trim();
+      /* new paragraph: a new speaker, or a finished sentence after a pause (or after a long paragraph) */
+      const ends = /[.!?…»"]$/.test(cur);
+      if (cur && (turn || (k === 0 && ends && (t - last > 1.2 || cur.length > 280)))) { paras.push(cur); cur = ''; }
+      cur += (cur ? ' ' : '') + (turn ? '– ' : '') + txt;
+    });
+    last = sec(z);
+  });
+  if (cur) paras.push(cur);
+  const d = document.createElement('details'); d.className = 'transcript';
+  const sm = document.createElement('summary'); sm.textContent = L('Ver transcrição do vídeo', 'Show the video transcript');
+  const body = document.createElement('div'); body.className = 'tr-body';
+  paras.forEach(t => { const pp = document.createElement('p'); pp.textContent = t; body.append(pp); });
+  d.append(sm, body); v.closest('.player').after(d);
+});
 /* "say": polite announcement for screen readers (same live region as the slide changes) */
 const say = m => { const a = $('#announce'); a.textContent = ''; setTimeout(() => { a.textContent = m; }, 40); };
 /* flip cards: <li class="flip"><button data-front="…" data-back="…"> + .face.front / .face.back (decorative).
@@ -799,7 +852,8 @@ function flow(cfg) {
   /* the conversation is rebuilt from the start with the first answers kept, so another answer can be tried from there */
   const replay = keep => {
     quiet = true; begin();
-    keep.forEach(k => { const last = log.lastElementChild; if (last) $$('.opt', last)[k].click(); });
+    /* guarded: under very fast clicking the kept path can be longer than what the rebuilt conversation offers */
+    for (const k of keep) { const last = log.lastElementChild, o = last && $$('.opt', last)[k]; if (!o) break; o.click(); }
     quiet = false; back.hidden = !keep.length; reset.hidden = !keep.length; paintMap();
   };
   reset.onclick = () => { stopAuto(); begin(); $('.opt', log).focus(); };
@@ -832,50 +886,48 @@ function flow(cfg) {
  * the one thing the cover asks for (it opens the gate), the other one opens the same page in the other language.
  * Every page also gets a small switch in the Índice, which keeps the slide the reader is on. The last language used is remembered (psp:lang). */
 const HERE = EN ? 'en' : 'pt';
-/* this page's source fragment, found from its name in the address (with or without .html) */
+/* this page's source fragment, found from its name in the address (with or without .html; the folder itself is index.html) */
 const pageSrc = () => {
   const n = decodeURIComponent(location.pathname.split('/').pop() || '').replace(/\.html$/, '');
-  return Object.keys(PG_).find(k => !k.startsWith('_') && PG_[k][EN ? 1 : 0] === n) || 'idioma';
+  return Object.keys(PG_).find(k => PG_[k][EN ? 1 : 0] === n) || 'index.html';
 };
-/* the same page in language l (src: another page instead) */
-const langHref = (l, src = pageSrc()) => (l === HERE ? '' : l === 'en' ? 'en/' : '../') + PG(src, l === 'en' ? 1 : 0);
+/* the same page in language l */
+const langHref = l => (l === HERE ? '' : l === 'en' ? 'en/' : '../') + PG(pageSrc(), l === 'en' ? 1 : 0);
 gstore.set('lang', HERE);
+/* the language screen is the first slide of index.html; once a language was picked in this tab the home page opens on the cover */
 const LANG_KEY = 'psp:' + NS + ':lang-ok';
 const langDone = () => { try { sessionStorage.setItem(LANG_KEY, '1'); } catch (e) {} };
+if ($('.langpick') && !location.hash) { try { if (sessionStorage.getItem(LANG_KEY)) history.replaceState(null, '', '#m0-capa'); } catch (e) {} }
 /* choosing only marks a language (radio buttons); "Seguinte" then moves on: next slide in the same language, or the other language's cover */
 const langBtns = $$('.langpick .lbtn');
 /* the "Seguinte"/"Next" button follows the language that was just picked, before the page itself changes */
 const NEXT_TXT = { pt: 'Seguinte', en: 'Next' };
-const pick = b => { langBtns.forEach(x => { x.setAttribute('aria-checked', x === b); x.tabIndex = x === b ? 0 : -1; }); const t = $('#next .t'); if (t) t.textContent = NEXT_TXT[b.dataset.lang]; langDone(); };
-/* picking the other language switches the whole interface at once: the same language screen opens in the other language,
-   with that option already selected and focused ("Seguinte"/"Next" then goes on to the cover) */
-const LANG_PICK = 'psp:' + NS + ':lang-pick';
-const choose = (b, kbd) => {
-  if (b.dataset.lang === HERE) { pick(b); return; }
-  gstore.set('lang', b.dataset.lang);
-  /* the focus only comes back after the reload for keyboard users (a mouse click would get a focus ring it never asked for) */
-  try { sessionStorage.setItem(LANG_PICK, b.dataset.lang + (kbd ? ':k' : '')); } catch (e) {}
-  location.replace(langHref(b.dataset.lang, 'idioma'));
+/* picking the other language switches the whole screen at once (header, Índice, buttons): the same language screen opens in that
+   language with the card already chosen, so only "Seguinte" is left to press */
+const PICK_KEY = 'psp:lang-pick';
+const pick = (b, kb) => {
+  if (b.dataset.lang !== HERE) {
+    try { sessionStorage.setItem(PICK_KEY, b.dataset.lang + (kb ? ':k' : '')); } catch (e) {}
+    gstore.set('lang', b.dataset.lang); location.replace(langHref(b.dataset.lang) + '#m0-idioma'); return;
+  }
+  langBtns.forEach(x => { x.setAttribute('aria-checked', x === b); x.tabIndex = x === b ? 0 : -1; }); const t = $('#next .t'); if (t) t.textContent = NEXT_TXT[b.dataset.lang]; langDone();
 };
+(() => {
+  let p = null; try { p = sessionStorage.getItem(PICK_KEY); sessionStorage.removeItem(PICK_KEY); } catch (e) {}
+  const [l, kb] = (p || '').split(':'), b = l && langBtns.find(x => x.dataset.lang === l);
+  /* the card gets the keyboard focus back only when it was chosen with the keyboard (a click shows no focus ring) */
+  if (b && l === HERE) { pick(b); if (kb) requestAnimationFrame(() => b.focus({ preventScroll: true })); }
+})();
 langBtns.forEach((b, i) => {
-  b.addEventListener('click', e => choose(b, e.detail === 0));
+  b.addEventListener('click', e => pick(b, e.detail === 0));
   b.addEventListener('keydown', e => {
     const k = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[e.key]; if (!k) return;
-    e.preventDefault(); e.stopPropagation(); const n = langBtns[(i + k + langBtns.length) % langBtns.length]; n.focus(); choose(n, true);
+    e.preventDefault(); e.stopPropagation(); const n = langBtns[(i + k + langBtns.length) % langBtns.length]; pick(n, true); n.focus();
   });
 });
-try {
-  const [p, how] = (sessionStorage.getItem(LANG_PICK) || '').split(':');
-  if (p) {
-    sessionStorage.removeItem(LANG_PICK);
-    const b = langBtns.find(x => x.dataset.lang === p);
-    if (b) { pick(b); if (how === 'k') setTimeout(() => b.focus({ preventScroll: true }), 0); }
-  }
-} catch (e) {}
-/* "Seguinte" on the language screen: the home page (inicio / start) of the language that was picked */
 const langGo = () => {
-  const sel = $('.lbtn[aria-checked=true]'); if (!sel) return false;
-  gstore.set('lang', sel.dataset.lang); langDone(); location.href = langHref(sel.dataset.lang, 'index.html'); return true;
+  const sel = $('.lbtn[aria-checked=true]'); if (!sel || sel.dataset.lang === HERE) return false;
+  gstore.set('lang', sel.dataset.lang); location.href = langHref(sel.dataset.lang) + '#m0-capa'; return true;
 };
 /* language button in the header, beside the sound button: the flag of the language in use; a click opens the same section in the other language.
    Not on the language screen (.is-solo). */
@@ -885,7 +937,7 @@ const langGo = () => {
   b.setAttribute('aria-label', L('Idioma: português. Mudar para inglês', 'Language: English. Switch to Portuguese'));
   b.dataset.tip = L('Mudar para inglês', 'Switch to Portuguese');
   b.innerHTML = `<img src="${EN ? '../' : ''}assets/img/flag-${HERE}.svg" alt="">`;
-  b.addEventListener('click', () => { gstore.set('lang', o); langDone(); location.href = langHref(o) + (cur > -1 ? '#' + hashOf(cur) : ''); });
+  b.addEventListener('click', () => { gstore.set('lang', o); langDone(); location.href = langHref(o) + location.hash; });
   $('#muteBtn').after(b);
 })();
 /* phones and tablets: captions, sound, language and exit live in one settings button (the real buttons stay in the page, hidden, and keep doing the work).
@@ -893,7 +945,7 @@ const langGo = () => {
 (() => {
   const icon = sel => { const i = $(sel); return i ? i.cloneNode(true).outerHTML : ''; };
   const btn = document.createElement('button');
-  btn.type = 'button'; btn.id = 'setBtn'; btn.className = 'ibtn';
+  btn.type = 'button'; btn.id = 'setBtn'; btn.className = 'ibtn'; btn.dataset.tip = L('Definições', 'Settings');
   btn.setAttribute('aria-label', L('Definições', 'Settings')); btn.setAttribute('aria-expanded', 'false'); btn.setAttribute('aria-controls', 'setMenu');
   btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h9M19 7h1M4 17h1M11 17h9"/><circle cx="16" cy="7" r="2.6"/><circle cx="8" cy="17" r="2.6"/></svg>';
   const over = document.createElement('div'); over.id = 'setOver'; over.hidden = true;
@@ -903,14 +955,22 @@ const langGo = () => {
   m.innerHTML = row('setCc', '<span class="cc">CC</span>', L('Legendas', 'Captions'), true)
     + row('setMute', icon('#muteBtn .on'), L('Som', 'Sound'), true)
     + `<button type="button" class="setrow" id="setLang" aria-label="${L('Idioma: português. Mudar para inglês', 'Language: English. Switch to Portuguese')}"><span class="seti" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.5-3.8-9S9.500 5.500 12 3z"/></svg></span><span class="sett">${L('Idioma', 'Language')}</span><span class="setseg" data-on="${HERE}" aria-hidden="true"><i>PT</i><i>EN</i></span></button>`
+    + row('setText', '<b class="aa">Aa</b>', L('Texto maior', 'Larger text'), true)
+    + row('setMotion', '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h3l2-6 4 12 2-6h3"/></svg>', L('Animações', 'Animations'), true)
     + row('setExit', icon('#exitBtn svg'), L('Sair do curso', 'Leave the course'));
-  $('.tools').append(btn); $('.hdr').append(over, m);
+  $('.hdr').append(over, m);
+  /* the button sits where it is seen, so Tab goes left to right: on computers right after the language flag (before Apoio / Sair),
+     on phones and tablets at the end of the bar (after Apoio) */
+  const DESK = matchMedia('(min-width:861px) and (min-aspect-ratio:4/5) and (min-height:501px)');
+  const place = () => { if (DESK.matches && $('#langBtn')) $('#langBtn').after(btn); else $('.tools').append(btn); };
+  place(); DESK.addEventListener('change', place);
   const sync = () => {
     $('#setCc').setAttribute('aria-pressed', $('#ccBtn').getAttribute('aria-pressed') === 'true');
     $('#setMute').setAttribute('aria-pressed', $('#muteBtn').getAttribute('aria-pressed') !== 'true');
+    $('#setText').setAttribute('aria-pressed', !!PREFS.text); $('#setMotion').setAttribute('aria-pressed', !PREFS.still);
   };
   const open = on => {
-    if (on) sync();
+    if (on) { sync(); /* the menu opens under its button, right edges aligned */ m.style.right = Math.max(0, $('.hdr').getBoundingClientRect().right - btn.getBoundingClientRect().right) + 'px'; }
     m.hidden = over.hidden = !on; btn.setAttribute('aria-expanded', on); document.body.classList.toggle('set-open', on);
     if (on) m.focus({ preventScroll: true });
   };
@@ -918,6 +978,9 @@ const langGo = () => {
   over.addEventListener('click', () => open(false));
   $('#setCc').addEventListener('click', () => { $('#ccBtn').click(); sync(); });
   $('#setMute').addEventListener('click', () => { $('#muteBtn').click(); sync(); });
+  const pref = (k, cls, on, msg) => { PREFS[k] = on; savePrefs(); cls.split(' ').forEach(c => document.documentElement.classList.toggle(c, on)); sync(); say(msg); };
+  $('#setText').addEventListener('click', () => pref('text', 'txt-lg txt-sp', !PREFS.text, PREFS.text ? L('Texto normal', 'Normal text') : L('Texto maior', 'Larger text')));
+  $('#setMotion').addEventListener('click', () => pref('still', 'no-motion', !PREFS.still, PREFS.still ? L('Animações ativas', 'Animations on') : L('Animações desativadas', 'Animations off')));
   /* same behaviour as the two switches: the control moves and the menu stays open, also after the page reloads in the other language */
   const SET_OPEN = 'psp:' + NS + ':set-open';
   $('#setLang').addEventListener('click', () => {
@@ -936,11 +999,13 @@ const langOk = () => { try { return !!sessionStorage.getItem(LANG_KEY); } catch 
 /* back in a module that is not finished (opened without a hash, e.g. from the Índice): open on the section where the reader was */
 const resume = () => { const c = store.get('cur'); return !location.hash && c > 0 && c < N && !dstore.get('done:' + CH) ? { i: c } : null; };
 function start() {
+  /* a page without an h1 (Parte 5 · the nine sheets): its first heading is exposed as the level-1 heading */
+  if (!$('h1')) { const h = $$('.stage h2')[0]; if (h) { h.setAttribute('role', 'heading'); h.setAttribute('aria-level', '1'); h.dataset.h1 = '1'; } }
   { const x = target(); if (x && x.to) { location.replace(x.to); return; } }
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
   gateStart(); watchSections();
   const t = target() || resume();
-  if (SOLO) solo(true);
+  if (SOLO) solo(t ? slides[t.i] === SOLO : !langOk());
   addEventListener('hashchange', () => { const x = target(); if (!x) return; if (x.to) location.replace(x.to); else go(x.i); });
   addEventListener('scroll', onScroll, { passive: true });
   addEventListener('resize', onScroll);

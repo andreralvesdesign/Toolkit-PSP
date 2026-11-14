@@ -1,8 +1,8 @@
 {
-"1.1 Como utilizar este Toolkit": [
+"Como utilizar este Toolkit": [
 "1-1-como-utilizar.html"
 ],
-"Módulo 1 · <b>1.1 Como utilizar este Toolkit</b>": [
+"Parte 1 · <b>Como utilizar este Toolkit</b>": [
 "1-1-como-utilizar.html"
 ],
 "Início": [
@@ -286,13 +286,13 @@
 "index.html",
 "index.html"
 ],
-"Módulo 1 · Introdução": [
+"Parte 1 · Introdução": [
 "1-1-como-utilizar.html"
 ],
 "Como utilizar este <span>Toolkit</span>": [
 "1-1-como-utilizar.html"
 ],
-"O que é, para quem é, quando recorrer a ele e o que vais encontrar.": [
+"O que é, a quem se destina, quando recorrer a ele e o que vais encontrar.": [
 "1-1-como-utilizar.html"
 ],
 "<span><svg#1/>8 ecrãs</span>": [
@@ -303,34 +303,6 @@
 "1-1-como-utilizar.html",
 "5-3-ataques-de-panico.html",
 "6-2-recursos.html"
-],
-"Eu escolho aprender. Construímos o futuro juntos.": [
-"1-1-como-utilizar.html",
-"2-1-contextualizacao.html",
-"2-2-riscos-psicossociais.html",
-"2-3-primeiros-socorros-psicologicos.html",
-"3-1-sinais-de-alerta.html",
-"3-2-autorregulacao.html",
-"3-3-reconhecer-e-aproximar.html",
-"3-4-apoiar-durante-a-conversa.html",
-"3-5-limites-e-guia-de-conversa.html",
-"4-1-o-papel-do-lider.html",
-"4-2-identificar-sinais-na-equipa.html",
-"4-3-devo-intervir.html",
-"4-4-como-abordar-um-colaborador.html",
-"4-5-liderar-para-a-seguranca-psicologica.html",
-"5-1-burnout.html",
-"5-2-luto.html",
-"5-3-ataques-de-panico.html",
-"5-4-situacoes-de-calamidade.html",
-"5-5-comportamento-agressivo.html",
-"5-6-crise-pessoal-grave.html",
-"5-7-conflito-na-equipa.html",
-"5-8-apoio-a-cliente-em-sofrimento.html",
-"5-9-suicidio.html",
-"6-1-quando-encaminhar.html",
-"6-2-recursos.html",
-"index.html"
 ],
 "#PrecisamosFalar": [
 "1-1-como-utilizar.html",
@@ -361,18 +333,16 @@
 "index.html"
 ],
 "O que é este material": [
+"1-1-como-utilizar.html",
 "1-1-como-utilizar.html"
 ],
-"1.1 · O que é este material": [
-"1-1-como-utilizar.html"
-],
-"Um guia prático de Primeiros Socorros Psicológicos (PSP) no trabalho": [
+"Um guia prático de Primeiros Socorros Psicológicos no trabalho": [
 "1-1-como-utilizar.html"
 ],
 "Ajuda-te a reconhecer sinais de sofrimento psicológico, em ti, num colega ou na equipa, e a responder de forma humana, segura e estruturada, segundo uma lógica simples:": [
 "1-1-como-utilizar.html"
 ],
-"A lógica dos PSP": [
+"A lógica dos Primeiros Socorros Psicológicos": [
 "1-1-como-utilizar.html"
 ],
 "<i aria-hidden=\"true\">1</i>Observar": [
@@ -392,10 +362,8 @@
 "Ilustração: duas pessoas preenchem uma grande lista de verificação.": [
 "1-1-como-utilizar.html"
 ],
-"Para quem é": [
-"1-1-como-utilizar.html"
-],
-"1.2 · Para quem é": [
+"A quem se destina": [
+"1-1-como-utilizar.html",
 "1-1-como-utilizar.html"
 ],
 "Para todos os colaboradores e líderes": [
@@ -420,9 +388,7 @@
 "1-1-como-utilizar.html"
 ],
 "Quando utilizar": [
-"1-1-como-utilizar.html"
-],
-"1.3 · Quando utilizar": [
+"1-1-como-utilizar.html",
 "1-1-como-utilizar.html"
 ],
 "Este toolkit acompanha-te em diferentes momentos": [
@@ -453,7 +419,7 @@
 "<img src=\"assets/img/ic-08.png\" alt=\"\">Encaminhar ou pedir contactos<span class=\"tick\" aria-hidden=\"true\"></span>": [
 "1-1-como-utilizar.html"
 ],
-"Módulo 3 · Bloco A": [
+"Parte 3 · Bloco A": [
 "1-1-como-utilizar.html"
 ],
 "No dia a dia, para prevenção e autocuidado": [
@@ -462,13 +428,13 @@
 "Reconhecer sinais de alerta em ti e cuidar do teu equilíbrio.": [
 "1-1-como-utilizar.html"
 ],
-"Ir para o Módulo 3 · Bloco A": [
+"Ir para a Parte 3 · Bloco A": [
 "1-1-como-utilizar.html"
 ],
 "Ilustração: duas pessoas a trabalhar lado a lado, cada uma na sua secretária, com o portátil.": [
 "1-1-como-utilizar.html"
 ],
-"Módulo 3 · Bloco B": [
+"Parte 3 · Bloco B": [
 "1-1-como-utilizar.html"
 ],
 "Quando notas que um colega está diferente ou em sofrimento": [
@@ -477,14 +443,14 @@
 "E queres saber como aproximar-te.": [
 "1-1-como-utilizar.html"
 ],
-"Ir para o Módulo 3 · Bloco B": [
+"Ir para a Parte 3 · Bloco B": [
 "1-1-como-utilizar.html"
 ],
 "Ilustração: duas pessoas, uma apoia a outra que está abatida.": [
 "1-1-como-utilizar.html",
 "2-3-primeiros-socorros-psicologicos.html"
 ],
-"Módulo 4": [
+"Parte 4": [
 "1-1-como-utilizar.html"
 ],
 "Quando lideras uma equipa": [
@@ -493,7 +459,7 @@
 "E queres identificar sinais e agir cedo.": [
 "1-1-como-utilizar.html"
 ],
-"Ir para o Módulo 4": [
+"Ir para a Parte 4": [
 "1-1-como-utilizar.html"
 ],
 "Ilustração: uma equipa de colegas a trabalhar em conjunto.": [
@@ -501,7 +467,7 @@
 "2-3-primeiros-socorros-psicologicos.html",
 "4-1-o-papel-do-lider.html"
 ],
-"Módulo 5": [
+"Parte 5": [
 "1-1-como-utilizar.html",
 "5-0-situacoes-sensiveis.html"
 ],
@@ -511,14 +477,14 @@
 "Burnout, luto, pânico, conflito, crise ou suicídio.": [
 "1-1-como-utilizar.html"
 ],
-"Ir para o Módulo 5": [
+"Ir para a Parte 5": [
 "1-1-como-utilizar.html"
 ],
 "Ilustração: um emaranhado de linhas entre duas pessoas, a representar confusão.": [
 "1-1-como-utilizar.html",
 "2-3-primeiros-socorros-psicologicos.html"
 ],
-"Módulo 6": [
+"Parte 6": [
 "1-1-como-utilizar.html"
 ],
 "Quando precisas de encaminhar ou de contactos de apoio": [
@@ -537,12 +503,10 @@
 "4-1-o-papel-do-lider.html"
 ],
 "O que não substitui": [
+"1-1-como-utilizar.html",
 "1-1-como-utilizar.html"
 ],
-"1.4 · O que não substitui": [
-"1-1-como-utilizar.html"
-],
-"Os PSP são uma primeira resposta de apoio": [
+"Os Primeiros Socorros Psicológicos são uma primeira resposta de apoio": [
 "1-1-como-utilizar.html"
 ],
 "<span class=\"x\" aria-hidden=\"true\"><svg#1/></span><span class=\"t\">Não são psicoterapia, aconselhamento clínico nem avaliação diagnóstica</span>": [
@@ -557,7 +521,7 @@
 "O seu objetivo é ajudar-te a <b>estar presente</b> e a <b>ligar a pessoa ao apoio certo</b>.": [
 "1-1-como-utilizar.html"
 ],
-"Em situações de risco, recorre ao Módulo 6 ou, em emergência, contacta o 112.": [
+"Em situações de risco, recorre à Parte 6 ou, em emergência, contacta o 112.": [
 "1-1-como-utilizar.html"
 ],
 "Ver contactos": [
@@ -584,16 +548,16 @@
 "Fluxogramas": [
 "1-1-como-utilizar.html"
 ],
-"<a href=\"2-3-primeiros-socorros-psicologicos.html#m2-3-s13\"><span>PSP no Momento<em>Módulo 2</em></span></a>": [
+"<a href=\"2-3-primeiros-socorros-psicologicos.html#m2-3-s13\"><span>Primeiros Socorros Psicológicos no Momento<em>Parte 2</em></span></a>": [
 "1-1-como-utilizar.html"
 ],
-"<a href=\"3-2-autorregulacao.html#m3-2-fluxo\"><span>Ação Rápida<em>Módulo 3 · Bloco A</em></span></a>": [
+"<a href=\"3-2-autorregulacao.html#m3-2-fluxo\"><span>Ação Rápida<em>Parte 3 · Bloco A</em></span></a>": [
 "1-1-como-utilizar.html"
 ],
-"<a href=\"3-2-autorregulacao.html#m3-2-depois\"><span>Reflexão Estruturada<em>Módulo 3 · Bloco A</em></span></a>": [
+"<a href=\"3-2-autorregulacao.html#m3-2-depois\"><span>Reflexão Estruturada<em>Parte 3 · Bloco A</em></span></a>": [
 "1-1-como-utilizar.html"
 ],
-"<a href=\"3-5-limites-e-guia-de-conversa.html#m3-5-fluxo\"><span>Apoiar um colega<em>Módulo 3 · Bloco B</em></span></a>": [
+"<a href=\"3-5-limites-e-guia-de-conversa.html#m3-5-fluxo\"><span>Apoiar um colega<em>Parte 3 · Bloco B</em></span></a>": [
 "1-1-como-utilizar.html"
 ],
 "Observar e decidir": [
@@ -602,16 +566,16 @@
 "Checklists": [
 "1-1-como-utilizar.html"
 ],
-"<a href=\"2-2-riscos-psicossociais.html#m2-2-observar\"><span>O que observar na equipa<em>Módulo 2</em></span></a>": [
+"<a href=\"2-2-riscos-psicossociais.html#m2-2-observar\"><span>O que observar na equipa<em>Parte 2</em></span></a>": [
 "1-1-como-utilizar.html"
 ],
-"<a href=\"3-3-reconhecer-e-aproximar.html#m3-3-guia\"><span>Devo aproximar-me?<em>Módulo 3 · Bloco B</em></span></a>": [
+"<a href=\"3-3-reconhecer-e-aproximar.html#m3-3-guia\"><span>Devo aproximar-me?<em>Parte 3 · Bloco B</em></span></a>": [
 "1-1-como-utilizar.html"
 ],
-"<a href=\"4-1-o-papel-do-lider.html#m4-1-radar\"><span>Radar de Risco Psicossocial<em>Módulo 4</em></span></a>": [
+"<a href=\"4-1-o-papel-do-lider.html#m4-1-radar\"><span>Radar de Risco Psicossocial<em>Parte 4</em></span></a>": [
 "1-1-como-utilizar.html"
 ],
-"<a href=\"4-3-devo-intervir.html#m4-3-checklist\"><span>Devo intervir?<em>Módulo 4</em></span></a>": [
+"<a href=\"4-3-devo-intervir.html#m4-3-checklist\"><span>Devo intervir?<em>Parte 4</em></span></a>": [
 "1-1-como-utilizar.html"
 ],
 "Role plays": [
@@ -645,7 +609,7 @@
 "Exercícios práticos": [
 "1-1-como-utilizar.html"
 ],
-"<a href=\"3-2-autorregulacao.html#m3-2-momento\"><span>Técnicas simples para reduzir a ativação e recuperar o equilíbrio<em>Módulo 3 · Bloco A</em></span></a>": [
+"<a href=\"3-2-autorregulacao.html#m3-2-momento\"><span>Técnicas simples para reduzir a ativação e recuperar o equilíbrio<em>Parte 3 · Bloco A</em></span></a>": [
 "1-1-como-utilizar.html"
 ],
 "Resumo “se → então”": [
@@ -654,7 +618,7 @@
 "Cartão de bolso": [
 "1-1-como-utilizar.html"
 ],
-"<a href=\"2-3-primeiros-socorros-psicologicos.html#m2-3-s14\"><span>As respostas essenciais, num só cartão<em>Módulo 2</em></span></a>": [
+"<a href=\"2-3-primeiros-socorros-psicologicos.html#m2-3-s14\"><span>As respostas essenciais, num só cartão<em>Parte 2</em></span></a>": [
 "1-1-como-utilizar.html"
 ],
 "Como navegar no curso": [
@@ -663,7 +627,7 @@
 "Não precisas de ver tudo de seguida": [
 "1-1-como-utilizar.html"
 ],
-"Usa o Índice e vai diretamente à situação de que precisas. Cada parte é uma página, para ler de cima para baixo. O curso guarda o ponto onde ficaste.": [
+"Usa o Índice e vai diretamente à situação de que precisas. Cada módulo é uma página, para ler de cima para baixo. O curso guarda o ponto onde ficaste.": [
 "1-1-como-utilizar.html"
 ],
 "Índice": [
@@ -672,7 +636,7 @@
 "shell.html",
 "shell.html"
 ],
-"Todos os módulos do curso e as partes de cada um, para abrires por qualquer ordem.": [
+"Todas as partes do curso e os módulos de cada uma, para abrires por qualquer ordem.": [
 "1-1-como-utilizar.html"
 ],
 "Apoio": [
@@ -695,7 +659,7 @@
 "Anterior e Seguinte": [
 "1-1-como-utilizar.html"
 ],
-"No fim de cada página, levam-te à parte anterior ou à seguinte. O Seguinte abre quando tiveres explorado tudo o que a página tem.": [
+"No fim de cada página, levam-te ao módulo anterior ou ao seguinte. O Seguinte abre quando tiveres explorado tudo o que a página tem.": [
 "1-1-como-utilizar.html"
 ],
 "Ponto vermelho": [
@@ -704,7 +668,7 @@
 "Marca o que ainda não abriste. Clica em cada elemento com ponto vermelho para ver todo o conteúdo da página.": [
 "1-1-como-utilizar.html"
 ],
-"Ler no Toolkit": [
+"Faz download para leres no Toolkit": [
 "1-1-como-utilizar.html",
 "1-1-como-utilizar.html",
 "2-1-contextualizacao.html",
@@ -732,7 +696,7 @@
 "6-1-quando-encaminhar.html",
 "6-2-recursos.html"
 ],
-"No fim de cada parte, o texto completo em PDF.": [
+"No fim de cada módulo, o texto completo em PDF.": [
 "1-1-como-utilizar.html"
 ],
 "Sair": [
@@ -769,7 +733,7 @@
 "6-1-quando-encaminhar.html",
 "6-2-recursos.html"
 ],
-"Fim da parte": [
+"Fim do módulo": [
 "1-1-como-utilizar.html",
 "2-1-contextualizacao.html",
 "2-2-riscos-psicossociais.html",
@@ -795,7 +759,7 @@
 "6-1-quando-encaminhar.html",
 "6-2-recursos.html"
 ],
-"Parte concluída": [
+"Módulo concluído": [
 "1-1-como-utilizar.html",
 "2-1-contextualizacao.html",
 "2-2-riscos-psicossociais.html",
@@ -810,10 +774,10 @@
 "4-4-como-abordar-um-colaborador.html",
 "6-1-quando-encaminhar.html"
 ],
-"Terminaste a parte “Como utilizar este Toolkit”": [
+"Terminaste o módulo “Como utilizar este Toolkit”": [
 "1-1-como-utilizar.html"
 ],
-"Viste todos os ecrãs desta parte.": [
+"Viste todos os ecrãs deste módulo.": [
 "1-1-como-utilizar.html",
 "2-1-contextualizacao.html",
 "2-2-riscos-psicossociais.html",
@@ -834,16 +798,16 @@
 "Parte 1 · páginas 4 a 6 do PDF original": [
 "1-1-como-utilizar.html"
 ],
-"\n      <a class=\"dl a\" href=\"downloads/toolkit-psp-parte-1.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#1/></span><span>Módulo 1 · Como utilizar este Toolkit<small>PDF · 3 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n      <a class=\"dl a\" href=\"downloads/toolkit-psp-completo.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#2/></span><span>Toolkit completo<small>PDF · 145 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n    ": [
+"\n      <a class=\"dl a\" href=\"downloads/toolkit-psp-parte-1.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#1/></span><span>Parte 1 · Como utilizar este Toolkit<small>PDF · 3 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n      <a class=\"dl a\" href=\"downloads/toolkit-psp-completo.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#2/></span><span>Toolkit completo<small>PDF · 145 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n    ": [
 "1-1-como-utilizar.html"
 ],
-"2.1 Contextualização": [
+"Contextualização": [
 "2-1-contextualizacao.html"
 ],
-"Módulo 2 · <b>2.1 Contextualização</b>": [
+"Parte 2 · <b>Contextualização</b>": [
 "2-1-contextualizacao.html"
 ],
-"Módulo 2 · Primeiros Socorros Psicológicos no Local de Trabalho": [
+"Parte 2 · Primeiros Socorros Psicológicos no Local de Trabalho": [
 "2-1-contextualizacao.html",
 "2-2-riscos-psicossociais.html",
 "2-3-primeiros-socorros-psicologicos.html"
@@ -851,7 +815,7 @@
 "Contextua&shy;lização": [
 "2-1-contextualizacao.html"
 ],
-"O trabalho pode proteger ou fragilizar a saúde mental. Porque é que isso importa, e o que as organizações podem fazer.": [
+"O trabalho tem um papel importante na saúde mental. Que impacto tem e o que podem as organizações fazer.": [
 "2-1-contextualizacao.html"
 ],
 "<span><svg#1/>9 ecrãs</span><span><svg#2/>3 vídeos</span>": [
@@ -869,11 +833,18 @@
 "2-1-contextualizacao.html"
 ],
 "1.1 · Vídeo": [
-"2-1-contextualizacao.html",
 "2-1-contextualizacao.html"
 ],
 "Vídeo: Prevalência de problemas de saúde mental em Portugal": [
 "2-1-contextualizacao.html"
+],
+"Vídeo": [
+"2-1-contextualizacao.html",
+"2-1-contextualizacao.html",
+"2-1-contextualizacao.html",
+"2-2-riscos-psicossociais.html",
+"2-2-riscos-psicossociais.html",
+"2-3-primeiros-socorros-psicologicos.html"
 ],
 "Prevalência de problemas de saúde mental em Portugal": [
 "2-1-contextualizacao.html"
@@ -898,7 +869,6 @@
 "2-1-contextualizacao.html"
 ],
 "1.2 · Vídeo": [
-"2-1-contextualizacao.html",
 "2-1-contextualizacao.html"
 ],
 "Vídeo: Saúde mental e bem-estar": [
@@ -923,7 +893,6 @@
 "2-1-contextualizacao.html"
 ],
 "1.3 · Vídeo": [
-"2-1-contextualizacao.html",
 "2-1-contextualizacao.html"
 ],
 "Vídeo: O papel das organizações na promoção da saúde mental": [
@@ -1048,7 +1017,7 @@
 "2-3-primeiros-socorros-psicologicos.html",
 "2-3-primeiros-socorros-psicologicos.html"
 ],
-"O trabalho pode proteger ou fragilizar a saúde mental. A diferença raramente está na tarefa em si, mas <em>na autonomia, no apoio, no reconhecimento e na atenção</em> que a organização coloca nas pessoas.": [
+"O trabalho pode ser um fator de proteção da saúde mental. E isso depende menos da tarefa em si e mais <em>da autonomia, do apoio, do reconhecimento e da atenção</em> que a organização dá às pessoas.": [
 "2-1-contextualizacao.html"
 ],
 "Autonomia": [
@@ -1061,19 +1030,19 @@
 "2-1-contextualizacao.html",
 "4-1-o-papel-do-lider.html"
 ],
-"Terminaste a parte “Contextualização”": [
+"Terminaste o módulo “Contextualização”": [
 "2-1-contextualizacao.html"
 ],
 "Parte 2, secção 1 · páginas 8 a 10 do PDF original": [
 "2-1-contextualizacao.html"
 ],
-"\n      <a class=\"dl a\" href=\"downloads/toolkit-psp-capitulo-1.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#1/></span><span>Parte completa<small>PDF · 3 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n    ": [
+"\n      <a class=\"dl a\" href=\"downloads/toolkit-psp-capitulo-1.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#1/></span><span>Módulo completo<small>PDF · 3 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n    ": [
 "2-1-contextualizacao.html"
 ],
-"2.2 Os Riscos Psicossociais": [
+"Os Riscos Psicossociais": [
 "2-2-riscos-psicossociais.html"
 ],
-"Módulo 2 · <b>2.2 Os Riscos Psicossociais</b>": [
+"Parte 2 · <b>Os Riscos Psicossociais</b>": [
 "2-2-riscos-psicossociais.html"
 ],
 "Os Riscos <span>Psicossociais</span>": [
@@ -1116,13 +1085,13 @@
 "Três passos · clica num para ires diretamente": [
 "2-2-riscos-psicossociais.html"
 ],
-"<em>2.1</em><b>Identificar</b><span>Os seis tipos de risco</span>": [
+"<b>Identificar</b><span>Os seis tipos de risco</span>": [
 "2-2-riscos-psicossociais.html"
 ],
-"<em>2.2</em><b>Observar</b><span>Checklist: o que observar</span>": [
+"<b>Observar</b><span>Checklist: o que observar</span>": [
 "2-2-riscos-psicossociais.html"
 ],
-"<em>2.3</em><b>Agir</b><span>O que fazer em cada nível</span>": [
+"<b>Agir</b><span>O que fazer em cada nível</span>": [
 "2-2-riscos-psicossociais.html"
 ],
 "Ilustração: pessoa ao computador, rodeada de pontos de interrogação e setas, com uma lâmpada ao lado.": [
@@ -1137,9 +1106,6 @@
 "Vídeo: Os riscos psicossociais": [
 "2-2-riscos-psicossociais.html"
 ],
-"Vídeo": [
-"2-2-riscos-psicossociais.html"
-],
 "Os riscos psicossociais": [
 "2-2-riscos-psicossociais.html"
 ],
@@ -1149,7 +1115,7 @@
 "Identificar: tipos de risco": [
 "2-2-riscos-psicossociais.html"
 ],
-"2.1 · Identificar": [
+"Identificar": [
 "2-2-riscos-psicossociais.html"
 ],
 "Seis tipos de risco psicossocial": [
@@ -1167,8 +1133,9 @@
 "Observar: checklist": [
 "2-2-riscos-psicossociais.html"
 ],
-"2.2 · Observar": [
-"2-2-riscos-psicossociais.html"
+"Observar": [
+"2-2-riscos-psicossociais.html",
+"3-5-limites-e-guia-de-conversa.html"
 ],
 "Checklist: o que observar na equipa": [
 "2-2-riscos-psicossociais.html"
@@ -1202,7 +1169,7 @@
 "Agir: o que fazer": [
 "2-2-riscos-psicossociais.html"
 ],
-"2.3 · Agir": [
+"Agir": [
 "2-2-riscos-psicossociais.html"
 ],
 "O que fazer, consoante o que observas": [
@@ -1218,7 +1185,6 @@
 "2-2-riscos-psicossociais.html"
 ],
 "2.4 · Vídeo": [
-"2-2-riscos-psicossociais.html",
 "2-2-riscos-psicossociais.html"
 ],
 "Vídeo: Fatores individuais que influenciam a perceção dos riscos": [
@@ -1234,6 +1200,7 @@
 "2-2-riscos-psicossociais.html"
 ],
 "Fatores individuais": [
+"2-2-riscos-psicossociais.html",
 "2-2-riscos-psicossociais.html"
 ],
 "Seis fatores, seis formas de viver o mesmo risco": [
@@ -1245,13 +1212,13 @@
 "0 de 6 virados": [
 "2-2-riscos-psicossociais.html"
 ],
-"Terminaste a parte “Os Riscos Psicossociais”": [
+"Terminaste o módulo “Os Riscos Psicossociais”": [
 "2-2-riscos-psicossociais.html"
 ],
 "Parte 2, secção 2 · páginas 11 a 15 do PDF original": [
 "2-2-riscos-psicossociais.html"
 ],
-"\n      <a class=\"dl a\" href=\"downloads/checklist-o-que-observar-na-equipa.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#1/></span><span>Checklist: o que observar na equipa<small>PDF · 1 página</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n      <a class=\"dl a\" href=\"downloads/toolkit-psp-capitulo-2.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#2/></span><span>Parte completa<small>PDF · 5 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n    ": [
+"\n      <a class=\"dl a\" href=\"downloads/checklist-o-que-observar-na-equipa.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#1/></span><span>Checklist: o que observar na equipa<small>PDF · 1 página</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n      <a class=\"dl a\" href=\"downloads/toolkit-psp-capitulo-2.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#2/></span><span>Módulo completo<small>PDF · 5 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n    ": [
 "2-2-riscos-psicossociais.html"
 ],
 "Exigências laborais": [
@@ -1702,10 +1669,10 @@
 "${n} de 6 virados": [
 "2-2-riscos-psicossociais.html"
 ],
-"2.3 Primeiros Socorros Psicológicos": [
+"Primeiros Socorros Psicológicos": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
-"Módulo 2 · <b>2.3 Primeiros Socorros Psicológicos</b>": [
+"Parte 2 · <b>Primeiros Socorros Psicológicos</b>": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
 "Primeiros Socorros <span>Psicológicos</span>": [
@@ -1727,13 +1694,13 @@
 "Introdução": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
-"Módulo 2 · 2.3": [
+"Parte 2 · 2.3": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
 "Uma resposta inicial de suporte humano": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
-"Nem todas as situações de risco exigem Primeiros Socorros Psicológicos (PSP). No entanto, quando existe sofrimento emocional agudo, desregulação ou impacto significativo, os PSP podem funcionar como uma resposta inicial de suporte humano e contenção.": [
+"Nem todas as situações de risco exigem Primeiros Socorros Psicológicos. No entanto, quando existe sofrimento emocional agudo, desregulação ou impacto significativo, os Primeiros Socorros Psicológicos podem funcionar como uma resposta inicial de suporte humano e contenção.": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
 "Nesta secção · clica num tema para ires diretamente": [
@@ -1746,17 +1713,15 @@
 "2-3-primeiros-socorros-psicologicos.html"
 ],
 "O que são os Primeiros Socorros Psicológicos": [
+"2-3-primeiros-socorros-psicologicos.html",
 "2-3-primeiros-socorros-psicologicos.html"
 ],
-"Clica em cada um dos quatro temas.": [
+"Clica em cada um dos quatro temas para abrires a informação.": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
 "0 de 4 vistos": [
 "2-3-primeiros-socorros-psicologicos.html",
 "4-1-o-papel-do-lider.html"
-],
-"O que são os PSP": [
-"2-3-primeiros-socorros-psicologicos.html"
 ],
 "<img src=\"assets/img/ic-04.png\" alt=\"\">O que são?<span class=\"tick\" aria-hidden=\"true\"></span>": [
 "2-3-primeiros-socorros-psicologicos.html"
@@ -1862,6 +1827,9 @@
 "2-3-primeiros-socorros-psicologicos.html",
 "2-3-primeiros-socorros-psicologicos.html"
 ],
+"Compreender o stress": [
+"2-3-primeiros-socorros-psicologicos.html"
+],
 "Clica em cada tipo para veres as características, exemplos e como se manifesta.": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
@@ -1880,23 +1848,26 @@
 "7 princípios base": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
-"7 princípios base dos PSP": [
+"Fundamentos": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
-"Clica em cada princípio da roda.": [
+"7 princípios base dos Primeiros Socorros Psicológicos": [
+"2-3-primeiros-socorros-psicologicos.html"
+],
+"Clica em cada princípio da roda para abrires a informação.": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
 "Roda dos 7 princípios": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
-"<b>PSP</b><small>7 princípios</small>": [
+"<b>7</b><small>princípios base</small>": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
 "3 regras de ouro": [
 "2-3-primeiros-socorros-psicologicos.html",
 "2-3-primeiros-socorros-psicologicos.html"
 ],
-"3.3 · Modelo de atuação": [
+"Modelo de atuação": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
 "As 3 regras de ouro": [
@@ -1935,7 +1906,10 @@
 "Quando e quem aplica": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
-"Quando e quem pode aplicar PSP": [
+"Aplicação": [
+"2-3-primeiros-socorros-psicologicos.html"
+],
+"Quando e quem pode aplicar Primeiros Socorros Psicológicos": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
 "Quando aplicar": [
@@ -1960,18 +1934,16 @@
 "2-3-primeiros-socorros-psicologicos.html"
 ],
 "Como aplicar": [
-"2-3-primeiros-socorros-psicologicos.html"
-],
-"3.4 · Como aplicar": [
+"2-3-primeiros-socorros-psicologicos.html",
 "2-3-primeiros-socorros-psicologicos.html"
 ],
 "Observar, Escutar, Ligar": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
-"Clica em cada um dos três passos.": [
+"Clica em cada um dos três passos para abrires a informação.": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
-"Como aplicar PSP": [
+"Como aplicar os Primeiros Socorros Psicológicos": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
 "<span class=\"c\" aria-hidden=\"true\">1</span>Observar": [
@@ -2054,6 +2026,9 @@
 "2-3-primeiros-socorros-psicologicos.html",
 "2-3-primeiros-socorros-psicologicos.html"
 ],
+"Depois de uma situação difícil": [
+"2-3-primeiros-socorros-psicologicos.html"
+],
 "Reações esperadas após situações de stress agudo": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
@@ -2078,9 +2053,6 @@
 "Vídeo: Fatores de risco e fatores protetores": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
-"3.6 · Vídeo": [
-"2-3-primeiros-socorros-psicologicos.html"
-],
 "Fatores de risco e fatores protetores": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
@@ -2091,6 +2063,9 @@
 "2-3-primeiros-socorros-psicologicos.html"
 ],
 "Antes, durante e depois": [
+"2-3-primeiros-socorros-psicologicos.html"
+],
+"Em diferentes momentos": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
 "Antes, durante e depois do evento": [
@@ -2120,14 +2095,12 @@
 "Evento": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
-"PSP no momento": [
+"Primeiros Socorros Psicológicos no momento": [
+"2-3-primeiros-socorros-psicologicos.html",
 "2-3-primeiros-socorros-psicologicos.html",
 "2-3-primeiros-socorros-psicologicos.html"
 ],
-"3.7 · Fluxograma 1": [
-"2-3-primeiros-socorros-psicologicos.html"
-],
-"Primeiros Socorros Psicológicos no momento": [
+"Fluxograma 1": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
 "Clica na tua resposta a cada pergunta para percorreres o fluxograma, ou clica em “Reproduzir a conversa”.": [
@@ -2176,7 +2149,7 @@
 "A pessoa quer falar? Se não: respeito e digo “Estou aqui se precisares”. Se sim: escuto com empatia (não interromper, não julgar, não dar soluções imediatas).": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
-"O que é mais necessário agora? Corpo ativado: acalmar (respiração, pausa, espaço). Emoção intensa: presença e validação. Confusão: escuta e organiza. Necessidade prática: apoio direto.": [
+"O que é mais necessário agora? Corpo estimulado: acalmar (respiração, pausa, espaço). Emoção intensa: presença e validação. Confusão: escuta e organiza. Necessidade prática: apoio direto.": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
 "Precisa de apoio adicional? Se sim: facilitar ligação (pessoas/serviços). Depois, ou se não: reforçar disponibilidade, não deixar isolado (se necessário), retomar ao ritmo da pessoa.": [
@@ -2186,7 +2159,7 @@
 "2-3-primeiros-socorros-psicologicos.html",
 "2-3-primeiros-socorros-psicologicos.html"
 ],
-"Cartão de Bolso PSP": [
+"Cartão de Bolso dos Primeiros Socorros Psicológicos": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
 "Se → Então. Pensa na tua resposta e clica em cada cartão para o virar.": [
@@ -2198,13 +2171,13 @@
 "Virar todos": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
-"Terminaste a parte “Primeiros Socorros Psicológicos”": [
+"Terminaste o módulo “Primeiros Socorros Psicológicos”": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
 "Parte 2, secção 3 · páginas 16 a 25 do PDF original": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
-"\n      <a class=\"dl a\" href=\"downloads/cartao-de-bolso-psp.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#1/></span><span>Cartão de Bolso<small>PDF · 1 página</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n      <a class=\"dl a\" href=\"downloads/fluxograma-1-psp-no-momento.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#2/></span><span>Fluxograma 1<small>PDF · 1 página</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n      <a class=\"dl a\" href=\"downloads/toolkit-psp-capitulo-3.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#3/></span><span>Parte completa<small>PDF · 10 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n    ": [
+"\n      <a class=\"dl a\" href=\"downloads/cartao-de-bolso-psp.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#1/></span><span>Cartão de Bolso<small>PDF · 1 página</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n      <a class=\"dl a\" href=\"downloads/fluxograma-1-psp-no-momento.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#2/></span><span>Fluxograma 1<small>PDF · 1 página</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n      <a class=\"dl a\" href=\"downloads/toolkit-psp-capitulo-3.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#3/></span><span>Módulo completo<small>PDF · 10 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n    ": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
 "7 princípios": [
@@ -2881,7 +2854,7 @@
 "escuto sem julgar": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
-"Se está muito ativado": [
+"Se está muito estimulado": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
 "ajudo a acalmar": [
@@ -2914,13 +2887,13 @@
 "${$$('.flip.open', ul).length} de 7 cartões virados": [
 "2-3-primeiros-socorros-psicologicos.html"
 ],
-"3.1 Sinais de alerta: o que observar em mim": [
+"Sinais de alerta: o que observar em mim": [
 "3-1-sinais-de-alerta.html"
 ],
-"Módulo 3 · <b>3.1 Sinais de alerta</b>": [
+"Parte 3 · <b>Sinais de alerta</b>": [
 "3-1-sinais-de-alerta.html"
 ],
-"Módulo 3 · Se eu sou um Colaborador": [
+"Parte 3 · Se eu sou um Colaborador": [
 "3-1-sinais-de-alerta.html",
 "3-2-autorregulacao.html",
 "3-3-reconhecer-e-aproximar.html",
@@ -3320,7 +3293,7 @@
 "5-7-conflito-na-equipa.html",
 "5-8-apoio-a-cliente-em-sofrimento.html"
 ],
-"Terminaste a parte “Sinais de alerta”": [
+"Terminaste o módulo “Sinais de alerta”": [
 "3-1-sinais-de-alerta.html"
 ],
 "Parte 3 – A, secções 1 e 2 · páginas 27 a 35 do PDF original, com as listas de sinais completas": [
@@ -3329,10 +3302,10 @@
 "\n      <a class=\"dl a\" href=\"downloads/toolkit-psp-parte-3a-sinais-de-alerta.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#1/></span><span>Sinais de alerta e quando pedir apoio<small>PDF · 9 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n    ": [
 "3-1-sinais-de-alerta.html"
 ],
-"3.2 Autorregulação: a base e o que fazer no momento": [
+"Autorregulação: a base e o que fazer no momento": [
 "3-2-autorregulacao.html"
 ],
-"Módulo 3 · <b>3.2 Autorregulação</b>": [
+"Parte 3 · <b>Autorregulação</b>": [
 "3-2-autorregulacao.html"
 ],
 "Autorregulação: a base e o que fazer <span>no momento</span>": [
@@ -3641,7 +3614,7 @@
 "b · Estratégias imediatas": [
 "3-2-autorregulacao.html"
 ],
-"Clica em cada uma das três estratégias.": [
+"Clica em cada uma das três estratégias para abrires a informação.": [
 "3-2-autorregulacao.html",
 "3-2-autorregulacao.html"
 ],
@@ -3839,7 +3812,7 @@
 "Em momentos de maior ativação, é normal sentir perda de controlo, urgência ou confusão. Estas estratégias não eliminam imediatamente o problema, mas ajudam a recuperar estabilidade suficiente para responder, em vez de reagir. <b>Começar pequeno já é suficiente.</b>": [
 "3-2-autorregulacao.html"
 ],
-"Terminaste a parte “Autorregulação”": [
+"Terminaste o módulo “Autorregulação”": [
 "3-2-autorregulacao.html"
 ],
 "Parte 3 – A, secções 3 e 4 · páginas 36 a 45 do PDF original": [
@@ -3935,10 +3908,10 @@
 "<p>Escolhe outra estratégia ou repete a anterior. Em particular: partilha e normaliza.</p><p>Vê a página de Encaminhamento. Os contactos essenciais estão no botão Apoio.</p>": [
 "3-2-autorregulacao.html"
 ],
-"3.3 Um colega em sofrimento: reconhecer e aproximar": [
+"Um colega em sofrimento: reconhecer e aproximar": [
 "3-3-reconhecer-e-aproximar.html"
 ],
-"Módulo 3 · <b>3.3 Reconhecer e aproximar</b>": [
+"Parte 3 · <b>Reconhecer e aproximar</b>": [
 "3-3-reconhecer-e-aproximar.html"
 ],
 "Reconhecer sinais e decidir <span>aproximar</span>": [
@@ -4149,7 +4122,7 @@
 "Se algo em ti ficou com a sensação de que devia perguntar, <em>provavelmente já tens informação suficiente para te aproximares.</em>": [
 "3-3-reconhecer-e-aproximar.html"
 ],
-"Terminaste a parte “Reconhecer e aproximar”": [
+"Terminaste o módulo “Reconhecer e aproximar”": [
 "3-3-reconhecer-e-aproximar.html"
 ],
 "Parte 3 – B, secções 5.1 e 5.2 · páginas 46 a 48 do PDF original": [
@@ -4161,10 +4134,10 @@
 "<b>${n === 1 ? 'Respondeste “sim” a 1 ponto' : `Respondeste “sim” a ${n} pontos`}.</b> Pode fazer sentido aproximar-se.": [
 "3-3-reconhecer-e-aproximar.html"
 ],
-"3.4 Apoiar durante a conversa": [
+"Apoiar durante a conversa": [
 "3-4-apoiar-durante-a-conversa.html"
 ],
-"Módulo 3 · <b>3.4 Apoiar durante a conversa</b>": [
+"Parte 3 · <b>Apoiar durante a conversa</b>": [
 "3-4-apoiar-durante-a-conversa.html"
 ],
 "Apoiar durante a <span>conversa</span>": [
@@ -4566,7 +4539,7 @@
 "Evitar estas respostas não significa ficar em silêncio ou “não saber o que dizer”. Significa priorizar a escuta, a validação e o ritmo da pessoa, em vez de tentar corrigir, explicar ou resolver.": [
 "3-4-apoiar-durante-a-conversa.html"
 ],
-"Terminaste a parte “Apoiar durante a conversa”": [
+"Terminaste o módulo “Apoiar durante a conversa”": [
 "3-4-apoiar-durante-a-conversa.html"
 ],
 "Parte 3 – B, secções 5.3 a 5.5 · páginas 49 a 54 do PDF original": [
@@ -4728,10 +4701,10 @@
 "<p class=\"sphrase\" style=\"font-size:clamp(1.2rem,1.9vw,1.6rem);margin-bottom:0.75rem\">${q[0]}</p>\n      <div class=\"sfb ${q[1] ? '' : 'no'}\"><b>${q[1] ? 'Ajuda' : 'Não ajuda'} · ${q[2]}</b><span class=\"v\">${right ? 'Isso mesmo.' : 'Não é bem assim.'}</span> ${q[3]}</div>\n      ${last ? '<p style=\"margin-bottom:0.875rem\">Viste as oito frases. A seguir encontras todos os tipos de resposta a evitar.</p>' : ''}\n      <div class=\"sbtns\">${i ? '<button class=\"sbtn sbtn--ghost\" data-act=\"back\">← Frase anterior</button>' : ''}<button class=\"sbtn sbtn--solid\" ${last ? 'data-act=\"again\"' : ''}>${last ? 'Recomeçar' : 'Frase seguinte'}</button></div>": [
 "3-4-apoiar-durante-a-conversa.html"
 ],
-"3.5 Limites, confidencialidade e guia de conversa": [
+"Limites, confidencialidade e guia de conversa": [
 "3-5-limites-e-guia-de-conversa.html"
 ],
-"Módulo 3 · <b>3.5 Limites e guia de conversa</b>": [
+"Parte 3 · <b>Limites e guia de conversa</b>": [
 "3-5-limites-e-guia-de-conversa.html"
 ],
 "Limites, confidencialidade e <span>guia de conversa</span>": [
@@ -4789,7 +4762,7 @@
 "Três perguntas sobre limites": [
 "3-5-limites-e-guia-de-conversa.html"
 ],
-"Clica em cada pergunta.": [
+"Clica em cada pergunta para abrires a informação.": [
 "3-5-limites-e-guia-de-conversa.html"
 ],
 "<img src=\"assets/img/ic-29.png\" alt=\"\">O que é confidencial?<span class=\"tick\" aria-hidden=\"true\"></span>": [
@@ -5071,7 +5044,7 @@
 "<i>5</i>Apoio adicional?": [
 "3-5-limites-e-guia-de-conversa.html"
 ],
-"<b>Se o apoio envolver Médico do Trabalho</b>Indicar uma janela temporal expectável para observação. Se o prazo não puder ser assegurado, ativar de imediato uma alternativa (Linha Somos Sonae 800 100 025 – 24h, apoio psicológico ou recurso externo).": [
+"<b>Se o apoio envolver Médico do Trabalho</b>Indicar uma janela temporal expectável para observação. Se o prazo não puder ser assegurado, ativar de imediato uma alternativa (Linha Somos Sonae oculto – 24h, apoio psicológico ou recurso externo).": [
 "3-5-limites-e-guia-de-conversa.html"
 ],
 "Notei que algo não está bem com um colega.": [
@@ -5090,10 +5063,10 @@
 "Há necessidade de apoio adicional? Se sim: “Queres que te ajude a falar com alguém?” “Podemos ver juntos que apoio faz sentido.” De acordo com a situação, encaminha para os recursos disponíveis. Se não: manter disponibilidade.": [
 "3-5-limites-e-guia-de-conversa.html"
 ],
-"Módulo 3 concluído": [
+"Parte 3 concluída": [
 "3-5-limites-e-guia-de-conversa.html"
 ],
-"Terminaste a parte “Limites e guia de conversa”": [
+"Terminaste o módulo “Limites e guia de conversa”": [
 "3-5-limites-e-guia-de-conversa.html"
 ],
 "Parte 3 – B, secções 6 e 7 · páginas 54 a 64 do PDF original": [
@@ -5157,9 +5130,6 @@
 "3-5-limites-e-guia-de-conversa.html"
 ],
 "Apoiar implica também garantir condições mínimas para o fazer com qualidade.": [
-"3-5-limites-e-guia-de-conversa.html"
-],
-"Observar": [
 "3-5-limites-e-guia-de-conversa.html"
 ],
 "Identificar sinais de que algo pode não estar bem.": [
@@ -5291,13 +5261,13 @@
 "Não é necessário fazer tudo. Seguir o fluxo de forma simples já permite responder com cuidado, respeito e eficácia no momento.": [
 "3-5-limites-e-guia-de-conversa.html"
 ],
-"4.1 O papel do líder nos PSP": [
+"O papel do líder nos Primeiros Socorros Psicológicos": [
 "4-1-o-papel-do-lider.html"
 ],
-"Módulo 4 · <b>4.1 O papel do líder</b>": [
+"Parte 4 · <b>O papel do líder</b>": [
 "4-1-o-papel-do-lider.html"
 ],
-"Módulo 4 · Se eu sou um Líder": [
+"Parte 4 · Se eu sou um Líder": [
 "4-1-o-papel-do-lider.html",
 "4-2-identificar-sinais-na-equipa.html",
 "4-3-devo-intervir.html",
@@ -5339,10 +5309,13 @@
 "4-1-o-papel-do-lider.html",
 "4-1-o-papel-do-lider.html"
 ],
+"Liderança": [
+"4-1-o-papel-do-lider.html"
+],
 "Quatro dimensões-chave do papel do líder": [
 "4-1-o-papel-do-lider.html"
 ],
-"Clica em cada uma das quatro dimensões.": [
+"Clica em cada uma das quatro dimensões para abrires a informação.": [
 "4-1-o-papel-do-lider.html"
 ],
 "<img src=\"assets/img/ic-29.png\" alt=\"\">1. Identificar precocemente sinais<span class=\"tick\" aria-hidden=\"true\"></span>": [
@@ -5449,10 +5422,13 @@
 "A importância dos riscos psicossociais": [
 "4-1-o-papel-do-lider.html"
 ],
+"Porque importa": [
+"4-1-o-papel-do-lider.html"
+],
 "A importância dos riscos psicossociais para os líderes": [
 "4-1-o-papel-do-lider.html"
 ],
-"Clica em cada um dos três temas.": [
+"Clica em cada um dos três temas para abrires a informação.": [
 "4-1-o-papel-do-lider.html",
 "4-5-liderar-para-a-seguranca-psicologica.html"
 ],
@@ -5557,6 +5533,9 @@
 "1.3 · Radar": [
 "4-1-o-papel-do-lider.html"
 ],
+"Ferramenta": [
+"4-1-o-papel-do-lider.html"
+],
 "Reflete sobre as últimas 2–3 semanas. Responde com base em padrões, não em exceções. Assinala o que se verifica na tua equipa.": [
 "4-1-o-papel-do-lider.html"
 ],
@@ -5569,13 +5548,13 @@
 "Percorre as cinco dimensões e assinala o que se verifica. <b id=\"rdSeen\">1 de 5 vistas.</b>": [
 "4-1-o-papel-do-lider.html"
 ],
-"Terminaste a parte “O papel do líder”": [
+"Terminaste o módulo “O papel do líder”": [
 "4-1-o-papel-do-lider.html"
 ],
 "Parte 4, secção 1 · páginas 66 a 70 do PDF original": [
 "4-1-o-papel-do-lider.html"
 ],
-"\n      <a class=\"dl a\" href=\"downloads/radar-de-risco-psicossocial-da-equipa.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#1/></span><span>Radar de Risco Psicossocial da Equipa<small>PDF · 2 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n      <a class=\"dl a\" href=\"downloads/toolkit-psp-parte-4-o-papel-do-lider.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#2/></span><span>O papel do líder nos PSP<small>PDF · 5 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n    ": [
+"\n      <a class=\"dl a\" href=\"downloads/radar-de-risco-psicossocial-da-equipa.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#1/></span><span>Radar de Risco Psicossocial da Equipa<small>PDF · 2 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n      <a class=\"dl a\" href=\"downloads/toolkit-psp-parte-4-o-papel-do-lider.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#2/></span><span>O papel do líder nos Primeiros Socorros Psicológicos<small>PDF · 5 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n    ": [
 "4-1-o-papel-do-lider.html"
 ],
 "Carga e ritmo": [
@@ -5710,10 +5689,10 @@
 "<p><b>Leitura global: ${glob}</b></p><ul class=\"stats\">${L.map((x, i) => `<li><i class=\"${x[0]}\" aria-hidden=\"true\"></i>${i + 1}. ${RD_SHORT[i]}: <b>${x[1]}</b> (${count(i)} de 5)</li>`).join('')}</ul>": [
 "4-1-o-papel-do-lider.html"
 ],
-"4.2 Identificar sinais na equipa": [
+"Identificar sinais na equipa": [
 "4-2-identificar-sinais-na-equipa.html"
 ],
-"Módulo 4 · <b>4.2 Identificar sinais na equipa</b>": [
+"Parte 4 · <b>Identificar sinais na equipa</b>": [
 "4-2-identificar-sinais-na-equipa.html"
 ],
 "Identificar sinais <span>na equipa</span>": [
@@ -5797,7 +5776,7 @@
 "O que pode mudar no funcionamento de uma pessoa": [
 "4-2-identificar-sinais-na-equipa.html"
 ],
-"Clica em cada categoria.": [
+"Clica em cada categoria para abrires a informação.": [
 "4-2-identificar-sinais-na-equipa.html"
 ],
 "1 de 9 vistas": [
@@ -5868,7 +5847,7 @@
 "<b>Saúde física</b><span>estado geral</span>": [
 "4-2-identificar-sinais-na-equipa.html"
 ],
-"Terminaste a parte “Identificar sinais na equipa”": [
+"Terminaste o módulo “Identificar sinais na equipa”": [
 "4-2-identificar-sinais-na-equipa.html"
 ],
 "Parte 4 – A · páginas 70 a 75 do PDF original": [
@@ -6107,10 +6086,10 @@
 "${seen.size} de 9 vistas": [
 "4-2-identificar-sinais-na-equipa.html"
 ],
-"4.3 Devo intervir? Da dúvida à ação": [
+"Devo intervir? Da dúvida à ação": [
 "4-3-devo-intervir.html"
 ],
-"Módulo 4 · <b>4.3 Devo intervir?</b>": [
+"Parte 4 · <b>Devo intervir?</b>": [
 "4-3-devo-intervir.html"
 ],
 "Devo intervir? <span>Da dúvida à ação</span>": [
@@ -6178,7 +6157,7 @@
 "Mudança, impacto, sofrimento, tempo e risco": [
 "4-3-devo-intervir.html"
 ],
-"Clica em cada dimensão.": [
+"Clica em cada dimensão para abrires a informação.": [
 "4-3-devo-intervir.html"
 ],
 "1 de 5 vistas": [
@@ -6228,10 +6207,10 @@
 "4-3-devo-intervir.html",
 "4-3-devo-intervir.html"
 ],
-"A · Mais do que PSP": [
+"A · Mais do que Primeiros Socorros Psicológicos": [
 "4-3-devo-intervir.html"
 ],
-"Quando é mais do que PSP": [
+"Quando é mais do que Primeiros Socorros Psicológicos": [
 "4-3-devo-intervir.html"
 ],
 "Procurar apoio especializado de imediato quando a pessoa:": [
@@ -6333,7 +6312,7 @@
 "4.º Role Play": [
 "4-3-devo-intervir.html"
 ],
-"Ler sobre PSP é diferente de ver como uma conversa dessas acontece de verdade – com hesitação, com pausas, com o risco de a pessoa não querer falar. O role-play seguinte é o mais próximo de uma situação real que encontrarás neste toolkit. Vale a pena ver com atenção.": [
+"Ler sobre Primeiros Socorros Psicológicos é diferente de ver como uma conversa dessas acontece de verdade – com hesitação, com pausas, com o risco de a pessoa não querer falar. O role-play seguinte é o mais próximo de uma situação real que encontrarás neste toolkit. Vale a pena ver com atenção.": [
 "4-3-devo-intervir.html"
 ],
 "<b>Contexto</b>Open space, final de tarde. Vários prazos a coincidir, equipa sob pressão. A líder de equipa repara em sinais de sobrecarga numa colaboradora e decide abordar.": [
@@ -6431,7 +6410,7 @@
 "Intervenções precoces são, tendencialmente, mais simples, mais proporcionais e mais eficazes.": [
 "4-3-devo-intervir.html"
 ],
-"Terminaste a parte “Devo intervir?”": [
+"Terminaste o módulo “Devo intervir?”": [
 "4-3-devo-intervir.html"
 ],
 "Parte 4 – A, secções 2 a 6 · páginas 76 a 86 do PDF original": [
@@ -6890,7 +6869,7 @@
 "<b>Foco da intervenção:</b> nesta fase, o líder não deve tentar gerir a situação sozinho.": [
 "4-3-devo-intervir.html"
 ],
-"Caso se envolva o Médico do Trabalho como parte da solução, definir uma janela temporal expectável para observação; se esta não puder ser assegurada, ativar uma alternativa (Somos Sonae 800 100 025 – 24h / apoio psicológico / recurso externo).": [
+"Caso se envolva o Médico do Trabalho como parte da solução, definir uma janela temporal expectável para observação; se esta não puder ser assegurada, ativar uma alternativa (Somos Sonae oculto – 24h / apoio psicológico / recurso externo).": [
 "4-3-devo-intervir.html"
 ],
 "${i + 1}. ${DI[i][0]}, ${n} de 4 assinalados": [
@@ -7004,16 +6983,16 @@
 "${seen.size} de 15 vistos": [
 "4-3-devo-intervir.html"
 ],
-"4.4 Como abordar um colaborador": [
+"Como abordar um colaborador": [
 "4-4-como-abordar-um-colaborador.html"
 ],
-"Módulo 4 · <b>4.4 Como abordar um colaborador</b>": [
+"Parte 4 · <b>Como abordar um colaborador</b>": [
 "4-4-como-abordar-um-colaborador.html"
 ],
 "Como abordar <span>um colaborador</span>": [
 "4-4-como-abordar-um-colaborador.html"
 ],
-"Bloco B. Os princípios da abordagem, um modelo de conversa em sete passos, quatro estudos de caso e a mini-secção PSP para líderes.": [
+"Bloco B. Os princípios da abordagem, um modelo de conversa em sete passos, quatro estudos de caso e a mini-secção de Primeiros Socorros Psicológicos para líderes.": [
 "4-4-como-abordar-um-colaborador.html"
 ],
 "<span><svg#1/>9 ecrãs</span>": [
@@ -7055,7 +7034,7 @@
 "Sete passos, da preparação ao follow-up": [
 "4-4-como-abordar-um-colaborador.html"
 ],
-"Clica em cada um dos sete passos.": [
+"Clica em cada um dos sete passos para abrires a informação.": [
 "4-4-como-abordar-um-colaborador.html"
 ],
 "Gestão de diferentes tipos de resposta": [
@@ -7237,23 +7216,23 @@
 "<b>Apoio contínuo:</b> reforçar disponibilidade e manter contacto regular.": [
 "4-4-como-abordar-um-colaborador.html"
 ],
-"Mini-secção PSP para líderes": [
+"Mini-secção de Primeiros Socorros Psicológicos para líderes": [
 "4-4-como-abordar-um-colaborador.html",
 "4-4-como-abordar-um-colaborador.html",
 "4-4-como-abordar-um-colaborador.html",
 "4-4-como-abordar-um-colaborador.html"
 ],
-"B · Mini-secção PSP": [
+"B · Mini-secção de Primeiros Socorros Psicológicos": [
 "4-4-como-abordar-um-colaborador.html",
 "4-4-como-abordar-um-colaborador.html"
 ],
 "Quando um colaborador está em sofrimento: o que fazer numa primeira abordagem": [
 "4-4-como-abordar-um-colaborador.html"
 ],
-"O objetivo dos PSP é reduzir a ativação inicial, oferecer presença segura, escutar com empatia, apoiar nas necessidades imediatas e facilitar o acesso a ajuda adicional quando necessário. O líder não precisa de ter todas as respostas, nem de “resolver” a situação no momento.": [
+"O objetivo dos Primeiros Socorros Psicológicos é reduzir a ativação inicial, oferecer presença segura, escutar com empatia, apoiar nas necessidades imediatas e facilitar o acesso a ajuda adicional quando necessário. O líder não precisa de ter todas as respostas, nem de “resolver” a situação no momento.": [
 "4-4-como-abordar-um-colaborador.html"
 ],
-"Os PSP assentam em princípios consistentes com uma abordagem informada pelo trauma: segurança, confiança, escolha, colaboração, empoderamento e respeito pela dignidade humana. Na prática, isto significa proteger a pessoa de stresse adicional, cuidar de necessidades imediatas, oferecer apoio emocional e prático, normalizar reações comuns a situações difíceis e conectar a pessoa a recursos de apoio quando isso fizer sentido.": [
+"Os Primeiros Socorros Psicológicos assentam em princípios consistentes com uma abordagem informada pelo trauma: segurança, confiança, escolha, colaboração, empoderamento e respeito pela dignidade humana. Na prática, isto significa proteger a pessoa de stresse adicional, cuidar de necessidades imediatas, oferecer apoio emocional e prático, normalizar reações comuns a situações difíceis e conectar a pessoa a recursos de apoio quando isso fizer sentido.": [
 "4-4-como-abordar-um-colaborador.html"
 ],
 "Para um líder, a prioridade é muitas vezes seguir uma lógica simples: observar, escutar e conectar.": [
@@ -7358,13 +7337,13 @@
 "Garantir confidencialidade absoluta quando existe risco e pode ser necessário envolver outros recursos.": [
 "4-4-como-abordar-um-colaborador.html"
 ],
-"Terminaste a parte “Como abordar um colaborador”": [
+"Terminaste o módulo “Como abordar um colaborador”": [
 "4-4-como-abordar-um-colaborador.html"
 ],
 "Parte 4 – B, secções 1 a 4 · páginas 87 a 95 do PDF original": [
 "4-4-como-abordar-um-colaborador.html"
 ],
-"\n      <a class=\"dl a\" href=\"downloads/mini-seccao-psp-para-lideres.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#1/></span><span>Mini-secção PSP para líderes<small>PDF · 2 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n      <a class=\"dl a\" href=\"downloads/estudos-de-caso-intervencao-do-lider.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#2/></span><span>Estudos de caso com intervenção do líder<small>PDF · 4 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n      <a class=\"dl a\" href=\"downloads/toolkit-psp-parte-4b-como-abordar-um-colaborador.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#3/></span><span>Como abordar um colaborador<small>PDF · 9 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n    ": [
+"\n      <a class=\"dl a\" href=\"downloads/mini-seccao-psp-para-lideres.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#1/></span><span>Mini-secção de Primeiros Socorros Psicológicos para líderes<small>PDF · 2 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n      <a class=\"dl a\" href=\"downloads/estudos-de-caso-intervencao-do-lider.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#2/></span><span>Estudos de caso com intervenção do líder<small>PDF · 4 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n      <a class=\"dl a\" href=\"downloads/toolkit-psp-parte-4b-como-abordar-um-colaborador.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#3/></span><span>Como abordar um colaborador<small>PDF · 9 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n    ": [
 "4-4-como-abordar-um-colaborador.html"
 ],
 "Preparação": [
@@ -7529,10 +7508,10 @@
 "${$$('.flip.open', ul).length} de 4 virados": [
 "4-4-como-abordar-um-colaborador.html"
 ],
-"4.5 Liderar para a segurança psicológica": [
+"Liderar para a segurança psicológica": [
 "4-5-liderar-para-a-seguranca-psicologica.html"
 ],
-"Módulo 4 · <b>4.5 Liderar para a segurança psicológica</b>": [
+"Parte 4 · <b>Liderar para a segurança psicológica</b>": [
 "4-5-liderar-para-a-seguranca-psicologica.html"
 ],
 "Liderar para a <span>segurança psicológica</span>": [
@@ -7863,10 +7842,10 @@
 "Quando estrutura e humanidade se combinam, as pessoas tendem a falar mais cedo, pedir ajuda com menos medo, cooperar melhor e permanecer mais ligadas à equipa e ao trabalho.": [
 "4-5-liderar-para-a-seguranca-psicologica.html"
 ],
-"Módulo 4 concluído": [
+"Parte 4 concluída": [
 "4-5-liderar-para-a-seguranca-psicologica.html"
 ],
-"Terminaste a parte “Liderar para a segurança psicológica”": [
+"Terminaste o módulo “Liderar para a segurança psicológica”": [
 "4-5-liderar-para-a-seguranca-psicologica.html"
 ],
 "Parte 4 – B, secções 5 a 10 · páginas 96 a 107 do PDF original": [
@@ -8263,7 +8242,7 @@
 "${seen.size} de 6 vistas": [
 "4-5-liderar-para-a-seguranca-psicologica.html"
 ],
-"Módulo 5 · Situações Sensíveis": [
+"Parte 5 · Situações Sensíveis": [
 "5-0-situacoes-sensiveis.html",
 "5-0-situacoes-sensiveis.html",
 "5-1-burnout.html",
@@ -8276,7 +8255,7 @@
 "5-8-apoio-a-cliente-em-sofrimento.html",
 "5-9-suicidio.html"
 ],
-"<b>Módulo 5 · Situações Sensíveis</b>": [
+"<b>Parte 5 · Situações Sensíveis</b>": [
 "5-0-situacoes-sensiveis.html"
 ],
 "Nove situações sensíveis": [
@@ -8288,11 +8267,15 @@
 "Cada ficha segue a mesma ordem: o que pode estar a acontecer, o que fazer, o que evitar e quando encaminhar. Vai diretamente à situação de que precisas.": [
 "5-0-situacoes-sensiveis.html"
 ],
+"Estas fichas abordam situações difíceis. Se precisares, faz uma pausa ou usa o botão Apoio, sempre disponível no topo da página.": [
+"5-0-situacoes-sensiveis.html"
+],
 "<a class=\"partc\" href=\"5-1-burnout.html\"><span class=\"pn\">Ficha 1</span><h3>Burnout</h3><p>Exaustão associada ao stress profissional crónico</p></a>": [
 "5-0-situacoes-sensiveis.html"
 ],
 "Burnout": [
 "5-0-situacoes-sensiveis.html",
+"5-1-burnout.html",
 "5-1-burnout.html"
 ],
 "Exaustão associada ao stress profissional crónico": [
@@ -8303,6 +8286,7 @@
 ],
 "Luto": [
 "5-0-situacoes-sensiveis.html",
+"5-2-luto.html",
 "5-2-luto.html"
 ],
 "A perda de uma pessoa significativa": [
@@ -8312,7 +8296,8 @@
 "5-0-situacoes-sensiveis.html"
 ],
 "Ataques de pânico": [
-"5-0-situacoes-sensiveis.html"
+"5-0-situacoes-sensiveis.html",
+"5-3-ataques-de-panico.html"
 ],
 "Episódio súbito de medo ou desconforto intenso": [
 "5-0-situacoes-sensiveis.html"
@@ -8321,7 +8306,8 @@
 "5-0-situacoes-sensiveis.html"
 ],
 "Situações de calamidade": [
-"5-0-situacoes-sensiveis.html"
+"5-0-situacoes-sensiveis.html",
+"5-4-situacoes-de-calamidade.html"
 ],
 "Acontecimento súbito, grave ou potencialmente traumático": [
 "5-0-situacoes-sensiveis.html"
@@ -8330,7 +8316,8 @@
 "5-0-situacoes-sensiveis.html"
 ],
 "Comportamento agressivo": [
-"5-0-situacoes-sensiveis.html"
+"5-0-situacoes-sensiveis.html",
+"5-5-comportamento-agressivo.html"
 ],
 "Reduzir a escalada e proteger limites": [
 "5-0-situacoes-sensiveis.html"
@@ -8339,7 +8326,8 @@
 "5-0-situacoes-sensiveis.html"
 ],
 "Crise pessoal grave": [
-"5-0-situacoes-sensiveis.html"
+"5-0-situacoes-sensiveis.html",
+"5-6-crise-pessoal-grave.html"
 ],
 "Quando a vida ultrapassa os recursos habituais": [
 "5-0-situacoes-sensiveis.html"
@@ -8348,7 +8336,8 @@
 "5-0-situacoes-sensiveis.html"
 ],
 "Conflito na equipa": [
-"5-0-situacoes-sensiveis.html"
+"5-0-situacoes-sensiveis.html",
+"5-7-conflito-na-equipa.html"
 ],
 "Gerir o conflito de forma segura e respeitosa": [
 "5-0-situacoes-sensiveis.html"
@@ -8357,7 +8346,8 @@
 "5-0-situacoes-sensiveis.html"
 ],
 "Apoio a cliente em sofrimento": [
-"5-0-situacoes-sensiveis.html"
+"5-0-situacoes-sensiveis.html",
+"5-8-apoio-a-cliente-em-sofrimento.html"
 ],
 "Uma resposta humana dentro do papel profissional": [
 "5-0-situacoes-sensiveis.html"
@@ -8367,19 +8357,27 @@
 ],
 "Suicídio": [
 "5-0-situacoes-sensiveis.html",
+"5-9-suicidio.html",
 "5-9-suicidio.html"
 ],
 "Ideação suicida num colega · suicídio em ambiente de trabalho": [
 "5-0-situacoes-sensiveis.html"
 ],
-"5.1 Burnout": [
-"5-1-burnout.html"
-],
-"Módulo 5 · <b>5.1 Burnout</b>": [
+"Parte 5 · <b>Burnout</b>": [
 "5-1-burnout.html"
 ],
 "O burnout é um estado de exaustão física, emocional e mental associado ao stress profissional crónico.": [
 "5-1-burnout.html"
+],
+"Este módulo aborda situações difíceis. Se precisares, faz uma pausa ou usa o botão Apoio, sempre disponível no topo da página.": [
+"5-1-burnout.html",
+"5-2-luto.html",
+"5-3-ataques-de-panico.html",
+"5-4-situacoes-de-calamidade.html",
+"5-5-comportamento-agressivo.html",
+"5-6-crise-pessoal-grave.html",
+"5-7-conflito-na-equipa.html",
+"5-8-apoio-a-cliente-em-sofrimento.html"
 ],
 "O que pode estar a acontecer?": [
 "5-1-burnout.html",
@@ -8694,6 +8692,8 @@
 "5-6-crise-pessoal-grave.html",
 "5-7-conflito-na-equipa.html",
 "5-8-apoio-a-cliente-em-sofrimento.html",
+"6-1-quando-encaminhar.html",
+"6-1-quando-encaminhar.html",
 "6-1-quando-encaminhar.html"
 ],
 "Apoio especializado": [
@@ -8772,10 +8772,7 @@
 "\n      <a class=\"dl a\" href=\"downloads/ficha-1-burnout.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#1/></span><span>Ficha: Burnout<small>PDF · 3 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n    ": [
 "5-1-burnout.html"
 ],
-"5.2 Luto": [
-"5-2-luto.html"
-],
-"Módulo 5 · <b>5.2 Luto</b>": [
+"Parte 5 · <b>Luto</b>": [
 "5-2-luto.html"
 ],
 "O luto é uma resposta humana normal à perda de uma pessoa significativa. Implica adaptar-se a uma nova realidade e aprender a viver num mundo onde a pessoa falecida já não está presente.": [
@@ -8917,10 +8914,7 @@
 "\n      <a class=\"dl a\" href=\"downloads/ficha-2-luto.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#1/></span><span>Ficha: Luto<small>PDF · 2 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n    ": [
 "5-2-luto.html"
 ],
-"5.3 Ataques de pânico": [
-"5-3-ataques-de-panico.html"
-],
-"Módulo 5 · <b>5.3 Ataques de pânico</b>": [
+"Parte 5 · <b>Ataques de pânico</b>": [
 "5-3-ataques-de-panico.html"
 ],
 "Ataques de <span>pânico</span>": [
@@ -9093,10 +9087,7 @@
 "\n      <a class=\"dl a\" href=\"downloads/ficha-3-ataques-de-panico.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#1/></span><span>Ficha: Ataques de pânico<small>PDF · 3 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n    ": [
 "5-3-ataques-de-panico.html"
 ],
-"5.4 Situações de calamidade": [
-"5-4-situacoes-de-calamidade.html"
-],
-"Módulo 5 · <b>5.4 Calamidade</b>": [
+"Parte 5 · <b>Calamidade</b>": [
 "5-4-situacoes-de-calamidade.html"
 ],
 "Situações de <span>calamidade</span>": [
@@ -9232,10 +9223,7 @@
 "\n      <a class=\"dl a\" href=\"downloads/ficha-4-situacoes-de-calamidade.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#1/></span><span>Ficha: Situações de calamidade<small>PDF · 3 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n    ": [
 "5-4-situacoes-de-calamidade.html"
 ],
-"5.5 Comportamento agressivo": [
-"5-5-comportamento-agressivo.html"
-],
-"Módulo 5 · <b>5.5 Comportamento agressivo</b>": [
+"Parte 5 · <b>Comportamento agressivo</b>": [
 "5-5-comportamento-agressivo.html"
 ],
 "Comportamento <span>agressivo</span>": [
@@ -9385,10 +9373,7 @@
 "\n      <a class=\"dl a\" href=\"downloads/ficha-5-comportamento-agressivo.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#1/></span><span>Ficha: Comportamento agressivo<small>PDF · 3 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n    ": [
 "5-5-comportamento-agressivo.html"
 ],
-"5.6 Crise pessoal grave": [
-"5-6-crise-pessoal-grave.html"
-],
-"Módulo 5 · <b>5.6 Crise pessoal grave</b>": [
+"Parte 5 · <b>Crise pessoal grave</b>": [
 "5-6-crise-pessoal-grave.html"
 ],
 "Crise pessoal <span>grave</span>": [
@@ -9498,10 +9483,7 @@
 "\n      <a class=\"dl a\" href=\"downloads/ficha-6-crise-pessoal-grave.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#1/></span><span>Ficha: Crise pessoal grave<small>PDF · 2 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n    ": [
 "5-6-crise-pessoal-grave.html"
 ],
-"5.7 Conflito na equipa": [
-"5-7-conflito-na-equipa.html"
-],
-"Módulo 5 · <b>5.7 Conflito na equipa</b>": [
+"Parte 5 · <b>Conflito na equipa</b>": [
 "5-7-conflito-na-equipa.html"
 ],
 "Conflito <span>na equipa</span>": [
@@ -9675,10 +9657,7 @@
 "\n      <a class=\"dl a\" href=\"downloads/ficha-7-conflito-na-equipa.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#1/></span><span>Ficha: Conflito na equipa<small>PDF · 3 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n    ": [
 "5-7-conflito-na-equipa.html"
 ],
-"5.8 Apoio a cliente em sofrimento": [
-"5-8-apoio-a-cliente-em-sofrimento.html"
-],
-"Módulo 5 · <b>5.8 Apoio a cliente</b>": [
+"Parte 5 · <b>Apoio a cliente</b>": [
 "5-8-apoio-a-cliente-em-sofrimento.html"
 ],
 "Apoio a cliente <span>em sofrimento</span>": [
@@ -9793,10 +9772,7 @@
 "\n      <a class=\"dl a\" href=\"downloads/ficha-8-apoio-a-cliente-em-sofrimento.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#1/></span><span>Ficha: Apoio a cliente em sofrimento<small>PDF · 2 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n    ": [
 "5-8-apoio-a-cliente-em-sofrimento.html"
 ],
-"5.9 Suicídio": [
-"5-9-suicidio.html"
-],
-"Módulo 5 · <b>5.9 Suicídio</b>": [
+"Parte 5 · <b>Suicídio</b>": [
 "5-9-suicidio.html"
 ],
 "Esta ficha aborda a ideação suicida e o suicídio em ambiente de trabalho. É um tema sensível e delicado. Avança ao teu ritmo e, se preferires, volta mais tarde.": [
@@ -9805,7 +9781,7 @@
 "Aviso": [
 "5-9-suicidio.html"
 ],
-"Módulo 5 · Situações Sensíveis · Ficha 9": [
+"Parte 5 · Situações Sensíveis · Ficha 9": [
 "5-9-suicidio.html"
 ],
 "<em>Situação 1</em><b>Um colega com ideação suicida</b><span>O que pode estar a acontecer, o que fazer, o que evitar e quando encaminhar</span>": [
@@ -9817,7 +9793,7 @@
 "<a class=\"pill\" href=\"5-0-situacoes-sensiveis.html\">Voltar às situações sensíveis</a>": [
 "5-9-suicidio.html"
 ],
-"<b>Precisas de ajuda agora?</b><a href=\"tel:112\">112</a><a href=\"tel:1411\">1411 <small>Prevenção do Suicídio</small></a><a href=\"tel:808242424\">808 24 24 24 <small>SNS 24</small></a><a href=\"tel:800100025\">800 100 025 <small>Somos Sonae</small></a>": [
+"<b>Precisas de ajuda agora?</b><a href=\"tel:112\">112</a><a href=\"tel:1411\">1411 <small>Prevenção do Suicídio</small></a><a href=\"tel:808242424\">808 24 24 24 <small>SNS 24</small></a>": [
 "5-9-suicidio.html",
 "5-9-suicidio.html",
 "5-9-suicidio.html",
@@ -10017,19 +9993,16 @@
 "Parte 5, ficha 9 · páginas 130 a 133 do PDF original": [
 "5-9-suicidio.html"
 ],
-"\n    <a class=\"dl\" href=\"downloads/ficha-9-suicidio.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#1/></span><span>Ficha: Suicídio<small>PDF · 4 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n    <a class=\"dl\" href=\"downloads/toolkit-psp-parte-5-situacoes-sensiveis.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#2/></span><span>Módulo 5 completo: as nove fichas<small>PDF · 26 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n  ": [
+"\n    <a class=\"dl\" href=\"downloads/ficha-9-suicidio.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#1/></span><span>Ficha: Suicídio<small>PDF · 4 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n    <a class=\"dl\" href=\"downloads/toolkit-psp-parte-5-situacoes-sensiveis.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#2/></span><span>Parte 5 completa: as nove fichas<small>PDF · 26 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n  ": [
 "5-9-suicidio.html"
 ],
 "<a class=\"pill\" href=\"5-0-situacoes-sensiveis.html\">Todas as situações sensíveis</a>": [
 "5-9-suicidio.html"
 ],
-"6.1 Quando encaminhar": [
+"Parte 6 · <b>Quando encaminhar</b>": [
 "6-1-quando-encaminhar.html"
 ],
-"Módulo 6 · <b>6.1 Quando encaminhar</b>": [
-"6-1-quando-encaminhar.html"
-],
-"Módulo 6 · Encaminhamento e Recursos": [
+"Parte 6 · Encaminhamento e Recursos": [
 "6-1-quando-encaminhar.html",
 "6-2-recursos.html"
 ],
@@ -10046,7 +10019,6 @@
 "6-1-quando-encaminhar.html"
 ],
 "1.1 · Quando encaminhar": [
-"6-1-quando-encaminhar.html",
 "6-1-quando-encaminhar.html"
 ],
 "Quando o apoio informal deixa de ser suficiente": [
@@ -10076,7 +10048,7 @@
 "Para onde encaminhar": [
 "6-1-quando-encaminhar.html"
 ],
-"Os recursos internos e externos, com contactos e horários, estão na parte seguinte.": [
+"Os recursos internos e externos, com contactos e horários, estão no módulo seguinte.": [
 "6-1-quando-encaminhar.html"
 ],
 "Ver os recursos": [
@@ -10085,10 +10057,13 @@
 "Três tipos de indicadores": [
 "6-1-quando-encaminhar.html"
 ],
+"Critérios para encaminhar": [
+"6-1-quando-encaminhar.html"
+],
 "O que observar para decidir encaminhar": [
 "6-1-quando-encaminhar.html"
 ],
-"Clica em cada um dos três tipos de indicadores.": [
+"Clica em cada um dos três tipos de indicadores para abrires a informação.": [
 "6-1-quando-encaminhar.html"
 ],
 "Indicadores para encaminhar": [
@@ -10188,7 +10163,7 @@
 "Não é substituir o apoio inicial, mas <em>garantir que a pessoa recebe o tipo de ajuda mais adequado às suas necessidades.</em>": [
 "6-1-quando-encaminhar.html"
 ],
-"Terminaste a parte “Quando encaminhar”": [
+"Terminaste o módulo “Quando encaminhar”": [
 "6-1-quando-encaminhar.html"
 ],
 "Parte 6, secção 1 · páginas 135 a 136 do PDF original": [
@@ -10197,13 +10172,11 @@
 "\n      <a class=\"dl a\" href=\"downloads/toolkit-psp-parte-6-quando-encaminhar.pdf\" target=\"_blank\" rel=\"noopener\"><span class=\"ic\"><svg#1/></span><span>Quando encaminhar<small>PDF · 2 páginas</small></span><span class=\"go\" aria-hidden=\"true\">→</span><span class=\"sr\"> (abre numa nova janela)</span></a>\n    ": [
 "6-1-quando-encaminhar.html"
 ],
-"6.2 Recursos": [
-"6-2-recursos.html"
-],
-"Módulo 6 · <b>6.2 Recursos</b>": [
-"6-2-recursos.html"
-],
 "Recursos": [
+"6-2-recursos.html",
+"6-2-recursos.html"
+],
+"Parte 6 · <b>Recursos</b>": [
 "6-2-recursos.html"
 ],
 "Os recursos internos da MC e as principais linhas de apoio gratuito em Portugal, para a saúde mental e para além dela.": [
@@ -10216,7 +10189,9 @@
 ],
 "2.1 · Recursos internos": [
 "6-2-recursos.html",
-"6-2-recursos.html",
+"6-2-recursos.html"
+],
+"Recursos internos": [
 "6-2-recursos.html",
 "6-2-recursos.html"
 ],
@@ -10243,6 +10218,12 @@
 ],
 "Ligar para a linha dedicada do Programa Somos Sonae, gerida pela CVP e disponível 24h/dia.": [
 "6-2-recursos.html"
+],
+"Oculto": [
+"6-2-recursos.html",
+"6-2-recursos.html",
+"6-2-recursos.html",
+"shell.html"
 ],
 "No contacto, só precisas de te identificar como colaborador(a) MC e serás encaminhado/a para a rede de psicólogos clínicos credenciados.": [
 "6-2-recursos.html"
@@ -10296,13 +10277,13 @@
 "Ou através do website da Multicare:": [
 "6-2-recursos.html"
 ],
-"multicare.pt/medicina-online": [
-"6-2-recursos.html"
-],
 "Linhas de apoio psicológico": [
 "6-2-recursos.html"
 ],
 "2.2 · Recursos externos": [
+"6-2-recursos.html"
+],
+"Recursos externos": [
 "6-2-recursos.html",
 "6-2-recursos.html"
 ],
@@ -10341,13 +10322,13 @@
 "3.1 · Recursos internos": [
 "6-2-recursos.html"
 ],
-"3 · Além da saúde mental": [
+"Além da saúde mental": [
 "6-2-recursos.html"
 ],
 "Outras iniciativas relevantes: recursos internos": [
 "6-2-recursos.html"
 ],
-"Clica em cada um dos três recursos.": [
+"Clica em cada um dos três recursos para abrires a informação.": [
 "6-2-recursos.html"
 ],
 "Outros recursos internos": [
@@ -10401,7 +10382,7 @@
 "Eixo de apoio à vítima de violência doméstica": [
 "6-2-recursos.html"
 ],
-"<b>Linha de atendimento, gratuita e confidencial (<a href=\"tel:800100025\">800 100 025</a>), disponível 24h/dia</b>": [
+"<b>Linha de atendimento, gratuita e confidencial (<a href=\"#demo-indisponivel\">oculto</a>), disponível 24h/dia</b>": [
 "6-2-recursos.html"
 ],
 "Articulação da CVP com as suas estruturas de apoio à vítima, que integram a Rede Nacional de Apoio a Vítimas de Violência Doméstica, mediante consentimento prévio": [
@@ -10437,14 +10418,13 @@
 "É importante saber": [
 "6-2-recursos.html"
 ],
-"Caso a Medicina do Trabalho não consiga dar uma resposta no prazo previsto, deve estar prevista a ativação de uma alternativa adequada (ex.: Linha Somos Sonae <a href=\"tel:800100025\">800 100 025</a> – 24h, apoio psicológico ou recurso externo), para não comprometer a resposta ao colaborador em tempo útil.": [
+"Caso a Medicina do Trabalho não consiga dar uma resposta no prazo previsto, deve estar prevista a ativação de uma alternativa adequada (ex.: Linha Somos Sonae <a href=\"#demo-indisponivel\">oculto</a> – 24h, apoio psicológico ou recurso externo), para não comprometer a resposta ao colaborador em tempo útil.": [
 "6-2-recursos.html"
 ],
 "Outras linhas de apoio": [
 "6-2-recursos.html"
 ],
 "3.2 · Recursos externos": [
-"6-2-recursos.html",
 "6-2-recursos.html"
 ],
 "Outras linhas de apoio gratuito (Portugal)": [
@@ -10479,7 +10459,7 @@
 "Exige, acima de tudo, disponibilidade para observar, escutar e ligar as pessoas ao apoio certo. Os pequenos gestos – uma pergunta atenta, um espaço seguro para falar, a coragem de não ignorar o sofrimento de quem está ao nosso lado – fazem toda a diferença.": [
 "6-2-recursos.html"
 ],
-"Os PSP consistem num apoio humano, próximo e prático a quem está em dificuldade – de uma forma que respeita sempre a sua dignidade, a sua cultura e as suas capacidades. Não substituem acompanhamento clínico, mas são muitas vezes o primeiro passo que faz a diferença.": [
+"Os Primeiros Socorros Psicológicos consistem num apoio humano, próximo e prático a quem está em dificuldade – de uma forma que respeita sempre a sua dignidade, a sua cultura e as suas capacidades. Não substituem acompanhamento clínico, mas são muitas vezes o primeiro passo que faz a diferença.": [
 "6-2-recursos.html"
 ],
 "Guarda este material como um recurso a que podes voltar sempre que precisares. E lembra-te de que <b style=\"color:#fff\">cuidar dos outros começa por cuidares também de ti.</b>": [
@@ -10488,10 +10468,10 @@
 "Obrigada por fazeres parte da construção de um ambiente de trabalho mais atento, seguro e saudável para todos.": [
 "6-2-recursos.html"
 ],
-"Módulo 6 concluído": [
+"Parte 6 concluída": [
 "6-2-recursos.html"
 ],
-"Terminaste a parte “Recursos”": [
+"Terminaste o módulo “Recursos”": [
 "6-2-recursos.html"
 ],
 "Parte 6, secções 2 e 3 · páginas 137 a 145 do PDF original": [
@@ -10527,46 +10507,49 @@
 "Reconhecer sinais de sofrimento psicológico, em ti, num colega ou na equipa, e responder de forma humana, segura e estruturada.": [
 "index.html"
 ],
-"<span><svg#1/>6 módulos</span><span><svg#2/>15 vídeos</span>": [
+"<span><svg#1/>6 partes</span><span><svg#2/>15 vídeos</span>": [
 "index.html"
 ],
-"6 módulos": [
+"6 partes": [
 "index.html"
 ],
 "15 vídeos": [
 "index.html"
 ],
-"Os 6 módulos do curso": [
+"Eu escolho aprender. Construímos o futuro juntos.": [
+"index.html"
+],
+"As 6 partes do curso": [
 "index.html"
 ],
 "O curso": [
 "index.html"
 ],
-"Seis módulos, para consultar sempre que precisares": [
+"Seis partes, para consultar sempre que precisares": [
 "index.html"
 ],
-"Não precisas de ver tudo de seguida: usa o Índice e vai diretamente à situação de que precisas. Cada parte é uma página, para ler de cima para baixo.": [
+"Não precisas de ver tudo de seguida: usa o Índice e vai diretamente à situação de que precisas. Cada módulo é uma página, para ler de cima para baixo.": [
 "index.html"
 ],
-"<a class=\"partc\" href=\"1-1-como-utilizar.html\"><span class=\"pn\">Módulo 1</span><h3>Introdução: como utilizar este Toolkit</h3><p>O que é, para quem é e quando utilizar</p></a>": [
+"<a class=\"partc\" href=\"1-1-como-utilizar.html\"><span class=\"pn\">Parte 1</span><h3>Introdução: como utilizar este Toolkit</h3><p>O que é, a quem se destina e quando utilizar</p></a>": [
 "index.html"
 ],
 "Introdução: como utilizar este Toolkit": [
 "index.html"
 ],
-"O que é, para quem é e quando utilizar": [
+"O que é, a quem se destina e quando utilizar": [
 "index.html"
 ],
-"<a class=\"partc\" href=\"2-1-contextualizacao.html\"><span class=\"pn\">Módulo 2</span><h3>Primeiros Socorros Psicológicos no Local de Trabalho</h3><p>Contextualização, riscos psicossociais e PSP</p></a>": [
+"<a class=\"partc\" href=\"2-1-contextualizacao.html\"><span class=\"pn\">Parte 2</span><h3>Primeiros Socorros Psicológicos no Local de Trabalho</h3><p>Contextualização, riscos psicossociais e Primeiros Socorros Psicológicos</p></a>": [
 "index.html"
 ],
 "Primeiros Socorros Psicológicos no Local de Trabalho": [
 "index.html"
 ],
-"Contextualização, riscos psicossociais e PSP": [
+"Contextualização, riscos psicossociais e Primeiros Socorros Psicológicos": [
 "index.html"
 ],
-"<a class=\"partc\" href=\"3-1-sinais-de-alerta.html\"><span class=\"pn\">Módulo 3</span><h3>Se eu sou um Colaborador</h3><p>Estou a passar por um momento difícil · Um colega está em sofrimento</p></a>": [
+"<a class=\"partc\" href=\"3-1-sinais-de-alerta.html\"><span class=\"pn\">Parte 3</span><h3>Se eu sou um Colaborador</h3><p>Estou a passar por um momento difícil · Um colega está em sofrimento</p></a>": [
 "index.html"
 ],
 "Se eu sou um Colaborador": [
@@ -10575,7 +10558,7 @@
 "Estou a passar por um momento difícil · Um colega está em sofrimento": [
 "index.html"
 ],
-"<a class=\"partc\" href=\"4-1-o-papel-do-lider.html\"><span class=\"pn\">Módulo 4</span><h3>Se eu sou um Líder</h3><p>Identificar sinais na equipa · Como abordar um colaborador</p></a>": [
+"<a class=\"partc\" href=\"4-1-o-papel-do-lider.html\"><span class=\"pn\">Parte 4</span><h3>Se eu sou um Líder</h3><p>Identificar sinais na equipa · Como abordar um colaborador</p></a>": [
 "index.html"
 ],
 "Se eu sou um Líder": [
@@ -10584,16 +10567,16 @@
 "Identificar sinais na equipa · Como abordar um colaborador": [
 "index.html"
 ],
-"<a class=\"partc\" href=\"5-0-situacoes-sensiveis.html\"><span class=\"pn\">Módulo 5</span><h3>Situações Sensíveis</h3><p>Burnout, luto, pânico, calamidade, agressividade, crise, conflito, clientes e suicídio</p></a>": [
+"<a class=\"partc\" href=\"5-0-situacoes-sensiveis.html\"><span class=\"pn\">Parte 5</span><h3>Situações Sensíveis</h3><p>Burnout, luto, pânico, calamidade, agressividade, crise, conflito, apoio a cliente em sofrimento e suicídio</p></a>": [
 "index.html"
 ],
 "Situações Sensíveis": [
 "index.html"
 ],
-"Burnout, luto, pânico, calamidade, agressividade, crise, conflito, clientes e suicídio": [
+"Burnout, luto, pânico, calamidade, agressividade, crise, conflito, apoio a cliente em sofrimento e suicídio": [
 "index.html"
 ],
-"<a class=\"partc\" href=\"6-1-quando-encaminhar.html\"><span class=\"pn\">Módulo 6</span><h3>Encaminhamento e Recursos</h3><p>Quando encaminhar e contactos de apoio</p></a>": [
+"<a class=\"partc\" href=\"6-1-quando-encaminhar.html\"><span class=\"pn\">Parte 6</span><h3>Encaminhamento e Recursos</h3><p>Quando encaminhar e contactos de apoio</p></a>": [
 "index.html"
 ],
 "Encaminhamento e Recursos": [
@@ -10602,7 +10585,7 @@
 "Quando encaminhar e contactos de apoio": [
 "index.html"
 ],
-"{{TITLE}} · Toolkit PSP": [
+"Sonae Toolkit PSP": [
 "shell.html"
 ],
 "Saltar para o conteúdo": [
@@ -10611,7 +10594,7 @@
 "MC Sonae": [
 "shell.html"
 ],
-"Toolkit PSP · {{CRUMB}}": [
+"{{CRUMB}}": [
 "shell.html"
 ],
 "Legendas": [
@@ -10627,13 +10610,16 @@
 "Som": [
 "shell.html"
 ],
-"Progresso nesta parte": [
+"Apoio: contactos de ajuda imediata": [
+"shell.html"
+],
+"Progresso neste módulo": [
 "shell.html"
 ],
 "\n{{SLIDES}}\n": [
 "shell.html"
 ],
-"Navegação entre partes": [
+"Navegação entre módulos": [
 "shell.html"
 ],
 "Para avançar, explora todos os elementos desta página.": [
@@ -10648,7 +10634,7 @@
 "Fechar índice": [
 "shell.html"
 ],
-"0 partes concluídas": [
+"0 módulos concluídos": [
 "shell.html"
 ],
 "Módulos do curso": [
@@ -10666,19 +10652,28 @@
 "Precisas de apoio agora?": [
 "shell.html"
 ],
-"<b>Emergência</b><small>Perigo imediato para a vida ou saúde</small>": [
+"Contactos de ajuda imediata, gratuitos e confidenciais.": [
 "shell.html"
 ],
-"<b>Linha Somos Sonae</b><small>24h/dia · gratuita e confidencial</small>": [
+"<b>Emergência</b><small>24h/dia · Se perigo imediato para a vida ou saúde</small>": [
 "shell.html"
 ],
-"<b>SNS 24 · Aconselhamento Psicológico</b><small>24h/dia · opção 4</small>": [
+"<b>SNS 24 · Aconselhamento Psicológico</b><small>24h/dia · Selecionar opção 4</small>": [
 "shell.html"
 ],
 "<b>Linha Nacional de Prevenção do Suicídio</b><small>24h/dia</small>": [
 "shell.html"
 ],
-"Todos os recursos (Módulo 6)": [
+"<b>Somos Sonae · Consultas de Psicologia</b><small>Gratuito e confidencial</small>": [
+"shell.html"
+],
+"Sabe mais aqui": [
+"shell.html"
+],
+"Todos os recursos disponíveis, incluindo consultas de Psicologia": [
+"shell.html"
+],
+"Esta janela está sempre disponível no botão Apoio, no topo de cada página.": [
 "shell.html"
 ],
 "Fechar": [

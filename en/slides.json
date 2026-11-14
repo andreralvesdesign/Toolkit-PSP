@@ -1,6 +1,6 @@
 [
  {
-  "id": "mlang-idioma",
+  "id": "m0-idioma",
   "module": "Home",
   "title": "Idioma · Language",
   "order": 1
@@ -14,1314 +14,1314 @@
  {
   "id": "m0-curso",
   "module": "Home",
-  "title": "The 6 modules of the course",
+  "title": "The 6 parts of the course",
   "order": 3
  },
  {
   "id": "m1-1-capa",
-  "module": "1.1 How to use this Toolkit",
+  "module": "How to use this Toolkit",
   "title": "Start",
   "order": 4
  },
  {
   "id": "m1-1-oque",
-  "module": "1.1 How to use this Toolkit",
+  "module": "How to use this Toolkit",
   "title": "What this material is",
   "order": 5
  },
  {
   "id": "m1-1-quem",
-  "module": "1.1 How to use this Toolkit",
-  "title": "Who it is for",
+  "module": "How to use this Toolkit",
+  "title": "Who it is intended for",
   "order": 6
  },
  {
   "id": "m1-1-quando",
-  "module": "1.1 How to use this Toolkit",
+  "module": "How to use this Toolkit",
   "title": "When to use it",
   "order": 7
  },
  {
   "id": "m1-1-naosubstitui",
-  "module": "1.1 How to use this Toolkit",
+  "module": "How to use this Toolkit",
   "title": "What it does not replace",
   "order": 8
  },
  {
   "id": "m1-1-ferramentas",
-  "module": "1.1 How to use this Toolkit",
+  "module": "How to use this Toolkit",
   "title": "What you will find",
   "order": 9
  },
  {
   "id": "m1-1-navegar",
-  "module": "1.1 How to use this Toolkit",
+  "module": "How to use this Toolkit",
   "title": "How to navigate the course",
   "order": 10
  },
  {
   "id": "m1-1-fim",
-  "module": "1.1 How to use this Toolkit",
+  "module": "How to use this Toolkit",
   "title": "Completed",
   "order": 11
  },
  {
   "id": "m2-1-capa",
-  "module": "2.1 Context",
+  "module": "Context",
   "title": "Start",
   "order": 12
  },
  {
   "id": "m2-1-v01",
-  "module": "2.1 Context",
+  "module": "Context",
   "title": "Mental health in Portugal",
   "order": 13
  },
  {
   "id": "m2-1-v12",
-  "module": "2.1 Context",
+  "module": "Context",
   "title": "Mental health and wellbeing",
   "order": 14
  },
  {
   "id": "m2-1-v13",
-  "module": "2.1 Context",
+  "module": "Context",
   "title": "The role of organisations",
   "order": 15
  },
  {
   "id": "m2-1-ex1",
-  "module": "2.1 Context",
+  "module": "Context",
   "title": "The same workload, two contexts",
   "order": 16
  },
  {
   "id": "m2-1-ex2",
-  "module": "2.1 Context",
+  "module": "Context",
   "title": "The sign that goes unnoticed",
   "order": 17
  },
  {
   "id": "m2-1-ex3",
-  "module": "2.1 Context",
+  "module": "Context",
   "title": "Coming back after a difficult period",
   "order": 18
  },
  {
   "id": "m2-1-ideia",
-  "module": "2.1 Context",
+  "module": "Context",
   "title": "Key idea",
   "order": 19
  },
  {
   "id": "m2-1-fim",
-  "module": "2.1 Context",
+  "module": "Context",
   "title": "Completed",
   "order": 20
  },
  {
   "id": "m2-2-capa",
-  "module": "2.2 Psychosocial Risks",
+  "module": "Psychosocial Risks",
   "title": "Start",
   "order": 21
  },
  {
   "id": "m2-2-intro",
-  "module": "2.2 Psychosocial Risks",
+  "module": "Psychosocial Risks",
   "title": "What they are",
   "order": 22
  },
  {
   "id": "m2-2-v21",
-  "module": "2.2 Psychosocial Risks",
+  "module": "Psychosocial Risks",
   "title": "Video: psychosocial risks",
   "order": 23
  },
  {
   "id": "m2-2-identificar",
-  "module": "2.2 Psychosocial Risks",
+  "module": "Psychosocial Risks",
   "title": "Identify: types of risk",
   "order": 24
  },
  {
   "id": "m2-2-observar",
-  "module": "2.2 Psychosocial Risks",
+  "module": "Psychosocial Risks",
   "title": "Observe: checklist",
   "order": 25
  },
  {
   "id": "m2-2-agir",
-  "module": "2.2 Psychosocial Risks",
+  "module": "Psychosocial Risks",
   "title": "Act: what to do",
   "order": 26
  },
  {
   "id": "m2-2-v24",
-  "module": "2.2 Psychosocial Risks",
+  "module": "Psychosocial Risks",
   "title": "Video: individual factors",
   "order": 27
  },
  {
   "id": "m2-2-fatores",
-  "module": "2.2 Psychosocial Risks",
+  "module": "Psychosocial Risks",
   "title": "Individual factors",
   "order": 28
  },
  {
   "id": "m2-2-fim",
-  "module": "2.2 Psychosocial Risks",
+  "module": "Psychosocial Risks",
   "title": "Completed",
   "order": 29
  },
  {
   "id": "m2-3-s1",
-  "module": "2.3 Psychological First Aid",
+  "module": "Psychological First Aid",
   "title": "Start",
   "order": 30
  },
  {
   "id": "m2-3-s2",
-  "module": "2.3 Psychological First Aid",
+  "module": "Psychological First Aid",
   "title": "Introduction",
   "order": 31
  },
  {
   "id": "m2-3-s3",
-  "module": "2.3 Psychological First Aid",
+  "module": "Psychological First Aid",
   "title": "What they are",
   "order": 32
  },
  {
   "id": "m2-3-s4",
-  "module": "2.3 Psychological First Aid",
+  "module": "Psychological First Aid",
   "title": "What it is not",
   "order": 33
  },
  {
   "id": "m2-3-s5",
-  "module": "2.3 Psychological First Aid",
+  "module": "Psychological First Aid",
   "title": "Types of stress",
   "order": 34
  },
  {
   "id": "m2-3-s6",
-  "module": "2.3 Psychological First Aid",
+  "module": "Psychological First Aid",
   "title": "7 core principles",
   "order": 35
  },
  {
   "id": "m2-3-s7",
-  "module": "2.3 Psychological First Aid",
+  "module": "Psychological First Aid",
   "title": "3 golden rules",
   "order": 36
  },
  {
   "id": "m2-3-s8",
-  "module": "2.3 Psychological First Aid",
+  "module": "Psychological First Aid",
   "title": "When and who applies it",
   "order": 37
  },
  {
   "id": "m2-3-s9",
-  "module": "2.3 Psychological First Aid",
+  "module": "Psychological First Aid",
   "title": "How to apply it",
   "order": 38
  },
  {
   "id": "m2-3-s10",
-  "module": "2.3 Psychological First Aid",
+  "module": "Psychological First Aid",
   "title": "Expected reactions",
   "order": 39
  },
  {
   "id": "m2-3-s11",
-  "module": "2.3 Psychological First Aid",
+  "module": "Psychological First Aid",
   "title": "Video: risk and protection",
   "order": 40
  },
  {
   "id": "m2-3-s12",
-  "module": "2.3 Psychological First Aid",
+  "module": "Psychological First Aid",
   "title": "Before, during and after",
   "order": 41
  },
  {
   "id": "m2-3-s13",
-  "module": "2.3 Psychological First Aid",
-  "title": "PFA in the moment",
+  "module": "Psychological First Aid",
+  "title": "Psychological First Aid in the moment",
   "order": 42
  },
  {
   "id": "m2-3-s14",
-  "module": "2.3 Psychological First Aid",
+  "module": "Psychological First Aid",
   "title": "Pocket Card",
   "order": 43
  },
  {
   "id": "m2-3-s15",
-  "module": "2.3 Psychological First Aid",
+  "module": "Psychological First Aid",
   "title": "Completed",
   "order": 44
  },
  {
   "id": "m3-1-capa",
-  "module": "3.1 Warning signs: what to look for in myself",
+  "module": "Warning signs: what to look for in myself",
   "title": "Start",
   "order": 45
  },
  {
   "id": "m3-1-intro",
-  "module": "3.1 Warning signs: what to look for in myself",
+  "module": "Warning signs: what to look for in myself",
   "title": "What to look for in myself",
   "order": 46
  },
  {
   "id": "m3-1-sinais",
-  "module": "3.1 Warning signs: what to look for in myself",
+  "module": "Warning signs: what to look for in myself",
   "title": "Signs in five areas",
   "order": 47
  },
  {
   "id": "m3-1-padrao",
-  "module": "3.1 Warning signs: what to look for in myself",
+  "module": "Warning signs: what to look for in myself",
   "title": "Looking at the overall pattern",
   "order": 48
  },
  {
   "id": "m3-1-apoio",
-  "module": "3.1 Warning signs: what to look for in myself",
+  "module": "Warning signs: what to look for in myself",
   "title": "When to ask for support?",
   "order": 49
  },
  {
   "id": "m3-1-persistencia",
-  "module": "3.1 Warning signs: what to look for in myself",
+  "module": "Warning signs: what to look for in myself",
   "title": "Persistence and impact",
   "order": 50
  },
  {
   "id": "m3-1-fim",
-  "module": "3.1 Warning signs: what to look for in myself",
+  "module": "Warning signs: what to look for in myself",
   "title": "Completed",
   "order": 51
  },
  {
   "id": "m3-2-capa",
-  "module": "3.2 Self-regulation: the foundation and what to do in the moment",
+  "module": "Self-regulation: the foundation and what to do in the moment",
   "title": "Start",
   "order": 52
  },
  {
   "id": "m3-2-base",
-  "module": "3.2 Self-regulation: the foundation and what to do in the moment",
+  "module": "Self-regulation: the foundation and what to do in the moment",
   "title": "Foundation of self-regulation",
   "order": 53
  },
  {
   "id": "m3-2-bases",
-  "module": "3.2 Self-regulation: the foundation and what to do in the moment",
+  "module": "Self-regulation: the foundation and what to do in the moment",
   "title": "Start with the foundations",
   "order": 54
  },
  {
   "id": "m3-2-momento",
-  "module": "3.2 Self-regulation: the foundation and what to do in the moment",
+  "module": "Self-regulation: the foundation and what to do in the moment",
   "title": "What to do in the moment",
   "order": 55
  },
  {
   "id": "m3-2-pausa",
-  "module": "3.2 Self-regulation: the foundation and what to do in the moment",
+  "module": "Self-regulation: the foundation and what to do in the moment",
   "title": "Mindful pause",
   "order": 56
  },
  {
   "id": "m3-2-respiracao",
-  "module": "3.2 Self-regulation: the foundation and what to do in the moment",
+  "module": "Self-regulation: the foundation and what to do in the moment",
   "title": "Video: controlled breathing",
   "order": 57
  },
  {
   "id": "m3-2-respirar",
-  "module": "3.2 Self-regulation: the foundation and what to do in the moment",
+  "module": "Self-regulation: the foundation and what to do in the moment",
   "title": "Exercise: controlled breathing",
   "order": 58
  },
  {
   "id": "m3-2-grounding",
-  "module": "3.2 Self-regulation: the foundation and what to do in the moment",
+  "module": "Self-regulation: the foundation and what to do in the moment",
   "title": "Video: 5-4-3-2-1 grounding",
   "order": 59
  },
  {
   "id": "m3-2-sentidos",
-  "module": "3.2 Self-regulation: the foundation and what to do in the moment",
+  "module": "Self-regulation: the foundation and what to do in the moment",
   "title": "Exercise: 5-4-3-2-1 grounding",
   "order": 60
  },
  {
   "id": "m3-2-stop",
-  "module": "3.2 Self-regulation: the foundation and what to do in the moment",
+  "module": "Self-regulation: the foundation and what to do in the moment",
   "title": "Video: the STOP strategy",
   "order": 61
  },
  {
   "id": "m3-2-recentrar",
-  "module": "3.2 Self-regulation: the foundation and what to do in the moment",
+  "module": "Self-regulation: the foundation and what to do in the moment",
   "title": "Refocus and organise",
   "order": 62
  },
  {
   "id": "m3-2-regular",
-  "module": "3.2 Self-regulation: the foundation and what to do in the moment",
+  "module": "Self-regulation: the foundation and what to do in the moment",
   "title": "Regulate and reconnect",
   "order": 63
  },
  {
   "id": "m3-2-toque",
-  "module": "3.2 Self-regulation: the foundation and what to do in the moment",
+  "module": "Self-regulation: the foundation and what to do in the moment",
   "title": "Video: self-regulation through touch",
   "order": 64
  },
  {
   "id": "m3-2-fluxo",
-  "module": "3.2 Self-regulation: the foundation and what to do in the moment",
+  "module": "Self-regulation: the foundation and what to do in the moment",
   "title": "Flowchart 2: Quick Action",
   "order": 65
  },
  {
   "id": "m3-2-depois",
-  "module": "3.2 Self-regulation: the foundation and what to do in the moment",
+  "module": "Self-regulation: the foundation and what to do in the moment",
   "title": "After the moment",
   "order": 66
  },
  {
   "id": "m3-2-fim",
-  "module": "3.2 Self-regulation: the foundation and what to do in the moment",
+  "module": "Self-regulation: the foundation and what to do in the moment",
   "title": "Completed",
   "order": 67
  },
  {
   "id": "m3-3-capa",
-  "module": "3.3 A colleague in distress: recognising and approaching",
+  "module": "A colleague in distress: recognising and approaching",
   "title": "Start",
   "order": 68
  },
  {
   "id": "m3-3-observar",
-  "module": "3.3 A colleague in distress: recognising and approaching",
+  "module": "A colleague in distress: recognising and approaching",
   "title": "What to observe",
   "order": 69
  },
  {
   "id": "m3-3-duvidas",
-  "module": "3.3 A colleague in distress: recognising and approaching",
+  "module": "A colleague in distress: recognising and approaching",
   "title": "Common doubts",
   "order": 70
  },
  {
   "id": "m3-3-guia",
-  "module": "3.3 A colleague in distress: recognising and approaching",
+  "module": "A colleague in distress: recognising and approaching",
   "title": "Action guide: should I approach them?",
   "order": 71
  },
  {
   "id": "m3-3-prioridade",
-  "module": "3.3 A colleague in distress: recognising and approaching",
+  "module": "A colleague in distress: recognising and approaching",
   "title": "Signs that need more attention",
   "order": 72
  },
  {
   "id": "m3-3-chave",
-  "module": "3.3 A colleague in distress: recognising and approaching",
+  "module": "A colleague in distress: recognising and approaching",
   "title": "Key message",
   "order": 73
  },
  {
   "id": "m3-3-fim",
-  "module": "3.3 A colleague in distress: recognising and approaching",
+  "module": "A colleague in distress: recognising and approaching",
   "title": "Completed",
   "order": 74
  },
  {
   "id": "m3-4-capa",
-  "module": "3.4 Supporting during the conversation",
+  "module": "Supporting during the conversation",
   "title": "Start",
   "order": 75
  },
  {
   "id": "m3-4-aproximar",
-  "module": "3.4 Supporting during the conversation",
+  "module": "Supporting during the conversation",
   "title": "Opening, posture and giving space",
   "order": 76
  },
  {
   "id": "m3-4-eva",
-  "module": "3.4 Supporting during the conversation",
+  "module": "Supporting during the conversation",
   "title": "Listening, validating and supporting",
   "order": 77
  },
  {
   "id": "m3-4-silencio",
-  "module": "3.4 Supporting during the conversation",
+  "module": "Supporting during the conversation",
   "title": "Managing silence and pace",
   "order": 78
  },
  {
   "id": "m3-4-atencao",
-  "module": "3.4 Supporting during the conversation",
+  "module": "Supporting during the conversation",
   "title": "Signs to watch for",
   "order": 79
  },
  {
   "id": "m3-4-chave1",
-  "module": "3.4 Supporting during the conversation",
+  "module": "Supporting during the conversation",
   "title": "Key message",
   "order": 80
  },
  {
   "id": "m3-4-classificar",
-  "module": "3.4 Supporting during the conversation",
+  "module": "Supporting during the conversation",
   "title": "Helps or doesn’t help?",
   "order": 81
  },
  {
   "id": "m3-4-evitar",
-  "module": "3.4 Supporting during the conversation",
+  "module": "Supporting during the conversation",
   "title": "What to avoid during the conversation",
   "order": 82
  },
  {
   "id": "m3-4-chave2",
-  "module": "3.4 Supporting during the conversation",
+  "module": "Supporting during the conversation",
   "title": "Key message",
   "order": 83
  },
  {
   "id": "m3-4-fim",
-  "module": "3.4 Supporting during the conversation",
+  "module": "Supporting during the conversation",
   "title": "Completed",
   "order": 84
  },
  {
   "id": "m3-5-capa",
-  "module": "3.5 Limits, confidentiality and conversation guide",
+  "module": "Limits, confidentiality and conversation guide",
   "title": "Start",
   "order": 85
  },
  {
   "id": "m3-5-intro",
-  "module": "3.5 Limits, confidentiality and conversation guide",
+  "module": "Limits, confidentiality and conversation guide",
   "title": "Closeness and responsibility",
   "order": 86
  },
  {
   "id": "m3-5-confidencial",
-  "module": "3.5 Limits, confidentiality and conversation guide",
+  "module": "Limits, confidentiality and conversation guide",
   "title": "Confidentiality and the colleague’s role",
   "order": 87
  },
  {
   "id": "m3-5-pratica",
-  "module": "3.5 Limits, confidentiality and conversation guide",
+  "module": "Limits, confidentiality and conversation guide",
   "title": "Limits in practice",
   "order": 88
  },
  {
   "id": "m3-5-autoprotecao",
-  "module": "3.5 Limits, confidentiality and conversation guide",
+  "module": "Limits, confidentiality and conversation guide",
   "title": "Protecting yourself when you help",
   "order": 89
  },
  {
   "id": "m3-5-chave",
-  "module": "3.5 Limits, confidentiality and conversation guide",
+  "module": "Limits, confidentiality and conversation guide",
   "title": "Key message",
   "order": 90
  },
  {
   "id": "m3-5-rp1",
-  "module": "3.5 Limits, confidentiality and conversation guide",
+  "module": "Limits, confidentiality and conversation guide",
   "title": "See it in action: Role play 1",
   "order": 91
  },
  {
   "id": "m3-5-rp2",
-  "module": "3.5 Limits, confidentiality and conversation guide",
+  "module": "Limits, confidentiality and conversation guide",
   "title": "See it in action: Role play 2",
   "order": 92
  },
  {
   "id": "m3-5-guia",
-  "module": "3.5 Limits, confidentiality and conversation guide",
+  "module": "Limits, confidentiality and conversation guide",
   "title": "Six-step conversation guide",
   "order": 93
  },
  {
   "id": "m3-5-notas",
-  "module": "3.5 Limits, confidentiality and conversation guide",
+  "module": "Limits, confidentiality and conversation guide",
   "title": "Important notes",
   "order": 94
  },
  {
   "id": "m3-5-fluxo",
-  "module": "3.5 Limits, confidentiality and conversation guide",
+  "module": "Limits, confidentiality and conversation guide",
   "title": "Flowchart 4: what to do in the moment",
   "order": 95
  },
  {
   "id": "m3-5-fim",
-  "module": "3.5 Limits, confidentiality and conversation guide",
+  "module": "Limits, confidentiality and conversation guide",
   "title": "Completed",
   "order": 96
  },
  {
   "id": "m4-1-capa",
-  "module": "4.1 The role of the leader in PFA",
+  "module": "The role of the leader in Psychological First Aid",
   "title": "Start",
   "order": 97
  },
  {
   "id": "m4-1-intro",
-  "module": "4.1 The role of the leader in PFA",
+  "module": "The role of the leader in Psychological First Aid",
   "title": "The role of the leader",
   "order": 98
  },
  {
   "id": "m4-1-dimensoes",
-  "module": "4.1 The role of the leader in PFA",
+  "module": "The role of the leader in Psychological First Aid",
   "title": "Key dimensions of the leader’s role",
   "order": 99
  },
  {
   "id": "m4-1-chave",
-  "module": "4.1 The role of the leader in PFA",
+  "module": "The role of the leader in Psychological First Aid",
   "title": "The leader’s role is not to solve it",
   "order": 100
  },
  {
   "id": "m4-1-riscos",
-  "module": "4.1 The role of the leader in PFA",
+  "module": "The role of the leader in Psychological First Aid",
   "title": "The importance of psychosocial risks",
   "order": 101
  },
  {
   "id": "m4-1-radar",
-  "module": "4.1 The role of the leader in PFA",
+  "module": "The role of the leader in Psychological First Aid",
   "title": "Team Psychosocial Risk Radar",
   "order": 102
  },
  {
   "id": "m4-1-fim",
-  "module": "4.1 The role of the leader in PFA",
+  "module": "The role of the leader in Psychological First Aid",
   "title": "Completed",
   "order": 103
  },
  {
   "id": "m4-2-capa",
-  "module": "4.2 Identifying signs in the team",
+  "module": "Identifying signs in the team",
   "title": "Start",
   "order": 104
  },
  {
   "id": "m4-2-intro",
-  "module": "4.2 Identifying signs in the team",
+  "module": "Identifying signs in the team",
   "title": "Identifying is not diagnosing",
   "order": 105
  },
  {
   "id": "m4-2-metodo",
-  "module": "4.2 Identifying signs in the team",
+  "module": "Identifying signs in the team",
   "title": "Observing with a method",
   "order": 106
  },
  {
   "id": "m4-2-sinais",
-  "module": "4.2 Identifying signs in the team",
+  "module": "Identifying signs in the team",
   "title": "Signs to consider",
   "order": 107
  },
  {
   "id": "m4-2-integracao",
-  "module": "4.2 Identifying signs in the team",
+  "module": "Identifying signs in the team",
   "title": "Putting the signs together",
   "order": 108
  },
  {
   "id": "m4-2-variam",
-  "module": "4.2 Identifying signs in the team",
+  "module": "Identifying signs in the team",
   "title": "Why signs vary",
   "order": 109
  },
  {
   "id": "m4-2-fim",
-  "module": "4.2 Identifying signs in the team",
+  "module": "Identifying signs in the team",
   "title": "Completed",
   "order": 110
  },
  {
   "id": "m4-3-capa",
-  "module": "4.3 Should I step in? From doubt to action",
+  "module": "Should I step in? From doubt to action",
   "title": "Start",
   "order": 111
  },
  {
   "id": "m4-3-guia",
-  "module": "4.3 Should I step in? From doubt to action",
+  "module": "Should I step in? From doubt to action",
   "title": "Quick guide for leaders",
   "order": 112
  },
  {
   "id": "m4-3-dimensoes",
-  "module": "4.3 Should I step in? From doubt to action",
+  "module": "Should I step in? From doubt to action",
   "title": "The five decision dimensions",
   "order": 113
  },
  {
   "id": "m4-3-checklist",
-  "module": "4.3 Should I step in? From doubt to action",
+  "module": "Should I step in? From doubt to action",
   "title": "Quick checklist: should I step in?",
   "order": 114
  },
  {
   "id": "m4-3-niveis",
-  "module": "4.3 Should I step in? From doubt to action",
+  "module": "Should I step in? From doubt to action",
   "title": "What to do at each level",
   "order": 115
  },
  {
   "id": "m4-3-urgente",
-  "module": "4.3 Should I step in? From doubt to action",
+  "module": "Should I step in? From doubt to action",
   "title": "Urgent referral",
   "order": 116
  },
  {
   "id": "m4-3-niveis2",
-  "module": "4.3 Should I step in? From doubt to action",
+  "module": "Should I step in? From doubt to action",
   "title": "Individual signs and team signs",
   "order": 117
  },
  {
   "id": "m4-3-rp3",
-  "module": "4.3 Should I step in? From doubt to action",
+  "module": "Should I step in? From doubt to action",
   "title": "See it in action: Role play 3",
   "order": 118
  },
  {
   "id": "m4-3-rp4",
-  "module": "4.3 Should I step in? From doubt to action",
+  "module": "Should I step in? From doubt to action",
   "title": "See it in action: Role play 4",
   "order": 119
  },
  {
   "id": "m4-3-erros",
-  "module": "4.3 Should I step in? From doubt to action",
+  "module": "Should I step in? From doubt to action",
   "title": "Common mistakes in identifying signs",
   "order": 120
  },
  {
   "id": "m4-3-duvida",
-  "module": "4.3 Should I step in? From doubt to action",
+  "module": "Should I step in? From doubt to action",
   "title": "From doubt to action",
   "order": 121
  },
  {
   "id": "m4-3-frases",
-  "module": "4.3 Should I step in? From doubt to action",
+  "module": "Should I step in? From doubt to action",
   "title": "Phrases to start the approach",
   "order": 122
  },
  {
   "id": "m4-3-fim",
-  "module": "4.3 Should I step in? From doubt to action",
+  "module": "Should I step in? From doubt to action",
   "title": "Completed",
   "order": 123
  },
  {
   "id": "m4-4-capa",
-  "module": "4.4 How to approach an employee",
+  "module": "How to approach an employee",
   "title": "Start",
   "order": 124
  },
  {
   "id": "m4-4-principios",
-  "module": "4.4 How to approach an employee",
+  "module": "How to approach an employee",
   "title": "Principles of the approach",
   "order": 125
  },
  {
   "id": "m4-4-modelo",
-  "module": "4.4 How to approach an employee",
+  "module": "How to approach an employee",
   "title": "Structured conversation model",
   "order": 126
  },
  {
   "id": "m4-4-respostas",
-  "module": "4.4 How to approach an employee",
+  "module": "How to approach an employee",
   "title": "Handling different types of response",
   "order": 127
  },
  {
   "id": "m4-4-apoio",
-  "module": "4.4 How to approach an employee",
+  "module": "How to approach an employee",
   "title": "Supportive phrases and what to avoid",
   "order": 128
  },
  {
   "id": "m4-4-casos",
-  "module": "4.4 How to approach an employee",
+  "module": "How to approach an employee",
   "title": "Case studies",
   "order": 129
  },
  {
   "id": "m4-4-mini",
-  "module": "4.4 How to approach an employee",
-  "title": "PFA mini-section for leaders",
+  "module": "How to approach an employee",
+  "title": "Psychological First Aid mini-section for leaders",
   "order": 130
  },
  {
   "id": "m4-4-minitab",
-  "module": "4.4 How to approach an employee",
+  "module": "How to approach an employee",
   "title": "Useful phrases, what to favour and what to avoid",
   "order": 131
  },
  {
   "id": "m4-4-fim",
-  "module": "4.4 How to approach an employee",
+  "module": "How to approach an employee",
   "title": "Completed",
   "order": 132
  },
  {
   "id": "m4-5-capa",
-  "module": "4.5 Leading for psychological safety",
+  "module": "Leading for psychological safety",
   "title": "Start",
   "order": 133
  },
  {
   "id": "m4-5-funcionais",
-  "module": "4.5 Leading for psychological safety",
+  "module": "Leading for psychological safety",
   "title": "Functional recommendations",
   "order": 134
  },
  {
   "id": "m4-5-relacionais",
-  "module": "4.5 Leading for psychological safety",
+  "module": "Leading for psychological safety",
   "title": "Relational recommendations",
   "order": 135
  },
  {
   "id": "m4-5-evidencia",
-  "module": "4.5 Leading for psychological safety",
+  "module": "Leading for psychological safety",
   "title": "What the evidence suggests",
   "order": 136
  },
  {
   "id": "m4-5-competencias",
-  "module": "4.5 Leading for psychological safety",
+  "module": "Leading for psychological safety",
   "title": "Practical implications for leaders",
   "order": 137
  },
  {
   "id": "m4-5-autocheck",
-  "module": "4.5 Leading for psychological safety",
+  "module": "Leading for psychological safety",
   "title": "Ten leader self-check questions",
   "order": 138
  },
  {
   "id": "m4-5-autocuidado",
-  "module": "4.5 Leading for psychological safety",
+  "module": "Leading for psychological safety",
   "title": "Leader self-care",
   "order": 139
  },
  {
   "id": "m4-5-limites",
-  "module": "4.5 Leading for psychological safety",
+  "module": "Leading for psychological safety",
   "title": "Limits of the leader’s role",
   "order": 140
  },
  {
   "id": "m4-5-micro",
-  "module": "4.5 Leading for psychological safety",
+  "module": "Leading for psychological safety",
   "title": "Psychological safety day to day",
   "order": 141
  },
  {
   "id": "m4-5-fim",
-  "module": "4.5 Leading for psychological safety",
+  "module": "Leading for psychological safety",
   "title": "Completed",
   "order": 142
  },
  {
   "id": "m5-0-fichas",
-  "module": "Module 5 · Sensitive Situations",
+  "module": "Part 5 · Sensitive Situations",
   "title": "Nine sensitive situations",
   "order": 143
  },
  {
   "id": "m5-1-capa",
-  "module": "5.1 Burnout",
+  "module": "Burnout",
   "title": "Start",
   "order": 144
  },
  {
   "id": "m5-1-acontecer",
-  "module": "5.1 Burnout",
+  "module": "Burnout",
   "title": "What may be happening?",
   "order": 145
  },
  {
   "id": "m5-1-sinais",
-  "module": "5.1 Burnout",
+  "module": "Burnout",
   "title": "Common warning signs",
   "order": 146
  },
  {
   "id": "m5-1-fazer",
-  "module": "5.1 Burnout",
+  "module": "Burnout",
   "title": "What to do?",
   "order": 147
  },
  {
   "id": "m5-1-evitar",
-  "module": "5.1 Burnout",
+  "module": "Burnout",
   "title": "What to avoid?",
   "order": 148
  },
  {
   "id": "m5-1-encaminhar",
-  "module": "5.1 Burnout",
+  "module": "Burnout",
   "title": "When to refer?",
   "order": 149
  },
  {
   "id": "m5-1-fim",
-  "module": "5.1 Burnout",
+  "module": "Burnout",
   "title": "Completed",
   "order": 150
  },
  {
   "id": "m5-2-capa",
-  "module": "5.2 Grief",
+  "module": "Grief",
   "title": "Start",
   "order": 151
  },
  {
   "id": "m5-2-acontecer",
-  "module": "5.2 Grief",
+  "module": "Grief",
   "title": "What may be happening?",
   "order": 152
  },
  {
   "id": "m5-2-processo",
-  "module": "5.2 Grief",
+  "module": "Grief",
   "title": "The process may involve",
   "order": 153
  },
  {
   "id": "m5-2-fazer",
-  "module": "5.2 Grief",
+  "module": "Grief",
   "title": "What to do?",
   "order": 154
  },
  {
   "id": "m5-2-evitar",
-  "module": "5.2 Grief",
+  "module": "Grief",
   "title": "What to avoid?",
   "order": 155
  },
  {
   "id": "m5-2-encaminhar",
-  "module": "5.2 Grief",
+  "module": "Grief",
   "title": "When to refer?",
   "order": 156
  },
  {
   "id": "m5-2-fim",
-  "module": "5.2 Grief",
+  "module": "Grief",
   "title": "Completed",
   "order": 157
  },
  {
   "id": "m5-3-capa",
-  "module": "5.3 Panic attacks",
+  "module": "Panic attacks",
   "title": "Start",
   "order": 158
  },
  {
   "id": "m5-3-acontecer",
-  "module": "5.3 Panic attacks",
+  "module": "Panic attacks",
   "title": "What may be happening?",
   "order": 159
  },
  {
   "id": "m5-3-ciclo",
-  "module": "5.3 Panic attacks",
+  "module": "Panic attacks",
   "title": "The panic cycle",
   "order": 160
  },
  {
   "id": "m5-3-fazer",
-  "module": "5.3 Panic attacks",
+  "module": "Panic attacks",
   "title": "What to do?",
   "order": 161
  },
  {
   "id": "m5-3-evitar",
-  "module": "5.3 Panic attacks",
+  "module": "Panic attacks",
   "title": "What to avoid?",
   "order": 162
  },
  {
   "id": "m5-3-encaminhar",
-  "module": "5.3 Panic attacks",
+  "module": "Panic attacks",
   "title": "When to refer?",
   "order": 163
  },
  {
   "id": "m5-3-rp5",
-  "module": "5.3 Panic attacks",
+  "module": "Panic attacks",
   "title": "See it in action: Role play 5",
   "order": 164
  },
  {
   "id": "m5-3-fim",
-  "module": "5.3 Panic attacks",
+  "module": "Panic attacks",
   "title": "Completed",
   "order": 165
  },
  {
   "id": "m5-4-capa",
-  "module": "5.4 Disaster situations",
+  "module": "Disaster situations",
   "title": "Start",
   "order": 166
  },
  {
   "id": "m5-4-lembrar",
-  "module": "5.4 Disaster situations",
+  "module": "Disaster situations",
   "title": "It is important to remember",
   "order": 167
  },
  {
   "id": "m5-4-acontecer",
-  "module": "5.4 Disaster situations",
+  "module": "Disaster situations",
   "title": "What may be happening?",
   "order": 168
  },
  {
   "id": "m5-4-fazer",
-  "module": "5.4 Disaster situations",
+  "module": "Disaster situations",
   "title": "What to do?",
   "order": 169
  },
  {
   "id": "m5-4-evitar",
-  "module": "5.4 Disaster situations",
+  "module": "Disaster situations",
   "title": "What to avoid?",
   "order": 170
  },
  {
   "id": "m5-4-encaminhar",
-  "module": "5.4 Disaster situations",
+  "module": "Disaster situations",
   "title": "When to refer?",
   "order": 171
  },
  {
   "id": "m5-4-fim",
-  "module": "5.4 Disaster situations",
+  "module": "Disaster situations",
   "title": "Completed",
   "order": 172
  },
  {
   "id": "m5-5-capa",
-  "module": "5.5 Aggressive behaviour",
+  "module": "Aggressive behaviour",
   "title": "Start",
   "order": 173
  },
  {
   "id": "m5-5-limites",
-  "module": "5.5 Aggressive behaviour",
+  "module": "Aggressive behaviour",
   "title": "Understanding is not accepting",
   "order": 174
  },
  {
   "id": "m5-5-acontecer",
-  "module": "5.5 Aggressive behaviour",
+  "module": "Aggressive behaviour",
   "title": "What may be happening?",
   "order": 175
  },
  {
   "id": "m5-5-fazer",
-  "module": "5.5 Aggressive behaviour",
+  "module": "Aggressive behaviour",
   "title": "What to do?",
   "order": 176
  },
  {
   "id": "m5-5-evitar",
-  "module": "5.5 Aggressive behaviour",
+  "module": "Aggressive behaviour",
   "title": "What to avoid?",
   "order": 177
  },
  {
   "id": "m5-5-encaminhar",
-  "module": "5.5 Aggressive behaviour",
+  "module": "Aggressive behaviour",
   "title": "When to refer?",
   "order": 178
  },
  {
   "id": "m5-5-fim",
-  "module": "5.5 Aggressive behaviour",
+  "module": "Aggressive behaviour",
   "title": "Completed",
   "order": 179
  },
  {
   "id": "m5-6-capa",
-  "module": "5.6 Serious personal crisis",
+  "module": "Serious personal crisis",
   "title": "Start",
   "order": 180
  },
  {
   "id": "m5-6-acontecer",
-  "module": "5.6 Serious personal crisis",
+  "module": "Serious personal crisis",
   "title": "What may be happening?",
   "order": 181
  },
  {
   "id": "m5-6-fazer",
-  "module": "5.6 Serious personal crisis",
+  "module": "Serious personal crisis",
   "title": "What to do?",
   "order": 182
  },
  {
   "id": "m5-6-evitar",
-  "module": "5.6 Serious personal crisis",
+  "module": "Serious personal crisis",
   "title": "What to avoid?",
   "order": 183
  },
  {
   "id": "m5-6-encaminhar",
-  "module": "5.6 Serious personal crisis",
+  "module": "Serious personal crisis",
   "title": "When to refer?",
   "order": 184
  },
  {
   "id": "m5-6-fim",
-  "module": "5.6 Serious personal crisis",
+  "module": "Serious personal crisis",
   "title": "Completed",
   "order": 185
  },
  {
   "id": "m5-7-capa",
-  "module": "5.7 Conflict in the team",
+  "module": "Conflict in the team",
   "title": "Start",
   "order": 186
  },
  {
   "id": "m5-7-acontecer",
-  "module": "5.7 Conflict in the team",
+  "module": "Conflict in the team",
   "title": "What may be happening?",
   "order": 187
  },
  {
   "id": "m5-7-fazer",
-  "module": "5.7 Conflict in the team",
+  "module": "Conflict in the team",
   "title": "What to do: four steps",
   "order": 188
  },
  {
   "id": "m5-7-fazer2",
-  "module": "5.7 Conflict in the team",
+  "module": "Conflict in the team",
   "title": "What to do: throughout the conversation",
   "order": 189
  },
  {
   "id": "m5-7-evitar",
-  "module": "5.7 Conflict in the team",
+  "module": "Conflict in the team",
   "title": "What to avoid?",
   "order": 190
  },
  {
   "id": "m5-7-encaminhar",
-  "module": "5.7 Conflict in the team",
+  "module": "Conflict in the team",
   "title": "When to refer?",
   "order": 191
  },
  {
   "id": "m5-7-fim",
-  "module": "5.7 Conflict in the team",
+  "module": "Conflict in the team",
   "title": "Completed",
   "order": 192
  },
  {
   "id": "m5-8-capa",
-  "module": "5.8 Supporting a customer in distress",
+  "module": "Supporting a customer in distress",
   "title": "Start",
   "order": 193
  },
  {
   "id": "m5-8-acontecer",
-  "module": "5.8 Supporting a customer in distress",
+  "module": "Supporting a customer in distress",
   "title": "What may be happening?",
   "order": 194
  },
  {
   "id": "m5-8-fazer",
-  "module": "5.8 Supporting a customer in distress",
+  "module": "Supporting a customer in distress",
   "title": "What to do?",
   "order": 195
  },
  {
   "id": "m5-8-evitar",
-  "module": "5.8 Supporting a customer in distress",
+  "module": "Supporting a customer in distress",
   "title": "What to avoid?",
   "order": 196
  },
  {
   "id": "m5-8-encaminhar",
-  "module": "5.8 Supporting a customer in distress",
+  "module": "Supporting a customer in distress",
   "title": "When to make an urgent referral?",
   "order": 197
  },
  {
   "id": "m5-8-fim",
-  "module": "5.8 Supporting a customer in distress",
+  "module": "Supporting a customer in distress",
   "title": "Completed",
   "order": 198
  },
  {
   "id": "m5-9-capa",
-  "module": "5.9 Suicide",
+  "module": "Suicide",
   "title": "Start",
   "order": 199
  },
  {
   "id": "m5-9-aviso",
-  "module": "5.9 Suicide",
+  "module": "Suicide",
   "title": "Before you start",
   "order": 200
  },
  {
   "id": "m5-9-s1-acontecer",
-  "module": "5.9 Suicide",
+  "module": "Suicide",
   "title": "Situation 1: what may be happening",
   "order": 201
  },
  {
   "id": "m5-9-s1-fazer",
-  "module": "5.9 Suicide",
+  "module": "Suicide",
   "title": "Situation 1: what to do",
   "order": 202
  },
  {
   "id": "m5-9-s1-evitar",
-  "module": "5.9 Suicide",
+  "module": "Suicide",
   "title": "Situation 1: what to avoid and when to refer",
   "order": 203
  },
  {
   "id": "m5-9-s1-urgente",
-  "module": "5.9 Suicide",
+  "module": "Suicide",
   "title": "Situation 1: urgent referral",
   "order": 204
  },
  {
   "id": "m5-9-s2-acontecer",
-  "module": "5.9 Suicide",
+  "module": "Suicide",
   "title": "Situation 2: what may be happening",
   "order": 205
  },
  {
   "id": "m5-9-s2-fazer",
-  "module": "5.9 Suicide",
+  "module": "Suicide",
   "title": "Situation 2: what to do",
   "order": 206
  },
  {
   "id": "m5-9-s2-evitar",
-  "module": "5.9 Suicide",
+  "module": "Suicide",
   "title": "Situation 2: what to avoid and when to refer",
   "order": 207
  },
  {
   "id": "m5-9-fim",
-  "module": "5.9 Suicide",
+  "module": "Suicide",
   "title": "Find out more",
   "order": 208
  },
  {
   "id": "m6-1-capa",
-  "module": "6.1 When to refer",
+  "module": "When to refer",
   "title": "Start",
   "order": 209
  },
  {
   "id": "m6-1-quando",
-  "module": "6.1 When to refer",
+  "module": "When to refer",
   "title": "When to refer",
   "order": 210
  },
  {
   "id": "m6-1-sinais",
-  "module": "6.1 When to refer",
+  "module": "When to refer",
   "title": "Three types of indicators",
   "order": 211
  },
  {
   "id": "m6-1-chave",
-  "module": "6.1 When to refer",
+  "module": "When to refer",
   "title": "The purpose of referral",
   "order": 212
  },
  {
   "id": "m6-1-fim",
-  "module": "6.1 When to refer",
+  "module": "When to refer",
   "title": "Completed",
   "order": 213
  },
  {
   "id": "m6-2-capa",
-  "module": "6.2 Resources",
+  "module": "Resources",
   "title": "Start",
   "order": 214
  },
  {
   "id": "m6-2-somos",
-  "module": "6.2 Resources",
+  "module": "Resources",
   "title": "We Are Sonae",
   "order": 215
  },
  {
   "id": "m6-2-multicare",
-  "module": "6.2 Resources",
+  "module": "Resources",
   "title": "Multicare Health Insurance",
   "order": 216
  },
  {
   "id": "m6-2-linhas",
-  "module": "6.2 Resources",
+  "module": "Resources",
   "title": "Psychological support lines",
   "order": 217
  },
  {
   "id": "m6-2-alem",
-  "module": "6.2 Resources",
+  "module": "Resources",
   "title": "Beyond mental health: internal resources",
   "order": 218
  },
  {
   "id": "m6-2-outras",
-  "module": "6.2 Resources",
+  "module": "Resources",
   "title": "Other support lines",
   "order": 219
  },
  {
   "id": "m6-2-final",
-  "module": "6.2 Resources",
+  "module": "Resources",
   "title": "A final word",
   "order": 220
  },
  {
   "id": "m6-2-fim",
-  "module": "6.2 Resources",
+  "module": "Resources",
   "title": "Completed",
   "order": 221
  }

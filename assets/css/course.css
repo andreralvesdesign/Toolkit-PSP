@@ -1139,8 +1139,7 @@ button[data-goto]::after,a.partc::after{position:absolute;top:0.875rem;right:0.8
 /* ============ Language screen (first slide of index) + switch (Índice) ============ */
 .langscreen{display:grid;gap:clamp(1.5rem,5vh,2.75rem);justify-items:center;text-align:center;margin:auto}
 .langscreen h1{display:grid;gap:0.25rem;font-size:clamp(2rem,4.2vw,3.5rem);line-height:1.1}
-.langscreen h1 span:first-child{color:var(--red)}
-.langscreen h1 span:last-child{color:var(--navy)}
+.langscreen h1 span:last-child{color:var(--red)}
 .langpick{display:grid;gap:1.25rem;justify-items:center}
 .langpick .hint.cta{margin:0}
 .langbtns{display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem}
@@ -1441,6 +1440,7 @@ body[data-chapter^="6"] .drawer-top{--circ:url(../img/circ-pink-b.webp)}
 @media (max-width:520px){
   .contacts a{flex:none;font-size:1.125rem;justify-content:flex-end}
   .contacts li>div{min-width:0}
+  .player video::cue{font-size:calc(125% + 2px)}
   .dlg{padding:1.25rem}
   dialog .contacts li{padding:0.375rem 0;gap:0.625rem}
   dialog .contacts small{font-size:0.875rem;line-height:1.3}
@@ -1529,73 +1529,235 @@ body[data-chapter^="6"] .drawer-top{--circ:url(../img/circ-pink-b.webp)}
 /* videos: a soft light grey line keeps light frames apart from the grey sections (over the video, never in the way of the controls) */
 .player:not(.missing)::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1px var(--line);pointer-events:none}
 
-/* Índice button: filled navy at rest, outline on hover (the other pills keep the opposite) */
-.hdr #menuBtn{background:var(--navy);border-color:var(--navy);color:#fff}
-@media (hover:hover){.hdr #menuBtn:hover{background:#fff;color:var(--navy)}}
-
-/* Captions and sound: a simple hover like Apoio's, each state just shifts its own colour.
-   Off (grey): darker grey + navy line. On (navy): a lighter navy (navy with 20% white), clearly visible. Sound is "on" when #muteBtn is NOT pressed. */
-@media (hover:hover){
-  .hdr #ccBtn:not([aria-pressed=true]):hover,.hdr #muteBtn[aria-pressed=true]:hover{background:var(--warm-2);border-color:var(--navy)}
-  .hdr #ccBtn[aria-pressed=true]:hover,.hdr #muteBtn:not([aria-pressed=true]):hover{background:#333F83;border-color:#333F83}
+/* ============ CLIENT FEEDBACK 2026-11-09 ============ */
+/* support dialog: "Sabe mais aqui" stands out, with its line underneath */
+.dlg-foot{display:flex;justify-content:space-between;align-items:flex-start;gap:0.75rem 1rem;flex-wrap:wrap;margin-top:1.125rem}
+.dlg-more{display:grid;gap:0.375rem;justify-items:start;max-width:20rem}
+.dlg-more .hint{margin:0;font-size:0.9375rem}
+.pill--navy{background:var(--navy);border-color:var(--navy);color:#fff}
+@media (hover:hover){.pill--navy:hover{background:var(--navy-2);border-color:var(--navy-2)}}
+.pill--navy b{font-weight:800}
+/* part covers: only #PrecisamosFalar, smaller, on the left */
+.brandrow--pf{justify-content:flex-start}
+.brandrow--pf img,.brandrow--pf img + img{height:1.125rem;width:auto}
+/* end of a part: "use Seguinte" is the last line, right above the buttons */
+.fin-next{margin-top:1.5rem}
+.fin-next[hidden],#finTxt[hidden]{display:none}
+/* desktop header: captions, sound, language and settings the same height as Apoio / Sair (2.75rem) */
+@media (min-width:861px) and (min-aspect-ratio:4/5){
+  .hdr .ibtn{width:2.75rem;height:2.75rem}
 }
+/* video play button for keyboard and screen readers: hidden until focused */
+.vplay{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.vplay:focus-visible{position:static;width:auto;height:auto;overflow:visible;display:inline-flex;margin-bottom:0.625rem;padding:0.5rem 1rem;border-radius:999px;background:var(--navy);color:#fff;font-weight:700}
+/* 2.2 checklist: the question sits right after the mode switch, not pushed to the far right (#61) */
+.chk-top{justify-content:flex-start;column-gap:1.5rem}
 
-/* Flip cards in Safari/WebKit: backface-visibility is not always honoured there (the back showed mirrored over the front).
-   The face that is turned away is hidden outright, switching halfway through the .7s turn. The back text stays available
-   to screen readers through its own paragraph (p.sr), as before. */
-.flip .face{transition:visibility 0s linear .35s;align-self:stretch;min-height:100%}   /* older Chrome (Android, v124) did not stretch the faces to the card's height */
-.flip:not(.open) .back,.flip.open .front{visibility:hidden}
-@media (prefers-reduced-motion:reduce){.flip .face{transition:none}}
+/* phones, accordions: the open item and its content are one card (no line between them, same background) */
+.vtabs.acc,.rtabs.acc,.chk-groups.acc{row-gap:0.5rem}
+.acc>button[aria-expanded=true][aria-expanded]{background:#fff;border:1.5px solid var(--navy);border-bottom-color:transparent;border-bottom-left-radius:0;border-bottom-right-radius:0;box-shadow:none}
+.acc>button[aria-expanded=true]+[data-tp]{margin-top:-0.5rem;border-width:1.5px;border-top:0;background:#fff}
+.s-white .acc>button[aria-expanded=true],.s-white .acc>button[aria-expanded=true]+[data-tp]{background:#F0F0EB}
 
-/* Captions drawn by the course (player.js, .capov): the same size in every browser, in step with the video's width.
-   The browser's own captions (::cue, above) are only used in full screen. */
-.player{container-type:inline-size}
-.capov{position:absolute;left:4%;right:4%;bottom:5%;z-index:2;display:flex;flex-direction:column;align-items:center;pointer-events:none;transition:bottom .2s var(--ease)}
-.capov[hidden]{display:none}
-.capov.ctl{bottom:calc(5% + 2.75rem)}   /* above the native control bar while it shows */
-.capov span{background:rgba(0,0,0,.82);color:#fff;font-size:0.875rem;font-size:clamp(0.8125rem,3.9cqw,1.375rem);font-weight:500;line-height:1.35;padding:0.04em 0.45em;text-align:center;border-radius:2px}
-@media (prefers-reduced-motion:reduce){.capov{transition:none}}
+/* ============ INCLUSION (2026-11) ============ */
+/* contrast: small red text on light backgrounds uses the darker red (WCAG AA 4.5:1) */
+.cols3 h4,.two h4,.lvlp h4,.vpanel h4,.gp h4,.blk h4,.sgp h4,.nvp h4,.vpanel .sub,.erp .sub,.drow small,.pat small,.aud .card small,.tool small,
+.front small,.back small,.partc .pn,.bsteps li em,.path button em,.ctxt b,.gbtn b,.contacts a,.vpanel a[href^=tel],.clist .nums a,.topic em,
+.sub,.sit small,.breath em,p em,li em,.eyebrow:not(.ok){color:var(--red-dark)}
+[style*="color:var(--red)"]{color:var(--red-dark)!important}
+.s-navy .eyebrow,.s-navy .sub,.s-navy em,.s-navy small,.who .contacts a,.s-navy .contacts a{color:inherit}
+.s-navy .eyebrow{color:#FF8A80}
+.keybig em{color:#FF8A80}
+/* flowchart: the steps still ahead stay readable */
+.fn.is-next{opacity:.92}
+/* support dialog: what it is */
+.dlg-what{margin:0.375rem 0 0.25rem;font-size:1rem;color:var(--ink)}
+/* sensitive content note (Parte 5) */
+/* sensitive note: same box as the "nl nl--x" cards (5.1 "Estratégias de adaptação ineficazes"): warm card, no border, red round badge */
+.cw{display:flex;gap:1rem;align-items:center;margin-top:1rem;padding:0.6875rem 1.375rem 0.6875rem 0.9375rem;border-radius:1rem;background:var(--white);font-size:1.0313rem;line-height:1.4;color:var(--ink);width:fit-content;max-width:100%}
+.cw-ic{flex:none;width:2rem;height:2rem;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center}
+.cw-ic{line-height:0}
+.cw-ic svg{display:block;width:1.0625rem;height:1.0625rem;overflow:visible;transform:translateY(-0.0625rem)}
+.cw > svg{flex:none;width:1.25rem;height:1.25rem;color:var(--red-dark)}
+.s-cover .cw,.s-white .cw{background:#F0F0EB}
+/* transcripts */
+.transcript{margin-top:0.875rem;border:1.5px solid var(--line);border-radius:0.875rem;background:#fff}
+.transcript summary{cursor:pointer;padding:0.75rem 1rem;font-weight:700;color:var(--navy);list-style-position:inside}
+.transcript[open] summary{border-bottom:1px solid var(--line)}
+.tr-body{padding:0.75rem 1rem 1rem;max-height:22rem;overflow:auto;display:grid;gap:0.625rem;font-size:1rem;line-height:1.6}
+/* settings button on every screen size: on large screens the menu holds the reader preferences only */
+#setBtn{display:grid}
+#setMenu:not([hidden]){display:block;position:absolute;z-index:2;top:calc(100% + 0.5rem);right:var(--gut);width:min(19rem,calc(100vw - 2.5rem));max-height:calc(100dvh - var(--hdr) - 1rem);overflow:auto;padding:0.375rem;background:#fff;border-radius:1.125rem;box-shadow:0 1.25rem 2.5rem -0.75rem rgba(0,15,100,.45),0 0 0 1px rgba(0,15,100,.06)}
+#setOver:not([hidden]){display:block;position:fixed;inset:0;z-index:1;background:transparent}
+#setMenu:focus{outline:none}
+.setrow{display:flex;align-items:center;gap:0.75rem;width:100%;min-height:3.25rem;padding:0.375rem 0.75rem;border-radius:0.75rem;text-align:left;font-size:1.0625rem;font-weight:600;color:var(--navy)}
+.setrow+.setrow{margin-top:0.125rem}
+@media (hover:hover){.setrow:hover{background:var(--warm)}}
+.seti{flex:none;width:1.75rem;height:1.75rem;display:grid;place-items:center}
+.seti svg{width:1.375rem;height:1.375rem}
+.seti img{width:1.625rem;height:1.625rem;border-radius:50%;display:block}
+.seti .cc{font-weight:800;font-size:0.75rem;border:2px solid currentColor;border-radius:0.3125rem;padding:1px 0.1875rem;line-height:1.1}
+.seti .aa{font-weight:800;font-size:1rem;letter-spacing:-.02em}
+.sett{flex:1;min-width:0}
+.setsw{flex:none;position:relative;width:2.75rem;height:1.625rem;border-radius:999px;background:var(--warm-2);transition:background .2s}
+.setsw::after{content:"";position:absolute;top:0.1875rem;left:0.1875rem;width:1.25rem;height:1.25rem;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(0,15,100,.3);transition:transform .2s var(--ease)}
+.setrow[aria-pressed=true] .setsw{background:var(--navy)}
+.setrow[aria-pressed=true] .setsw::after{transform:translateX(1.125rem)}
+#setBtn[aria-expanded=true]{background:var(--navy);border-color:var(--navy);color:#fff}
+@media (min-width:861px) and (min-aspect-ratio:4/5) and (min-height:501px){
+  #setCc,#setMute,#setLang,#setExit{display:none}
+  #setMenu:not([hidden]) #setText{margin-top:0}
+}
+/* larger text: everything is in rem, so the root size carries it */
+html.txt-lg{font-size:clamp(18px,calc(min(1.171vw,2.083vh) * 1.125),27px)}
+/* more spacing (dyslexia-friendly) */
+html.txt-sp body{letter-spacing:.035em;word-spacing:.12em}
+html.txt-sp :is(p,li,dd,.lede){line-height:1.85}
+/* animations off: same as the system "reduce motion" setting */
+html.no-motion *,html.no-motion *::before,html.no-motion *::after{animation-duration:.001ms!important;animation-delay:0ms!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+html.no-motion .a{opacity:1}
+html.no-motion .hero-art .wc{animation:none}
+html.no-motion .draw path,html.no-motion .draw circle{stroke-dashoffset:0}
+html.no-motion .orb{transform:scale(.8)!important}
+html.no-motion .confetti{display:none}
+@media (prefers-reduced-motion:reduce){ .confetti{display:none} }
 
-/* Language screen on phones: the two cards side by side, sized to the screen's height, so the screen and its "Seguinte" fit without scrolling.
-   The section fills the screen down to the "Seguinte" bar, so the faint blue circle behind it is seen whole instead of cut by the section's edge. */
+/* inclusion: "O que fazer" label on the light green box (4.2:1) to a darker green */
+.fdo b,.tlw[data-kind=protect] .kind,.nl:not(.nl--x) .b{color:#00552F}
+/* the forced line break of the sensitive note only on wide screens (on phones the text flows) */
+@media (max-width:860px){.cw-br{display:none}}
+/* Índice button: filled navy at rest, outline on hover / while the index is open (the other pills do the opposite) */
+#menuBtn{background:var(--navy);color:#fff}
+@media (hover:hover){#menuBtn:hover{background:#fff;color:var(--navy)}}
+#menuBtn[aria-expanded=true]{background:#fff;color:var(--navy)}
+/* Definições button: white while closed */
+.hdr #setBtn:not([aria-expanded=true]){background:#fff;border-color:var(--navy)}
+/* Índice: modules not finished yet (and not locked) show an empty ring (still to do) in their circle; colour follows the circle's text colour */
+.course-nav a:not(.done):not(.lock) .no::before{content:"";width:0.875rem;height:0.875rem;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='8.5' fill='none' stroke='%23000' stroke-width='3'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='8.5' fill='none' stroke='%23000' stroke-width='3'/%3E%3C/svg%3E") center/contain no-repeat}
+.course-nav a:not(.done):not(.lock):not([aria-current=page]) .no{color:var(--navy)}
+/* Índice: the ring stays only on the module you are in; the other modules still to do show a grey eye (still to see) */
+.course-nav a:not(.done):not(.lock):not([aria-current=page]) .no::before{background:#8E8E89;width:1rem;height:1rem;-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z'/%3E%3Ccircle cx='12' cy='12' r='3'/%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z'/%3E%3Ccircle cx='12' cy='12' r='3'/%3E%3C/svg%3E")}
+/* Índice "Estás aqui" badge: more breathing room, one line */
+.course-nav .st em{padding:.3125rem .875rem;white-space:nowrap;display:inline-block;line-height:1.2}
+.course-nav .st{margin-left:.5rem}
+/* language screen: Portuguese line red, English line navy (swapped) */
+.langscreen h1 span:first-child{color:var(--red)}
+.langscreen h1 span:last-child{color:var(--navy)}
+/* narrow windows: the two language cards side by side, smaller, so the Seguinte button is visible without scrolling */
 @media (max-width:860px), (max-aspect-ratio:4/5){
-  .s-lang{min-height:calc(100vh - var(--hdr) - 6.75rem);min-height:calc(100svh - var(--hdr) - 6.75rem)}
-}
-@media (max-width:600px){
-  .langscreen,.langpick{width:100%;justify-items:stretch}
-  .langscreen h1{justify-self:center}
-  .langbtns{flex-wrap:nowrap;justify-content:center;gap:0.875rem;width:100%}
-  .lbtn{width:auto;flex:1 1 0;min-width:0;max-width:none;padding:1rem 0.625rem 0.9375rem;border-radius:1.25rem;gap:0.25rem;align-content:start}
-  .lbtn .flag{width:clamp(3.5rem,8svh,4.5rem);height:clamp(3.5rem,8svh,4.5rem);margin-bottom:0.375rem}
-  .lbtn b{font-size:1.3125rem}
-  .lbtn small{font-size:0.875rem;line-height:1.3}
-  .lbtn[aria-checked=true]::after{top:0.625rem;right:0.625rem;width:1.375rem;height:1.375rem}
-}
-/* short phones (iPhone SE and the like): a little smaller still, so "Seguinte" stays on screen */
-@media (max-width:600px) and (max-height:620px){
-  .langscreen{gap:1.25rem}
-  .lbtn{padding:1rem 0.5rem 0.875rem}
+  .langbtns{flex-wrap:nowrap;gap:0.75rem;width:100%;max-width:30rem}
+  .lbtn{flex:1 1 0;min-width:0;width:auto;align-content:start;padding:1rem 0.625rem 0.875rem;border-radius:1.25rem;gap:0.25rem}
   .lbtn .flag{width:3.5rem;height:3.5rem;margin-bottom:0.25rem}
-  .lbtn b{font-size:1.125rem}
+  .lbtn b{font-size:1.25rem}
+  .lbtn small{font-size:0.875rem;line-height:1.3}
+  .lbtn[aria-checked=true]::after{top:0.5rem;right:0.5rem;width:1.25rem;height:1.25rem}
 }
-/* phones: the two cards side by side as squares, content centred; capped so that "Seguinte" stays on screen */
-@media (max-width:600px){
-  .lbtn{aspect-ratio:12 / 11;max-width:10.5rem;min-width:0;min-height:0;align-content:center;padding:0.75rem 0.5rem}   /* a touch lower than square; min-height:0 lets Chrome shrink it (else it keeps the content's height and pushes out to the right) */
+/* narrow windows: the language screen fills the space above the Seguinte bar, so its circle is never cut */
+@media (max-width:860px), (max-aspect-ratio:4/5){ .slide.s-lang{min-height:calc(100dvh - var(--hdr) - 7rem)} }
+/* narrow windows: square language cards side by side */
+@media (max-width:860px), (max-aspect-ratio:4/5){
+  .langscreen{width:100%;min-width:0;grid-template-columns:minmax(0,1fr)}
+  .langpick{width:100%;min-width:0}
+  .langscreen h1{font-size:clamp(1.5rem,8.4vw,2.5rem)}
+  .langbtns{max-width:min(28rem,100%)}
+  .langbtns{gap:0.875rem;width:100%;max-width:28rem}
+  .lbtn{aspect-ratio:5/4;align-content:center;padding:0.5rem;gap:0.125rem;border-radius:1.25rem}
+  .lbtn .flag{width:3.5rem;height:3.5rem;margin-bottom:0.25rem}
+  .lbtn b{font-size:1.3125rem}
+  .lbtn small{font-size:0.875rem}
 }
-/* very narrow phones (iPhone SE, 320 px): a square of ~133 px has no room for the subtitle; flag + language name are enough */
-@media (max-width:359px){
-  .lbtn small{display:none}
+/* very narrow phones (iPhone SE 1st gen, 320 px): cards stop being forced square so they never push past the right margin */
+@media (max-width:359px){ .lbtn{aspect-ratio:auto;padding:0.875rem 0.375rem} .lbtn .flag{width:3.25rem;height:3.25rem} .lbtn b{font-size:1.125rem} .lbtn small{font-size:0.75rem} }
+/* ===== Apoio window: clear hierarchy (heading with icon, 112 first and highlighted, other lines as cards, "Sabe mais" link, then the footer) ===== */
+.dlg--help{display:grid}
+.hlp-head{display:flex;gap:0.875rem;align-items:center;margin-bottom:1.125rem}
+.hlp-ic{flex:none;width:2.75rem;height:2.75rem;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center}
+.hlp-ic svg{width:1.375rem;height:1.375rem}
+.dlg--help h2{margin:0;font-size:1.5rem;line-height:1.2}
+.dlg--help .dlg-what{margin:0.125rem 0 0;font-size:1.0625rem;font-weight:400;color:var(--ink-soft)}
+.dlg--help .hlp-list{display:grid;gap:0.5rem;margin:0}
+.dlg--help .hlp-list li{border:0;background:var(--warm);border-radius:0.875rem;padding:0.625rem 0.625rem 0.625rem 1rem;gap:0.75rem;flex-wrap:nowrap}
+.dlg--help .hlp-list li>div{min-width:0}
+.dlg--help .hlp-list b{display:block;font-size:1rem;line-height:1.3}
+.dlg--help .hlp-list small,.hlp-more small{font-weight:400}
+.dlg--help .hlp-list small{font-size:1rem;line-height:1.35;margin-top:0.125rem}
+.dlg--help .hlp-list a{flex:none;justify-content:center;min-height:2.5rem;min-width:4.5rem;padding:0 0.875rem;border-radius:999px;background:#fff;color:var(--navy);font-size:1.0625rem;font-weight:700}
+.dlg--help .hlp-list .hlp-sos{background:var(--red-soft)}
+.dlg--help .hlp-list .hlp-sos b{color:var(--red-dark)}
+.dlg--help .hlp-list .hlp-sos a{background:var(--red);color:#fff;font-size:1.25rem}
+@media (hover:hover){.dlg--help .hlp-list a:hover{background:var(--navy);color:#fff}.dlg--help .hlp-list .hlp-sos a:hover{background:var(--red-dark)}}
+.hlp-tel{margin:0.5rem 0 0 0.25rem;font-size:0.875rem}
+.hlp-more{display:flex;align-items:center;justify-content:space-between;gap:0.75rem;margin-top:1rem;padding:0.75rem 1rem;border-radius:0.875rem;border:1.5px solid var(--navy);color:var(--navy);text-decoration:none;transition:background .2s,color .2s}
+.hlp-more b{display:block;font-size:1rem}
+.hlp-more small{display:block;font-size:0.875rem;color:var(--ink-soft);line-height:1.35}
+.hlp-more svg{flex:none;width:1.25rem;height:1.25rem}
+@media (hover:hover){.hlp-more:hover{background:var(--navy);color:#fff}.hlp-more:hover small{color:#fff}}
+.dlg--help .dlg-foot{align-items:center;margin-top:1rem;padding-top:1rem;border-top:1px solid var(--line);flex-wrap:nowrap}
+.dlg--help .dlg-foot .hint{margin:0;font-size:0.875rem;flex:1;min-width:0}
+.dlg--help .dlg-foot .pill{flex:none}
+@media (max-width:420px){
+  .dlg--help .hlp-head{margin-bottom:0.875rem}
+  .dlg--help h2{font-size:1.3125rem}
+  .dlg--help .hlp-list li{padding:0.5rem 0.5rem 0.5rem 0.75rem}
+  .dlg--help .hlp-list a{min-width:0;padding:0 0.75rem;font-size:1rem}
+  .dlg--help .dlg-foot{flex-wrap:wrap}
+  .dlg--help .dlg-foot .pill{width:100%;justify-content:center}
 }
-
-/* phones, accordions of the checklists (.chk-groups): the open title has the same navy stroke as its panel, square bottom corners,
-   so the two read as one box (the .chk-groups button rule used to override the general "open" rule) */
-.chk-groups.acc>button[aria-expanded=true]{background:var(--white);border:1.5px solid var(--navy);border-bottom-left-radius:0;border-bottom-right-radius:0;box-shadow:none}
-.chk-groups.acc>[data-tp]{border-width:0 1.5px 1.5px}
-/* phones, the other accordions (.vtabs, .rtabs): their list gap (larger than the accordion's) left a 4 px band between an open title and its panel */
-.vtabs.acc,.rtabs.acc{row-gap:0.5rem}
-/* phones, open accordion: no outline; the title and its panel read as one box by their shared background and matching corners */
-.acc>button[aria-expanded=true],.chk-groups.acc>button[aria-expanded=true]{border-color:transparent}
-.acc>[data-tp],.chk-groups.acc>[data-tp]{border-color:transparent}
-.acc>[data-tp],.chk-groups.acc>[data-tp]{clip-path:inset(0 -2.5rem -3rem -2.5rem)}   /* no shadow band over the open title */
-/* phones, open accordion: a thin line between the title and its content */
-.acc>button[aria-expanded=true],.chk-groups.acc>button[aria-expanded=true]{border-bottom-color:var(--line)}
+.hlp-head>div{min-width:0}
+@media (max-width:420px){ .hlp-ic{width:2.25rem;height:2.25rem} .hlp-ic svg{width:1.125rem;height:1.125rem} .dlg--help .dlg-what{font-size:1rem} }
+/* very narrow phones: the number goes under the name */
+@media (max-width:360px){
+  .dlg--help .hlp-list li{flex-wrap:wrap;row-gap:0.375rem;padding:0.625rem 0.75rem}
+  .dlg--help .hlp-list li>div{flex:1 1 100%}
+  .dlg--help .hlp-list a{min-height:2.25rem}
+}
+/* Apoio window subtitle on one line on computers */
+@media (min-width:861px){ .dlg--help .dlg-what{white-space:nowrap} dialog#help{width:min(36rem,calc(100vw - 2rem))} }
+/* "Sabe mais aqui": filled navy at rest, outline on hover (states swapped) */
+.hlp-more{background:var(--navy);color:#fff}
+.hlp-more small{color:rgba(255,255,255,.82)}
+@media (hover:hover){.hlp-more:hover{background:#1E3196;border-color:#1E3196;color:#fff}.hlp-more:hover small{color:rgba(255,255,255,.85)}}
+/* phone hint: 2px larger, same space above and below (between the contacts and "Sabe mais aqui") */
+.dlg--help .hlp-tel{margin:0.875rem 0;font-size:1rem;line-height:1.3}
+.dlg--help .hlp-tel+.hlp-more{margin-top:0}
+/* Apoio window: phone icon before "No telemóvel, toca no número para ligar." */
+.dlg--help .hlp-tel{display:flex;align-items:center;gap:0.5rem}
+.dlg--help .hlp-tel::before{content:"";flex:none;width:1.125rem;height:1.125rem;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='6' y='2.5' width='12' height='19' rx='2.5'/%3E%3Cpath d='M10.5 18h3'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='6' y='2.5' width='12' height='19' rx='2.5'/%3E%3Cpath d='M10.5 18h3'/%3E%3C/svg%3E") center/contain no-repeat}
+/* header hovers: captions / sound (navy) go a lighter blue, settings (white) goes grey, the flag gets lighter */
+@media (hover:hover){
+  .hdr #ccBtn[aria-pressed=true]:hover,.hdr #muteBtn[aria-pressed=false]:hover{background:#1E3196;border-color:#1E3196}
+  .hdr #setBtn:not([aria-expanded=true]):hover{background:var(--warm)}
+  .hdr .ibtn--flag:hover img{box-shadow:none;opacity:.75}
+  .hdr .ibtn--flag img{transition:opacity .2s}
+}
+/* phones: header button labels (Índice, Apoio, Sair) hidden visually but still read by screen readers (axe: button-name) */
+@media (max-width:860px), (max-aspect-ratio:4/5), (max-height:500px){ .hdr .pill .t{display:inline;position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0} .hdr .pill{position:relative} }
+/* ===== narrow phones + "Texto maior": nothing may run past the screen edge ===== */
+/* a word longer than the line breaks (hyphenated where the browser can) instead of pushing out */
+h1,h2,h3,h4,p,li,small,.step,.lbtn b{overflow-wrap:break-word}
+@media (max-width:420px){ h1,h2,h3,.lede,.step,.lbtn b,.lbtn small{-webkit-hyphens:auto;hyphens:auto} }
+/* the step rows (4.2 and others): columns may shrink below their longest word */
+.steps{grid-template-columns:repeat(3,minmax(0,1fr))}
+.steps--n{grid-template-columns:repeat(var(--n),minmax(0,1fr))}
+.step{min-width:0}
+/* panels inside the accordions: their content may shrink to the card */
+.vpanel>*,.vpanel--text>div{min-width:0}
+/* language cards with larger text: no longer forced square (the bigger text needs the height) */
+html.txt-lg .lbtn{aspect-ratio:auto}
+/* end-of-module block and accordion tabs: grid tracks may shrink to the screen (a long download title or a long word no longer widens them) */
+.fin>*{min-width:0}
+.dls,.dl,.dl *{min-width:0}
+.vtabs.acc>*,.rtabs.acc>*,.chk-groups.acc>*{min-width:0}
+/* a button with the hidden attribute stays hidden even when its class sets a display (e.g. "Voltar um passo" before any step) */
+.pill[hidden],.nbtn[hidden],.ibtn[hidden],.flow-tools [hidden]{display:none!important}
+/* video players show a clear keyboard focus ring */
+.player:has(video:focus-visible){outline:3px solid var(--navy);outline-offset:3px}
+/* flows and conversations (2.3, 3.2, 3.5…): once answered, their columns still shrink to the screen (narrow phones, large text) */
+.flow>*,.chat,.chat ol,.chat li,.chat .q,.chat .q>*,.map,.map li,.map li>*{min-width:0}
+.chat .opt,.chat .opt *{white-space:normal;overflow-wrap:break-word}
+/* Apoio window: its single column never grows past the window (phones with larger text) */
+.dlg--help{grid-template-columns:minmax(0,1fr)}
+.dlg--help>*{min-width:0}
+.dlg--help .hlp-list{grid-template-columns:minmax(0,1fr)}
+/* larger text on phones: the number goes under the name (as on very narrow phones) */
+@media (max-width:480px){ html.txt-lg .dlg--help .hlp-list li{flex-wrap:wrap;row-gap:0.375rem;padding:0.625rem 0.75rem} html.txt-lg .dlg--help .hlp-list li>div{flex:1 1 100%} }

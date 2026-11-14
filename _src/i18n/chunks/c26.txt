@@ -79,7 +79,7 @@
 2936	Para saber mais
 2937	Fim da ficha
 2938	Este é um tema sensível e delicado
-2939	Se quiseres aprofundar o conhecimento sobre a prevenção do suicídio – como reconhecer sinais de alerta, como abordar alguém em sofrimento e que recursos existem – consulta o <a class="inl" href="#demo-indisponivel" target="_blank" rel="noopener">Manual sobre Prevenção do Suicídio<span class="sr"> (abre numa nova janela, no SharePoint de Saúde Ocupacional MC)</span></a>.
+2939	Se quiseres aprofundar o conhecimento sobre a prevenção do suicídio – como reconhecer sinais de alerta, como abordar alguém em sofrimento e que recursos existem – consulta o <a class="inl" href="https://sonaesystems.sharepoint.com/sites/SaudeOcupacionalMC/Shared%20Documents/Forms/Projeto%20RM%20%20CD%20Maia.aspx?id=%2Fsites%2FSaudeOcupacionalMC%2FShared%20Documents%2F%23PRECISAMOSFALAR%2FManual%20sobre%20Preven%C3%A7%C3%A3o%20do%20Suic%C3%ADdio%2Epdf&amp;parent=%2Fsites%2FSaudeOcupacionalMC%2FShared%20Documents%2F%23PRECISAMOSFALAR" target="_blank" rel="noopener">Manual sobre Prevenção do Suicídio<span class="sr"> (abre numa nova janela, no SharePoint de Saúde Ocupacional MC)</span></a>.
 2940	Parte 5, ficha 9 · páginas 130 a 133 do PDF original
 2941	
     <a class="dl" href="downloads/ficha-9-suicidio.pdf" target="_blank" rel="noopener"><span class="ic"><svg#1/></span><span>Ficha: Suicídio<small>PDF · 4 páginas</small></span><span class="go" aria-hidden="true">→</span><span class="sr"> (abre numa nova janela)</span></a>

@@ -6,29 +6,27 @@ Each fragment in _src/lessons/<file>.html starts with a JSON front-matter commen
 followed by the <section class="slide"> elements, then optionally a <script> block
 with chapter-specific code. The script must end with PSP.start(); if absent, it is added.
 
-Page names: the fragments keep their file names; the built pages get the short names of _src/pages.json
-(Portuguese in the course root, English in en/), and every link between pages is re-pointed to them.
-index.html is cut in two: the language screen (idioma / language) and the home page (inicio / start);
-index.html itself only forwards to the language screen. Online, player.js leaves ".html" out of the address.
-The browser tab reads "Sonae Toolkit PSP" (English: "Sonae PFA Toolkit"), with the module in front inside a module: "Módulo 3 - Sonae Toolkit PSP".
-
 English: _src/i18n/apply.py turns the Portuguese fragments into _src/lessons-en/ + _src/shell.en.html (see _src/i18n/).
-This script builds both: Portuguese into the course root, English into en/ (assets/ is shared, so its links get a "../" in front).
+This script builds both: Portuguese into the course root, English into en/ (same file names; assets/ and downloads/ are shared, so their
+links get a "../" in front).
+Page names (portfolio demo): the fragments keep their file names; the built pages get the short names of _src/pages.json
+(Portuguese in the course root, English in en/), and every link between pages is re-pointed to them. index.html keeps its name.
+idioma.html / inicio.html (en: language.html / start.html) only forward to index.html#m0-idioma / #m0-capa (older addresses).
+Online, player.js leaves ".html" out of the address. Pages left over from older names are removed.
 Run: python3 _src/build.py   (from the course root; add --no-en to skip the English pages)
 """
 import html, json, pathlib, re, subprocess, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PAGES = {k: v for k, v in json.loads((ROOT / '_src' / 'pages.json').read_text(encoding='utf-8')).items() if not k.startswith('_')}
-TITLE = ('Sonae Toolkit PSP', 'Sonae PFA Toolkit')
-LANG_SEC = re.compile(r'\s*(?:<!--[^>]*-->\s*)?<section class="slide s-lang\b.*?</section>', re.S)
+TITLE = ('Sonae Toolkit PSP', 'Sonae Toolkit PFA')
+FORWARD = (('idioma', 'language', 'm0-idioma'), ('inicio', 'start', 'm0-capa'))
 REDIRECT = '''<!doctype html>
 <html lang="{lang}"><head><meta charset="utf-8"><title>{title}</title>
 <meta name="robots" content="noindex, nofollow">
-<meta http-equiv="refresh" content="0; url={page}.html">
-<link rel="icon" type="image/png" sizes="32x32" href="{pre}assets/img/favicon-32.png">
-<script>location.replace(/^https?:$/.test(location.protocol) ? '{page}' : '{page}.html');</script>
-</head><body><a href="{page}.html">{title}</a></body></html>
+<meta http-equiv="refresh" content="0; url=index.html#{hash}">
+<script>location.replace((/^https?:$/.test(location.protocol) ? './' : 'index.html') + '#{hash}');</script>
+</head><body><a href="index.html#{hash}">{title}</a></body></html>
 '''
 
 
@@ -40,16 +38,15 @@ def pages_js():
 def relink(out, li):
     """links between pages: fragment file name -> short page name of this language"""
     for src, names in PAGES.items():
-        if src.endswith('.html'):
-            out = re.sub(r'(?<=["\'/])' + re.escape(src) + r'(?=["\'#?])', names[li] + '.html', out)
+        out = re.sub(r'(?<=["\'/])' + re.escape(src) + r'(?=["\'#?])', names[li] + '.html', out)
     return out
 
 
 def build(shell_file, lessons, dest, shared_prefix=''):
     li = 1 if shared_prefix else 0
+    built = set()
     shell = shell_file.read_text(encoding='utf-8')
     dest.mkdir(exist_ok=True)
-    built = set()
     slides = []   # for slides.json (review tool): hash id = m<chapter>-<data-id>, global order
     for frag in sorted(lessons.glob('*.html'), key=lambda f: (f.name != 'index.html', f.name)):
         src = frag.read_text(encoding='utf-8')
@@ -63,36 +60,30 @@ def build(shell_file, lessons, dest, shared_prefix=''):
             body = body[:sm.start()]
         if 'PSP.start()' not in script:
             script += '\nPSP.start();'
-        parts = [(PAGES[frag.name][li], meta['chapter'], body)]
-        if frag.name == 'index.html':
-            lang = LANG_SEC.search(body)
-            parts = [(PAGES['idioma'][li], 'lang', lang.group(0)), (PAGES['index.html'][li], meta['chapter'], body[:lang.start()] + body[lang.end():])]
-        for name, chapter, part in parts:
-            out = (shell.replace('{{TITLE}}', meta['title'])
-                        .replace('{{CHAPTER}}', chapter)
-                        .replace('{{CRUMB}}', meta['crumb'])
-                        .replace('{{SLIDES}}', part.strip())
-                        .replace('{{SCRIPT}}', script))
-            mod = chapter.split('.')[0] if re.match(r'[1-9]', chapter) else ''
-            title = (('Módulo ', 'Module ')[li] + mod + ' - ' if mod else '') + TITLE[li]
-            out = re.sub(r'<title>.*?</title>', '<title>%s</title>' % title, out, count=1, flags=re.S)
-            # header path: the dots get room of their own
-            out = re.sub(r'<p class="crumb">.*?</p>', lambda m: m.group(0).replace(' · ', ' <span class="csep">·</span> '), out, count=1)
-            out = relink(out, li)
-            if shared_prefix:
-                # assets/ and downloads/ stay in the course root: every reference that opens a quote, a backtick or a url( gets the prefix
-                out = re.sub(r'''(?<=["'`(])((?:assets|downloads)/)''', shared_prefix + r'\1', out)
-            (dest / (name + '.html')).write_text(out, encoding='utf-8')
-            built.add(name + '.html')
-            for sec in re.finditer(r'<section class="slide[^"]*"([^>]*)>', part):
-                a = sec.group(1)
-                sid = re.search(r'data-id="([^"]+)"', a).group(1)
-                ttl = re.search(r'data-title="([^"]*)"', a)
-                slides.append({'id': 'm%s-%s' % (chapter.replace('.', '-'), sid), 'module': meta['title'], 'title': html.unescape(ttl.group(1)) if ttl else sid, 'order': len(slides) + 1})
-            print('built', dest.relative_to(ROOT) if dest != ROOT else '.', name + '.html', len(out))
-    # the address without a page name opens the language screen
-    (dest / 'index.html').write_text(REDIRECT.format(lang=('pt-PT', 'en-GB')[li], title=TITLE[li], page=PAGES['idioma'][li], pre=shared_prefix), encoding='utf-8')
-    built.add('index.html')
+        out = (shell.replace('{{TITLE}}', meta['title'])
+                    .replace('{{CHAPTER}}', meta['chapter'])
+                    .replace('{{CRUMB}}', meta['crumb'])
+                    .replace('{{SLIDES}}', body.strip())
+                    .replace('{{SCRIPT}}', script))
+        # header path: the dots get room of their own
+        out = re.sub(r'<p class="crumb">.*?</p>', lambda m: m.group(0).replace(' · ', ' <span class="csep">·</span> '), out, count=1)
+        out = relink(out, li)
+        if shared_prefix:
+            # assets/ and downloads/ stay in the course root: every reference that opens a quote, a backtick or a url( gets the prefix
+            out = re.sub(r'''(?<=["'`(])((?:assets|downloads)/)''', shared_prefix + r'\1', out)
+        name = PAGES[frag.name][li] + '.html' if frag.name in PAGES else frag.name
+        (dest / name).write_text(out, encoding='utf-8')
+        built.add(name)
+        for sec in re.finditer(r'<section class="slide[^"]*"([^>]*)>', body):
+            a = sec.group(1)
+            sid = re.search(r'data-id="([^"]+)"', a).group(1)
+            ttl = re.search(r'data-title="([^"]*)"', a)
+            slides.append({'id': 'm%s-%s' % (meta['chapter'].replace('.', '-'), sid), 'module': meta['title'], 'title': html.unescape(ttl.group(1)) if ttl else sid, 'order': len(slides) + 1})
+        print('built', dest.relative_to(ROOT) if dest != ROOT else '.', name, len(out))
+    for pt, en, h in FORWARD:
+        name = (pt, en)[li] + '.html'
+        (dest / name).write_text(REDIRECT.format(lang=('pt-PT', 'en-GB')[li], title=TITLE[li], hash=h), encoding='utf-8')
+        built.add(name)
     # pages left over from older names
     for old in dest.glob('*.html'):
         if old.name not in built:
